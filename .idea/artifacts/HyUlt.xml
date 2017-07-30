@@ -1,6 +1,13 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="HyUlt">
+  <artifact name="HyUlt">
     <output-path>$PROJECT_DIR$/Build</output-path>
-    <root id="archive" name="HyUlt.jar" />
+    <root id="root">
+      <element id="archive" name="HyUlt.jar">
+        <element id="module-output" name="HyUlt" />
+      </element>
+      <element id="archive" name="HyUltXChat.jar">
+        <element id="module-output" name="HyUltXChat" />
+      </element>
+    </root>
   </artifact>
 </component>
