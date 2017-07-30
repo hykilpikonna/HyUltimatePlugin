@@ -27,7 +27,7 @@ public class Configs extends Config
         addDefault("AutoUpdate.This.Enable", true);
         addDefault("AutoUpdate.This.Repeat", true);
         addDefault("AutoUpdate.This.PluginYmlURL", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/HyUlt/src/plugin.yml");
-        addDefault("AutoUpdate.This.JarURL", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/HyUlt.jar");
+        addDefault("AutoUpdate.This.JarURL", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/Build/HyUlt.jar");
         addDefault("AutoUpdate.This.CheckDelay", 3200);
         addDefault("AutoUpdate.Default.TimeoutInSeconds", 3);
         addDefault("AutoUpdate.Default.CheckDelayInSeconds", 3600);
