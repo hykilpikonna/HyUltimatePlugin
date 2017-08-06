@@ -8,6 +8,9 @@
       <element id="archive" name="HyUltXChat.jar">
         <element id="module-output" name="HyUltXChat" />
       </element>
+      <element id="archive" name="HyUltXFix.jar">
+        <element id="module-output" name="HyUltXFix" />
+      </element>
     </root>
   </artifact>
 </component>

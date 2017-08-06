@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HyUlt/HyUlt.iml" filepath="$PROJECT_DIR$/HyUlt/HyUlt.iml" />
       <module fileurl="file://$PROJECT_DIR$/HyUltXChat/HyUltXChat.iml" filepath="$PROJECT_DIR$/HyUltXChat/HyUltXChat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HyUltXFix/HyUltXFix.iml" filepath="$PROJECT_DIR$/HyUltXFix/HyUltXFix.iml" />
     </modules>
   </component>
 </project>

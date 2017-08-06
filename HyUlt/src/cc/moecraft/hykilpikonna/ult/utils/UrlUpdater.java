@@ -243,7 +243,8 @@ public class UrlUpdater
             if (!fileName.endsWith(".jar")) fileName += ".jar";
         }
         else fileName = "FILE-" + UUID.randomUUID().toString() + ".jar";
-        tempDebug("获取文件名: " + fileName); //TODO: 测试完删除
+        tempDebug("获取文件名: " + fileName);
+        //TODO: 测试完删除
         return fileName;
     }
 

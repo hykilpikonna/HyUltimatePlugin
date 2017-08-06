@@ -1,5 +1,5 @@
 name: "HyUltimatePlugin"
-version: 0.1.7.1.63
+version: 0.1.7.2.66
 description: "Hykilpikonna's combined plugin"
 author: Hykilpikonna
 main: cc.moecraft.hykilpikonna.ult.Main
@@ -29,10 +29,6 @@ commands:
         description: Set a player to autorespawn.
         usage: /<commandRunner>
         aliases: [hyautores, hyar]
-    antistuckinnetherportal:
-        description: CommandRunner for ASINP.
-        usage: /<commandRunner>
-        aliases: [asinp, hyasinp]
     fish:
         description: CommandRunner for custom fish.
         usage: /<commandRunner>

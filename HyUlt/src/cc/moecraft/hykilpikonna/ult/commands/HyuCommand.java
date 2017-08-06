@@ -45,7 +45,8 @@ public class HyuCommand extends CommandRunner
                         .append("unload %PLUGINS%")
                         .append("delete %PLUGINS%")
                         .build()
-        ); //TODO: Tab补全的占位符替换
+        );
+        //TODO: Tab补全的占位符替换
     }
 
     @Override
@@ -118,27 +119,15 @@ public class HyuCommand extends CommandRunner
             case 1:
                 String arg = args.get(0).toLowerCase();
                 if (arg.contains("-url:") && Main.permissions.hasPermission(sender, "hyult.command.admin.install.url", true))
-                {
-                    String url = arg.replace("-url:", "");
-                    asyncDownloadFile(sender, url);
-                }
+                    asyncDownloadFile(sender, arg.replace("-url:", ""));
                 else if (arg.contains("-hyplugins:") && Main.permissions.hasPermission(sender, "hyult.command.admin.install.hyplugins", true))
                 {
                     String pluginName = arg.replace("-hyplugins:", "");
                     HyPluginsDownloadLink hyPluginsDownloadLink = HyPluginsDownloadLink.getPluginWithName(pluginName);
-                    if (hyPluginsDownloadLink != null)
-                    {
-                        tempDebug("调用下载方法");//TODO: 完成这个测试
-                        asyncDownloadFile(hyPluginsDownloadLink.getJarURL());
-                    }
-                    else
-                    {
-                        Main.messengers.sendMessage(sender, "download_failed_wrong_hyplugin_name");
-                        tempDebug(HyPluginsDownloadLink.getList().toString());//TODO: 测试完删掉
-                        tempDebug("[" + pluginName + "]");
-                    }
-
+                    if (hyPluginsDownloadLink != null) asyncDownloadFile(hyPluginsDownloadLink.getJarURL());
+                    else Main.messengers.sendMessage(sender, "download_failed_wrong_hyplugin_name");
                 }
+                else Main.messengers.sendMessageList(sender, "help_message");
                 break;
             default:
                 Main.messengers.sendMessageList(sender, "help_message");

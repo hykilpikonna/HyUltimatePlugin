@@ -33,7 +33,6 @@ public class Main extends HyPlugin
     public static Configs configs;
     public static Permissions permissions;
     private static HyuCommand command;
-    private static HyPluginsDownloadLink hyPluginsDownloadLink;
 
     @Override
     public void preInit() {
@@ -53,6 +52,7 @@ public class Main extends HyPlugin
     @Override
     public void run() {
         HyPluginsDownloadLink CHAT = new HyPluginsDownloadLink("HyUltXChat", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/Build/HyUltXChat.jar");
+        HyPluginsDownloadLink FIX = new HyPluginsDownloadLink("HyUltXFix", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/Build/HyUltXFix.jar");
         //TODO: 修复"未找到此插件"Bug
         setup();
         setupAutoUpdate();
@@ -125,7 +125,8 @@ public class Main extends HyPlugin
         return main;
     }
 
-    public static void tempDebug(String string) //TODO: 加开关
+    public static void tempDebug(String string)
+    //TODO: 加开关
     {
         //if (getMain().getConfig().getBoolean("Debug"))
             Bukkit.getConsoleSender().sendMessage("[" +
@@ -159,6 +160,7 @@ public class Main extends HyPlugin
         ArrayList<Plugin> pluginArrayList = new ArrayList<>();
         pluginArrayList.addAll(plugins);
         plugins = new ArrayList<>();
+        //TODO: 异步试试
         for (Plugin plugin : pluginArrayList) reload(plugin);
     }
 
