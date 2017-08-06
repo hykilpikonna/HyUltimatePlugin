@@ -1,5 +1,5 @@
 name: HyUltXChat
-version: 0.1.5.26
+version: 0.1.5.27
 author: Hykilpikonna
 main: cc.moecraft.hykilpikonna.ult.chat.Chat
 depend: [HyUltimatePlugin, HyEssentials]

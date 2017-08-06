@@ -9,6 +9,7 @@ import java.io.File;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.Objects;
 
 import static cc.moecraft.hykilpikonna.ult.Main.tempDebug;
@@ -31,6 +32,8 @@ public abstract class Config extends YamlConfiguration
 
     private boolean autoBackup;
     private boolean autoOverwriteVersionInfo;
+
+    private static ArrayList<Config> configs = new ArrayList<>();
 
     /**
      * 新建一个Config
@@ -64,6 +67,8 @@ public abstract class Config extends YamlConfiguration
         if (!isLatest() && autoBackupWhenPluginUpdate) backup();
 
         checkConfig();
+
+        configs.add(this);
     }
 
     /**
@@ -133,10 +138,12 @@ public abstract class Config extends YamlConfiguration
 
     /**
      * 重载配置
+     * 重载后会执行readConfig();
      */
     public void reload()
     {
         loadConfiguration(configFile);
+        readConfig();
     }
 
     /**
@@ -255,6 +262,17 @@ public abstract class Config extends YamlConfiguration
         set("ConfigVersion", plugin.getDescription().getVersion());
     }
 
+    /**
+     * 重载所有配置文件
+     */
+    public static void reloadAllConfig()
+    {
+        for (Config config : configs)
+        {
+            config.reload();
+        }
+    }
+
     public String getDir() {
         return dir;
     }
@@ -293,5 +311,9 @@ public abstract class Config extends YamlConfiguration
 
     public boolean isAutoOverwriteVersionInfo() {
         return autoOverwriteVersionInfo;
+    }
+
+    public void setAutoOverwriteVersionInfo(boolean autoOverwriteVersionInfo) {
+        this.autoOverwriteVersionInfo = autoOverwriteVersionInfo;
     }
 }

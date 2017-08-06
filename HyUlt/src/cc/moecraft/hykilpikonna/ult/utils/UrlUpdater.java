@@ -9,6 +9,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
+import java.util.UUID;
 
 import static cc.moecraft.hykilpikonna.ult.Main.getMain;
 import static cc.moecraft.hykilpikonna.ult.Main.tempDebug;
@@ -169,21 +170,33 @@ public class UrlUpdater
      * 下载文件
      * 归功于 @V乐乐
      * Credit to @Vlvxingze
+     *
      * @param url 下载地址
-     * @param file 覆盖文件
-     * @return 是否下载成功
+     * @param path 文件路径
+     * @return 完整文件路径(File)
      */
-    private static boolean downloadFile(URL url, File file)
+    public static File downloadFile(URL url, String path)
     {
+        String filePath = "";
+        if (!(path.endsWith("/")) && !(path.endsWith("\\"))) filePath = path + "/";
+        else filePath = path;
+
         tempDebug("正在下载文件, ");
         tempDebug("  - URL = " + url);
-        tempDebug("  - File = " + file);
-        if (file.exists()) file.delete();
+        tempDebug("  - Path = " + path);
+
         try
         {
             HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
             httpURLConnection.setConnectTimeout(getMain().getConfig().getInt("AutoUpdate.Default.TimeoutInSeconds") * 1000);
             httpURLConnection.setRequestProperty("User-Agent", "Mozilla/4.0 (compatible; MSIE 5.0; Windows NT; DigExt)");
+
+            //可能出错
+            File file = new File(path, getFileName(httpURLConnection));
+            tempDebug("  - File = " + file);
+
+            //更可能出错
+            if (file.exists()) file.delete();
 
             InputStream inputStream = httpURLConnection.getInputStream();
             byte[] getData = readInputStream(inputStream);
@@ -196,26 +209,49 @@ public class UrlUpdater
             {
                 inputStream.close();
             }
+
+            tempDebug(GREEN + "下载成功");
+            return file;
         }
         catch (IOException ignored)
         {
             tempDebug(RED + "下载失败");
             ignored.printStackTrace();
-            return false;
+            return null;
         }
-        tempDebug(GREEN + "下载成功");
-        return true;
+    }
+
+    /**
+     * 获取文件名
+     *
+     * @param httpURLConnection HTTP连接
+     * @return 文件名
+     */
+    public static String getFileName(HttpURLConnection httpURLConnection)
+    {
+        String raw = httpURLConnection.getHeaderField("Content-Disposition");
+        String fileName;
+        if(raw != null && raw.contains("filename="))
+        {
+            fileName = raw.split("filename=")[1];
+        }
+        else
+        {
+            fileName = "FILE-" + UUID.randomUUID().toString();
+        }
+        return fileName;
     }
 
     /**
      * 一行代码下载文件
      * 归功于 @喵呜
      * Credit to @ admin@yumc.pw
+     *
      * @param url 下载地址
      * @param file 覆盖文件
      * @return 是否下载成功
      */
-    private static boolean downloadFileInOneLine(URL url, File file)
+    public static boolean downloadFileInOneLine(URL url, File file)
     {
         tempDebug("正在下载文件, ");
         tempDebug("  - URL = " + url);
@@ -223,6 +259,8 @@ public class UrlUpdater
         try
         {
             Files.copy(url.openConnection().getInputStream(), file.toPath(), StandardCopyOption.REPLACE_EXISTING);
+            tempDebug(GREEN + "下载成功");
+            return true;
         }
         catch (IOException ignored)
         {
@@ -230,8 +268,6 @@ public class UrlUpdater
             ignored.printStackTrace();
             return false;
         }
-        tempDebug(GREEN + "下载成功");
-        return true;
     }
 
     /**
@@ -243,7 +279,7 @@ public class UrlUpdater
      * @return IDK! Ask @Vlvxingze
      * @throws IOException IDK! Ask @Vlvxingze
      */
-    private static byte[] readInputStream(InputStream inputStream) throws IOException
+    public static byte[] readInputStream(InputStream inputStream) throws IOException
     {
         byte[] buffer = new byte[1024];
         int len;
@@ -260,7 +296,7 @@ public class UrlUpdater
      * @param pluginYML Plugin.yml文件
      * @return 版本号
      */
-    private static String getVersionFromPluginYML(File pluginYML)
+    public static String getVersionFromPluginYML(File pluginYML)
     {
         return YamlConfiguration.loadConfiguration(pluginYML).getString("version");
     }

@@ -27,11 +27,14 @@ public class ClsMessenger extends Messenger
     @Override
     public void writeConfig() 
     {
-        setPrefix("&7&l[&6&l清屏&7&l] &r");
-
         addDefault("console_unallowed_cls_self", String.format("%s后台不能给自己清屏", RED));
         addDefault("cls_all_success", String.format("%s已给所有玩家清屏", GREEN));
         addDefault("cls_player_success", GREEN + "已给玩家%PLAYER%清屏");
         addDefault("cls_player_not_found", RED + "%PLAYER%玩家不存在");
+    }
+
+    @Override
+    public String prefix() {
+        return "&7&l[&6&l清屏&7&l] &r";
     }
 }

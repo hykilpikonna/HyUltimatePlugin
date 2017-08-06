@@ -8,15 +8,36 @@
 #   - 每一个单独的功能之间间隔一行
 #   - 前面有"[P]"代表只能是玩家输入的指令
 #
-#帮助:                所有输错指令的时候都会出现帮助               
-#重载:                /hyu reload
+#帮助:                    所有输错指令的时候都会出现帮助               
+#重载所有配置:            /hyu reload                                权限: hyult.command.admin.reload
+#重载所有HyUlt子插件:     /hyu reload -hyplugins                     权限: hyult.command.admin.reload.hyplugins
+#重载所有插件:            /hyu reload -all                           权限: hyult.command.admin.reload.all
+#重载指定插件:            /hyu reload <插件名>                       权限: hyult.command.admin.reload.<插件名>
 #
-#设置自己的昵称:      /nick <昵称*>
-#设置别人的昵称:      /nick set <玩家名> <昵称*>
-#查看别人的昵称:      /nick see <玩家名>
+#安装指定插件:            /hyu install -url:<HTTP开头的Jar下载地址>  权限: hyult.command.admin.install.url
+#安装指定HyUlt子插件:     /hyu install -hyplugins:<子插件名>         权限: hyult.command.admin.install.hyplugins
+#
+#从Plugins文件夹加载插件: /hyu load <插件文件名或插件名>
+#
+#卸载插件:                /hyu unload <插件名>
+#卸载并删除插件:          /hyu delete <插件名>
+#                                                    #
+######################################################
+
+######################################################
+#                 HyUltXChat 指令帮助                #
+#
+#设置自己的昵称:          /nick <昵称*>
+#设置别人的昵称:          /nick set <玩家名> <昵称*>
+#查看别人的昵称:          /nick see <玩家名>
 #
 #给玩家清屏:              /cls [玩家名]
 #给全员清屏:              /cls all
+#                                                    #
+######################################################
+
+######################################################
+#                 HyUltXUtil 指令帮助                #
 #
 #修复玩家主手中物品:      /fix [玩家名]
 #修复玩家的所有物品:      /fix all [玩家名]
@@ -37,9 +58,14 @@
 #
 #开启玩家自动重生:        /autorespawn [玩家名]
 #
-#[P]设置防卡地狱门拉回坐标:  /asinp setspawn 
-#
 #[P]右手物品添加到钓鱼列表:  /hyfish add <键名> <概率>
+#                                                    #
+######################################################
+
+######################################################
+#                 HyUltXFix 指令帮助                 #
+#
+#[P]设置防卡地狱门拉回坐标:  /asinp setspawn 
 #                                                    #
 ######################################################
 

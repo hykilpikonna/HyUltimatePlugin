@@ -30,6 +30,22 @@ public abstract class Messenger extends Config
     }
 
     /**
+     * 检测配置是否是最新
+     *
+     * 如果未生成, 执行writeDefaultConfig()方法
+     * 如果生成过但不是最新, 执行writeConfig()方法
+     * 然后保存, 然后重载, 然后执行readConfig()方法
+     */
+    @Override
+    public void checkConfig()
+    {
+        if (isDefaultConfig()) writeDefaultConfig();
+        if (!isLatest()) writeConfig();
+        if (isAutoOverwriteVersionInfo()) overwriteVersionInfo();
+        setPrefix(prefix()); save(); reload(); readConfig();
+    }
+
+    /**
      * 获取一个消息
      * 如果没有就返回MESSAGE MISSING (路径)
      *
@@ -154,4 +170,6 @@ public abstract class Messenger extends Config
 
     @Override
     public void writeDefaultConfig() {}
+
+    public abstract String prefix();
 }

@@ -1,12 +1,13 @@
 package cc.moecraft.hykilpikonna.ult.chat;
 
 import cc.moecraft.hykilpikonna.essentials.logger.Logger;
+import cc.moecraft.hykilpikonna.ult.Main;
+import cc.moecraft.hykilpikonna.ult.api.HyPlugin;
+import cc.moecraft.hykilpikonna.ult.api.HyPluginData;
 import cc.moecraft.hykilpikonna.ult.chat.features.Features;
 import org.bukkit.Bukkit;
-import org.bukkit.plugin.Plugin;
-import org.bukkit.plugin.java.JavaPlugin;
 
-import static cc.moecraft.hykilpikonna.ult.Main.tempDebug;
+import java.io.File;
 
 /**
  * 此类由 Hykilpikonna 在 2017/07/27 创建!
@@ -14,11 +15,10 @@ import static cc.moecraft.hykilpikonna.ult.Main.tempDebug;
  * Twitter: @Hykilpikonna
  * QQ/Wechat: 871674895
  */
-public class Chat extends JavaPlugin
+public class Chat extends HyPlugin
 {
     private static Chat instance;
 
-    public Logger logger;
     public Switches switches;
     public Features features;
 
@@ -28,22 +28,46 @@ public class Chat extends JavaPlugin
     }
 
     @Override
-    public void onEnable()
+    public void preInit()
     {
-        tempDebug("执行了onEnable");
         instance = this;
-
-        logger = new Logger("HyUltXChat", true);
         switches = new Switches();
         features = new Features();
+    }
 
-        if (Bukkit.getPluginManager().getPlugin("HyUltimatePlugin") != null)
-        {
+    @Override
+    public void run()
+    {
 
-        }
-        else
-        {
-            logger.Debug("未安装前置插件");
-        }
+    }
+
+    @Override
+    public String name() {
+        return "HyUltXChat";
+    }
+
+    @Override
+    public File pluginFile() {
+        return getFile();
+    }
+
+    @Override
+    public String jarUrl() {
+        return Main.configs.getString("Plugins.HyUltXChat.JarURL");
+    }
+
+    @Override
+    public String pluginYmlUrl() {
+        return Main.configs.getString("Plugins.HyUltXChat.PluginYmlURL");
+    }
+
+    @Override
+    public Boolean autoUpdate() {
+        return Chat.getHyUltXChat().switches.getBoolean("AutoUpdate.Enable");
+    }
+
+    @Override
+    public Boolean autoUpdateRepeat() {
+        return Chat.getHyUltXChat().switches.getBoolean("AutoUpdate.Repeat");
     }
 }

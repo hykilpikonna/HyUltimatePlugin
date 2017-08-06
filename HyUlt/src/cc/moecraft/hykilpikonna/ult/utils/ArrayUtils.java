@@ -35,6 +35,21 @@ public class ArrayUtils
         }
         return output;
     }
+    /**
+     * 获取剩下的
+     * @param strings ArrayList
+     * @param index 最小
+     * @return 剩下的
+     */
+    public static ArrayList<String> getTheRest(ArrayList<String> strings, int index)
+    {
+        ArrayList<String> output = new ArrayList<>();
+        for (int i = index; i < strings.size(); i++)
+        {
+            output.add(strings.get(i));
+        }
+        return output;
+    }
 
     /**
      * 获取剩下的
@@ -61,13 +76,13 @@ public class ArrayUtils
      */
     public static String getTheRestToString(ArrayList<String> strings, int index)
     {
-        String output = "";
+        StringBuilder output = new StringBuilder();
         for (int i = index; i < strings.size(); i++)
         {
-            output += strings.get(i);
+            output.append(strings.get(i));
         }
         loglogger.Debug("[工具处理]其余的字符串是: " + output);
-        return output;
+        return output.toString();
     }
 
     /**

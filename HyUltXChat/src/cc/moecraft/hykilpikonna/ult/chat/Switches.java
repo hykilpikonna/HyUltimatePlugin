@@ -21,6 +21,8 @@ public class Switches extends Config
 
     @Override
     public void writeConfig() {
+        addDefault("AutoUpdate.Enable", true);
+        addDefault("AutoUpdate.Repeat", false);
         addDefault("Cls.Enable", true);
         addDefault("Nick.Enable", true);
     }

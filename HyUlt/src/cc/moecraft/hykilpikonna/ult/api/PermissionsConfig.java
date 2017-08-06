@@ -33,7 +33,7 @@ public abstract class PermissionsConfig extends Config
 
     public boolean getRequired(String path)
     {
-        return getBoolean(replaceDot(path) + ".required");
+        return getBoolean(replaceDot(path) + ".required", true);
     }
 
     public void add(String node, boolean required)

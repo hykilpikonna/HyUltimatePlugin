@@ -1,14 +1,14 @@
 name: "HyUltimatePlugin"
-version: 0.1.6.2.53
+version: 0.1.7.0.59
 description: "Hykilpikonna's combined plugin"
 author: Hykilpikonna
 main: cc.moecraft.hykilpikonna.ult.Main
 softdepend: [HyEssentials]
 commands:
-    hyult:
+    hyu:
         description: The commandRunner to manage this plugin
         usage: /<commandRunner>
-        aliases: [hyultimate, hyu]
+        aliases: [hyultimate, hyult]
     fix:
         description: Fix items for players.
         usage: /<commandRunner>

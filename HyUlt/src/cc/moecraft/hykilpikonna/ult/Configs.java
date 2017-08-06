@@ -24,11 +24,13 @@ public class Configs extends Config
     public void writeConfig()
     {
         addDefault("AutoUpdate.Enable", true);
-        addDefault("AutoUpdate.This.Enable", true);
-        addDefault("AutoUpdate.This.Repeat", true);
-        addDefault("AutoUpdate.This.PluginYmlURL", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/HyUlt/src/plugin.yml");
-        addDefault("AutoUpdate.This.JarURL", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/Build/HyUlt.jar");
-        addDefault("AutoUpdate.This.CheckDelay", 3200);
+        addDefault("AutoUpdate.CheckDelay", 3200);
+
+        addDefault("AutoUpdate.HyUltimatePlugin.Enable", true);
+        addDefault("AutoUpdate.HyUltimatePlugin.Repeat", false);
+        addDefault("AutoUpdate.HyUltimatePlugin.PluginYmlURL", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/out/production/HyUlt/plugin.yml");
+        addDefault("AutoUpdate.HyUltimatePlugin.JarURL", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/Build/HyUlt.jar");
+
         addDefault("AutoUpdate.Default.TimeoutInSeconds", 3);
         addDefault("AutoUpdate.Default.CheckDelayInSeconds", 3600);
 
@@ -37,6 +39,9 @@ public class Configs extends Config
 
         addDefault("AutoBackupConfig.Enable", true);
         addDefault("AutoBackupConfig.WhenPluginUpdate", true);
+
+        addDefault("Plugins.HyUltXChat.PluginYmlURL", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/out/production/HyUltXChat/plugin.yml");
+        addDefault("Plugins.HyUltXChat.JarURL", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/Build/HyUltXChat.jar");
     }
 
     @Override

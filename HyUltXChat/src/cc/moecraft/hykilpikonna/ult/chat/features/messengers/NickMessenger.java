@@ -22,8 +22,6 @@ public class NickMessenger extends Messenger
     @Override
     public void writeConfig() 
     {
-        setPrefix("&7&l[&6&l昵称&7&l] &r");
-
         addDefault("command_missing_args", RED + "您未输入足够的参数");
         addDefault("command_player_not_found", String.format("%s%s玩家不存在", RED, "%PLAYER%"));
         addDefault("command_length_unqualified", String.format("%s昵称长度不合格, 需要在%s和%s之间", RED, "%MIN%", "%MAX%"));
@@ -32,5 +30,10 @@ public class NickMessenger extends Messenger
         addDefault("command_see_other", String.format("%s玩家%s的昵称是%s", AQUA, "%TARGETPLAYER%", "%NICK%"));
         addDefault("command_set_other", String.format("%s已将玩家%s的昵称设置为%s", GREEN, "%TARGETPLAYER%", "%NICK%"));
         addDefault("command_set_self", String.format("%s您已将自己的昵称设置为%s%s", GREEN, RESET, "%NICK%"));
+    }
+
+    @Override
+    public String prefix() {
+        return "&7&l[&6&l昵称&7&l] &r";
     }
 }
