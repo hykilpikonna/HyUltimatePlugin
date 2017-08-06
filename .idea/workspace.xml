@@ -7,40 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2643750-8be0-4570-af96-bc971080d381" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Build/HyUltXFix.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HyUltXFix/cc/moecraft/hykilpikonna/ult/fix/features/calculations/AsinpCalculations.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HyUltXFix/cc/moecraft/hykilpikonna/ult/fix/features/commands/AsinpCommands.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HyUltXFix/HyUltXFix.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/Fix.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/Switches.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/Features.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/calculations/AsinpCalculations.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/commands/AsinpCommands.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/configs/AsinpConfigs.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/listeners/AsinpListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/messengers/AsinpMessenger.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/permissions/AsinpPermissions.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HyUltXFix/src/plugin.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Build/HyUlt.jar" afterPath="$PROJECT_DIR$/Build/HyUlt.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Build/HyUltXChat.jar" afterPath="$PROJECT_DIR$/Build/HyUltXChat.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyUlt/cc/moecraft/hykilpikonna/ult/Configs.class" afterPath="$PROJECT_DIR$/out/production/HyUlt/cc/moecraft/hykilpikonna/ult/Configs.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyUlt/cc/moecraft/hykilpikonna/ult/Main.class" afterPath="$PROJECT_DIR$/out/production/HyUlt/cc/moecraft/hykilpikonna/ult/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyUlt/cc/moecraft/hykilpikonna/ult/api/Feature.class" afterPath="$PROJECT_DIR$/out/production/HyUlt/cc/moecraft/hykilpikonna/ult/api/Feature.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyUlt/cc/moecraft/hykilpikonna/ult/commands/HyuCommand$1.class" afterPath="$PROJECT_DIR$/out/production/HyUlt/cc/moecraft/hykilpikonna/ult/commands/HyuCommand$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyUlt/cc/moecraft/hykilpikonna/ult/commands/HyuCommand.class" afterPath="$PROJECT_DIR$/out/production/HyUlt/cc/moecraft/hykilpikonna/ult/commands/HyuCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyUlt/cc/moecraft/hykilpikonna/ult/utils/PlaceholderUtils.class" afterPath="$PROJECT_DIR$/out/production/HyUlt/cc/moecraft/hykilpikonna/ult/utils/PlaceholderUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyUlt/cc/moecraft/hykilpikonna/ult/utils/UrlUpdater.class" afterPath="$PROJECT_DIR$/out/production/HyUlt/cc/moecraft/hykilpikonna/ult/utils/UrlUpdater.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/HyUlt.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/HyUlt.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/Configs.java" afterPath="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/Configs.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/Main.java" afterPath="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/api/Feature.java" afterPath="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/api/Feature.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/commands/HyuCommand.java" afterPath="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/commands/HyuCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/utils/PlaceholderUtils.java" afterPath="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/utils/PlaceholderUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/utils/UrlUpdater.java" afterPath="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/utils/UrlUpdater.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Build/HyUltXFix.jar" afterPath="$PROJECT_DIR$/Build/HyUltXFix.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUlt/src/plugin.yml" afterPath="$PROJECT_DIR$/HyUlt/src/plugin.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyUlt/plugin.yml" afterPath="$PROJECT_DIR$/out/production/HyUlt/plugin.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUltXFix/src/plugin.yml" afterPath="$PROJECT_DIR$/HyUltXFix/src/plugin.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyUltXFix/plugin.yml" afterPath="$PROJECT_DIR$/out/production/HyUltXFix/plugin.yml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -76,64 +46,9 @@
       <file leaf-file-name="PlaceholderUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/utils/PlaceholderUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="46" column="27" lean-forward="true" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
+            <state relative-caret-position="655">
+              <caret line="56" column="36" lean-forward="false" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Fix.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/Fix.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="893">
-              <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#run#0;class#Fix#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plugin.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HyUltXFix/src/plugin.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Configs.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/Configs.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="674">
-              <caret line="42" column="31" lean-forward="false" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Switches.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/Switches.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Features.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/Features.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -212,9 +127,9 @@
         <option value="$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/commands/AsinpCommands.java" />
         <option value="$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/Features.java" />
         <option value="$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/Switches.java" />
-        <option value="$PROJECT_DIR$/HyUltXFix/src/plugin.yml" />
         <option value="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/Configs.java" />
         <option value="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/Main.java" />
+        <option value="$PROJECT_DIR$/HyUltXFix/src/plugin.yml" />
         <option value="$PROJECT_DIR$/HyUlt/src/plugin.yml" />
       </list>
     </option>
@@ -277,6 +192,36 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ult" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HyUltimatePlugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HyUltXFix" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HyUltimatePlugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HyUltXFix" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HyUltimatePlugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HyUltXFix" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="fix" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HyUltimatePlugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HyUltXFix" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="fix" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HyUltimatePlugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HyUltXFix" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="fix" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
+              <item name="configs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -411,12 +356,12 @@
       <workItem from="1501725849591" duration="12000" />
       <workItem from="1501726003422" duration="3772000" />
       <workItem from="1501742113451" duration="3391000" />
-      <workItem from="1501897818160" duration="27421000" />
+      <workItem from="1501897818160" duration="27898000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43521000" />
+    <option name="totallyTimeSpent" value="43998000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -429,6 +374,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27292112" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="557" y="311" width="1876" height="230" />
@@ -442,7 +388,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2153518" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2153518" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -883,24 +829,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/configs/AsinpConfigs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="82" column="11" lean-forward="false" selection-start-line="82" selection-start-column="11" selection-end-line="82" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#738#739#0" expanded="true" />
-            <element signature="e#829#830#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/Features.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/HyPluginsDownloadLink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="636">
+          <caret line="88" column="5" lean-forward="false" selection-start-line="88" selection-start-column="5" selection-end-line="88" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/Configs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="674">
+          <caret line="42" column="31" lean-forward="false" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="622">
+          <caret line="58" column="38" lean-forward="true" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/configs/AsinpConfigs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1501">
+          <caret line="82" column="11" lean-forward="false" selection-start-line="82" selection-start-column="11" selection-end-line="82" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/Fix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="893">
+          <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#run#0;class#Fix#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -921,50 +904,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/HyPluginsDownloadLink.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="88" column="5" lean-forward="false" selection-start-line="88" selection-start-column="5" selection-end-line="88" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/utils/PlaceholderUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="46" column="27" lean-forward="true" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
+        <state relative-caret-position="655">
+          <caret line="56" column="36" lean-forward="false" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/Fix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="893">
-          <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#run#0;class#Fix#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/Configs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="674">
-          <caret line="42" column="31" lean-forward="false" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="58" column="38" lean-forward="true" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
