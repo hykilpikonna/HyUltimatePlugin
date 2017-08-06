@@ -52,6 +52,8 @@ public class Main extends HyPlugin
 
     @Override
     public void run() {
+        HyPluginsDownloadLink CHAT = new HyPluginsDownloadLink("HyUltXChat", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/Build/HyUltXChat.jar");
+        //TODO: 修复"未找到此插件"Bug
         setup();
         setupAutoUpdate();
         loglogger.log("[加载]此插件加载完成!");
@@ -123,9 +125,9 @@ public class Main extends HyPlugin
         return main;
     }
 
-    public static void tempDebug(String string)
+    public static void tempDebug(String string) //TODO: 加开关
     {
-        if (getMain().getConfig().getBoolean("Debug"))
+        //if (getMain().getConfig().getBoolean("Debug"))
             Bukkit.getConsoleSender().sendMessage("[" +
                     ChatColor.RED +
                     "DEBUG" +

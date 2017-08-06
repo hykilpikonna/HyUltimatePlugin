@@ -4,6 +4,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 
+import static cc.moecraft.hykilpikonna.ult.Main.tempDebug;
+
 /**
  * 此类由 Hykilpikonna 在 2017/08/06 创建!
  * Created by Hykilpikonna on 2017/08/06!
@@ -12,8 +14,6 @@ import java.util.ArrayList;
  */
 public class HyPluginsDownloadLink
 {
-    public static final HyPluginsDownloadLink CHAT = new HyPluginsDownloadLink("HyUltXChat", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/Build/HyUltXChat.jar");
-
     private String name;
     private URL jarURL;
 
@@ -21,7 +21,7 @@ public class HyPluginsDownloadLink
     private static ArrayList<String> nameList = new ArrayList<>();
     private static ArrayList<URL> urlList = new ArrayList<>();
 
-    private HyPluginsDownloadLink(String name, String jarURL)
+    HyPluginsDownloadLink(String name, String jarURL)
     {
         this.name = name;
         try {
@@ -83,7 +83,7 @@ public class HyPluginsDownloadLink
     public static HyPluginsDownloadLink getPluginWithName(String name)
     {
         for (HyPluginsDownloadLink plugin : list)
-            if (plugin.getName().equals(name))
+            if (plugin.getName().equalsIgnoreCase(name))
                 return plugin;
         return null;
     }

@@ -127,9 +127,17 @@ public class HyuCommand extends CommandRunner
                     String pluginName = arg.replace("-hyplugins:", "");
                     HyPluginsDownloadLink hyPluginsDownloadLink = HyPluginsDownloadLink.getPluginWithName(pluginName);
                     if (hyPluginsDownloadLink != null)
+                    {
+                        tempDebug("调用下载方法");//TODO: 完成这个测试
                         asyncDownloadFile(hyPluginsDownloadLink.getJarURL());
+                    }
                     else
+                    {
                         Main.messengers.sendMessage(sender, "download_failed_wrong_hyplugin_name");
+                        tempDebug(HyPluginsDownloadLink.getList().toString());//TODO: 测试完删掉
+                        tempDebug("[" + pluginName + "]");
+                    }
+
                 }
                 break;
             default:
@@ -153,14 +161,16 @@ public class HyuCommand extends CommandRunner
 
     private void asyncDownloadFile(URL url)
     {
+        tempDebug("创建异步Runnable");
         new BukkitRunnable()
         {
             @Override
             public void run()
             {
+                tempDebug("开始下载");
                 File file = UrlUpdater.downloadFile(url, "plugins/");
                 PluginUtil.load(file);
             }
-        };
+        }.runTaskAsynchronously(Main.getMain());
     }
 }

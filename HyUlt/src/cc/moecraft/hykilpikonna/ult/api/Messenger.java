@@ -80,7 +80,7 @@ public abstract class Messenger extends Config
      */
     public ArrayList<String> getListWithPrefix(String path)
     {
-        ArrayList<String> arrayList = getList(path);
+        ArrayList<String> arrayList = getMessageList(path);
         for (int i = 0; i < arrayList.size(); i++) arrayList.set(i, convertColorCode(getPrefix() + arrayList.get(i)));
         return arrayList;
     }
@@ -125,8 +125,7 @@ public abstract class Messenger extends Config
      * @param path 路径
      * @return List
      */
-    @Override
-    public ArrayList<String> getList(String path)
+    public ArrayList<String> getMessageList(String path)
     {
         ArrayList<String> out = new ArrayList<>();
         ArrayList<String> defaultArrayList = new ArrayList<>();

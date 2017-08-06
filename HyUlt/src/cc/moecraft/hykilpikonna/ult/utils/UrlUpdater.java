@@ -192,7 +192,7 @@ public class UrlUpdater
             httpURLConnection.setRequestProperty("User-Agent", "Mozilla/4.0 (compatible; MSIE 5.0; Windows NT; DigExt)");
 
             //可能出错
-            File file = new File(path, getFileName(httpURLConnection));
+            File file = new File(path, getFileName(httpURLConnection, url));
             tempDebug("  - File = " + file);
 
             //更可能出错
@@ -225,9 +225,10 @@ public class UrlUpdater
      * 获取文件名
      *
      * @param httpURLConnection HTTP连接
+     * @param url URL
      * @return 文件名
      */
-    public static String getFileName(HttpURLConnection httpURLConnection)
+    public static String getFileName(HttpURLConnection httpURLConnection, URL url)
     {
         String raw = httpURLConnection.getHeaderField("Content-Disposition");
         String fileName;
@@ -235,10 +236,14 @@ public class UrlUpdater
         {
             fileName = raw.split("filename=")[1];
         }
-        else
+        else if (url != null && url.toString().contains("/"))
         {
-            fileName = "FILE-" + UUID.randomUUID().toString();
+            String[] urlString = url.toString().split("/");
+            fileName = urlString[urlString.length - 1];
+            if (!fileName.endsWith(".jar")) fileName += ".jar";
         }
+        else fileName = "FILE-" + UUID.randomUUID().toString() + ".jar";
+        tempDebug("获取文件名: " + fileName); //TODO: 测试完删除
         return fileName;
     }
 
