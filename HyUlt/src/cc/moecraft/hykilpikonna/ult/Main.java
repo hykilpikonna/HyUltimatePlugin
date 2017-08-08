@@ -53,7 +53,7 @@ public class Main extends HyPlugin
     public void run() {
         HyPluginsDownloadLink CHAT = new HyPluginsDownloadLink("HyUltXChat", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/Build/HyUltXChat.jar");
         HyPluginsDownloadLink FIX = new HyPluginsDownloadLink("HyUltXFix", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/Build/HyUltXFix.jar");
-        //TODO: 修复"未找到此插件"Bug
+
         setup();
         setupAutoUpdate();
         loglogger.log("[加载]此插件加载完成!");
@@ -155,13 +155,15 @@ public class Main extends HyPlugin
         plugins.add(plugin);
     }
 
-    public static void reloadAllHyPlugin()
+    public void reloadAllHyPlugin()
     {
         ArrayList<Plugin> pluginArrayList = new ArrayList<>();
         pluginArrayList.addAll(plugins);
         plugins = new ArrayList<>();
-        //TODO: 异步试试
-        for (Plugin plugin : pluginArrayList) reload(plugin);
+        for (Plugin plugin : pluginArrayList)
+        {
+            if (!(plugin.getDescription().getName().equals(this.getDescription().getName()))) reload(plugin);
+        }
     }
 
     public static ArrayList<HyPlugin> getPlugins() {

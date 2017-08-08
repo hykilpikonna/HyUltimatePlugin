@@ -33,6 +33,19 @@ public class Messengers extends Messenger
         addDefault("reloading", GREEN + "插件正在重新加载....");
         addDefault("reload_complete", GREEN + "插件重载成功!");
 
+        addDefault("command_reload_start", YELLOW + "正在重载配置...");
+        addDefault("command_reload_complete", GREEN + "所有HyUlt插件配置重载成功!");
+
+        addDefault("command_reload_hyplugins_start", YELLOW + "正在重载所有HyUlt插件...");
+        addDefault("command_reload_hyplugins_complete", GREEN + "所有HyUlt插件重载成功!");
+
+        addDefault("command_reload_all_start", YELLOW + "正在重载所有插件...");
+        addDefault("command_reload_all_complete", GREEN + "所有插件重载成功!");
+
+        addDefault("command_reload_specific_start", YELLOW + "正在重载%s插件...");
+        addDefault("command_reload_specific_err_not_found", RED + "重载失败, 未找到%s插件.");
+        addDefault("command_reload_specific_complete", GREEN + "%s插件重载成功!");
+
         addDefault("download_failed", RED + "文件下载失败! 详情请看后台");
         addDefault("download_failed_wrong_hyplugin_name", RED + "文件下载失败! 未找到该插件");
     }

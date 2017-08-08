@@ -57,23 +57,16 @@ public class HyuCommand extends CommandRunner
             Main.messengers.sendMessageList(sender, "help_message");
             return;
         }
-        try
+        String commandName = args.get(0);
+        args.remove(0);
+        switch (commandName)
         {
-            String commandName = args.get(0);
-            args.remove(0);
-            switch (commandName)
-            {
-                case "reload":
-                    commandReload(sender, args);
-                    break;
-                case "install":
-                    if (args.size() == 0 || args.size() == 1) commandInstall(sender, args); else Main.messengers.sendMessageList(sender, "help_message");
-                    break;
-            }
-        }
-        catch (Exception ignored)
-        {
-            Main.messengers.sendMessageList(sender, "help_message");
+            case "reload":
+                commandReload(sender, args);
+                break;
+            case "install":
+                if (args.size() == 0 || args.size() == 1) commandInstall(sender, args); else Main.messengers.sendMessageList(sender, "help_message");
+                break;
         }
     }
 
@@ -81,30 +74,40 @@ public class HyuCommand extends CommandRunner
     {
         if (args.size() == 0)
         {
-            if (Main.permissions.hasPermission(sender, "hyult.command.admin.reload", true)) Config.reloadAllConfig();
+            if (!Main.permissions.hasPermission(sender, "hyult.command.admin.reload", true)) return;
+            Main.messengers.sendMessage(sender, "command_reload_start");
+            Config.reloadAllConfig();
+            Main.messengers.sendMessage(sender, "command_reload_complete");
             return;
         }
         switch (args.get(0).toLowerCase())
         {
             case "-hyplugins":
-                if (Main.permissions.hasPermission(sender, "hyult.command.admin.reload.hyplugins", true))
-                    Main.reloadAllHyPlugin();
+                if (!Main.permissions.hasPermission(sender, "hyult.command.admin.reload.hyplugins", true)) return;
+                Main.messengers.sendMessage(sender, "command_reload_hyplugins_start");
+                Main.getMain().reloadAllHyPlugin();
+                Main.messengers.sendMessage(sender, "command_reload_hyplugins_complete");
                 break;
             case "-all":
-                if (Main.permissions.hasPermission(sender, "hyult.command.admin.reload.all", true))
-                    for (Plugin plugin : Bukkit.getPluginManager().getPlugins())
-                        if (plugin.isEnabled())
-                            reload(plugin);
+                if (!Main.permissions.hasPermission(sender, "hyult.command.admin.reload.all", true)) return;
+                Main.messengers.sendMessage(sender, "command_reload_all_start");
+                for (Plugin plugin : Bukkit.getPluginManager().getPlugins())
+                    if (plugin.isEnabled())
+                        if (!(plugin.getDescription().getName().equals(Main.getMain().getDescription().getName()))) reload(plugin);
+                Main.messengers.sendMessage(sender, "command_reload_all_complete");
                 break;
             default:
-                Plugin plugin = Bukkit.getPluginManager().getPlugin(getTheRestToString(args, 0));
+                String pluginName = getTheRestToString(args, 0);
+                Plugin plugin = Bukkit.getPluginManager().getPlugin(pluginName);
                 if (plugin == null)
                 {
-                    tempDebug("插件获取失败: " + getTheRestToString(args, 0));
+                    sender.sendMessage(String.format(Main.messengers.getWithPrefix("command_reload_specific_err_not_found"), pluginName));
                     return;
                 }
-                if (Main.permissions.hasPermission(sender, "hyult.command.admin.reload." + plugin.getName().toLowerCase(), true))
-                    reload(plugin);
+                if (!Main.permissions.hasPermissionNotInConfig(sender, "hyult.command.admin.reload." + plugin.getName().toLowerCase(), true)) return;
+                sender.sendMessage(String.format(Main.messengers.getWithPrefix("command_reload_specific_start"), pluginName));
+                reload(plugin);
+                sender.sendMessage(String.format(Main.messengers.getWithPrefix("command_reload_specific_complete"), plugin.getName()));
                 break;
         }
     }
@@ -131,6 +134,7 @@ public class HyuCommand extends CommandRunner
                 break;
             default:
                 Main.messengers.sendMessageList(sender, "help_message");
+                //TODO: 加安装完成消息
                 break;
         }
     }
@@ -150,7 +154,6 @@ public class HyuCommand extends CommandRunner
 
     private void asyncDownloadFile(URL url)
     {
-        tempDebug("创建异步Runnable");
         new BukkitRunnable()
         {
             @Override

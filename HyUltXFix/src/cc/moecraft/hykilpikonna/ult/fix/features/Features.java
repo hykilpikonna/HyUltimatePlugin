@@ -3,9 +3,13 @@ package cc.moecraft.hykilpikonna.ult.fix.features;
 import cc.moecraft.hykilpikonna.ult.api.Feature;
 import cc.moecraft.hykilpikonna.ult.fix.Fix;
 import cc.moecraft.hykilpikonna.ult.fix.features.commands.AsinpCommands;
+import cc.moecraft.hykilpikonna.ult.fix.features.configs.AbtnConfig;
 import cc.moecraft.hykilpikonna.ult.fix.features.configs.AsinpConfigs;
+import cc.moecraft.hykilpikonna.ult.fix.features.listeners.AbtnListener;
 import cc.moecraft.hykilpikonna.ult.fix.features.listeners.AsinpListener;
+import cc.moecraft.hykilpikonna.ult.fix.features.messengers.AbtnMessenger;
 import cc.moecraft.hykilpikonna.ult.fix.features.messengers.AsinpMessenger;
+import cc.moecraft.hykilpikonna.ult.fix.features.permissions.AbtnPermissions;
 import cc.moecraft.hykilpikonna.ult.fix.features.permissions.AsinpPermissions;
 
 import static cc.moecraft.hykilpikonna.ult.Main.tempDebug;
@@ -19,6 +23,7 @@ import static cc.moecraft.hykilpikonna.ult.Main.tempDebug;
 public class Features
 {
     private static Feature ASINP;
+    private static Feature ABTN;
 
     public Features()
     {
@@ -33,9 +38,25 @@ public class Features
             ASINP.setCommandRunner(new AsinpCommands());
             ASINP.setListener(new AsinpListener());
         }
+        if (Fix.getInstance().getSwitches().getBoolean("Abtn.Enable"))
+        {
+            ABTN = new Feature();
+            ABTN.setId("abtn");
+            ABTN.setFriendlyName("Abtn");
+            ABTN.setConfig(new AbtnConfig());
+            ABTN.setMessenger(new AbtnMessenger(Fix.getInstance(), ABTN.getFriendlyName()));
+            ABTN.setListener(new AbtnListener());
+            ABTN.setPermissionsConfig(new AbtnPermissions());
+        }
     }
 
-    public static Feature getASINP() {
+    public static Feature getASINP()
+    {
         return ASINP;
+    }
+
+    public static Feature getABTN()
+    {
+        return ABTN;
     }
 }

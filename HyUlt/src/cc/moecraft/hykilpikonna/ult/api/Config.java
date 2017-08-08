@@ -62,8 +62,6 @@ public abstract class Config extends YamlConfiguration
 
         loadConfiguration(configFile);
 
-        options().copyDefaults(true);
-
         if (!isLatest() && autoBackupWhenPluginUpdate) backup();
 
         checkConfig();
@@ -115,10 +113,35 @@ public abstract class Config extends YamlConfiguration
      */
     public void checkConfig()
     {
-        if (isDefaultConfig()) writeDefaultConfig();
-        if (!isLatest()) writeConfig();
-        if (autoOverwriteVersionInfo) overwriteVersionInfo();
-        save(); reload(); readConfig();
+        Main.tempDebug(" --- " + configFile + " --- ");
+        boolean save = false;
+        if (isDefaultConfig())
+        {
+            Main.tempDebug("写入默认配置");
+            options().copyDefaults(true);
+            writeDefaultConfig();
+            save = true;
+        }
+        if (!isLatest())
+        {
+            Main.tempDebug("写入配置");
+            options().copyDefaults(true);
+            writeConfig();
+            save = true;
+        }
+        if (autoOverwriteVersionInfo)
+        {
+            Main.tempDebug("覆盖版本信息");
+            overwriteVersionInfo();
+            save = true;
+        }
+        if (save)
+        {
+            Main.tempDebug("保存");
+            save();
+        }
+        if (save) reload();
+        else readConfig();
     }
 
     /**
@@ -233,6 +256,9 @@ public abstract class Config extends YamlConfiguration
      */
     public boolean isDefaultConfig()
     {
+        Main.tempDebug("getBoolean(\"DefaultConfig\") = " + getBoolean("DefaultConfig"));
+        //TODO: 删掉
+        Main.tempDebug("contains(\"DefaultConfig\") = " + contains("DefaultConfig"));
         return getBoolean("DefaultConfig") || !(contains("DefaultConfig"));
     }
 
@@ -242,6 +268,9 @@ public abstract class Config extends YamlConfiguration
      */
     public boolean isLatest()
     {
+        Main.tempDebug("getString(\"ConfigVersion\") = " + getString("ConfigVersion"));
+        //TODO: 测试完删掉
+        Main.tempDebug("plugin.getDescription().getVersion() = " + plugin.getDescription().getVersion());
         return getString("ConfigVersion") != null && getString("ConfigVersion").equals(plugin.getDescription().getVersion());
     }
 
@@ -271,6 +300,17 @@ public abstract class Config extends YamlConfiguration
         {
             config.reload();
         }
+    }
+
+    /**
+     * 安全的添加一个默认值
+     * @param path 路径
+     * @param object 对象
+     */
+    @Override
+    public void addDefault(String path, Object object)
+    {
+        if (!contains(path)) super.addDefault(path, object);
     }
 
     public String getDir() {

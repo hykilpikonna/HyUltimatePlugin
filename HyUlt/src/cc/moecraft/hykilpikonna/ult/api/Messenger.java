@@ -18,12 +18,6 @@ import static org.bukkit.ChatColor.*;
  */
 public abstract class Messenger extends Config
 {
-    /**
-     * 新建一个消息配置文件
-     * 会自动写入默认消息
-     *
-     * @param plugin 插件
-     */
     public Messenger(JavaPlugin plugin, String featureID)
     {
         super(plugin, "Messages", featureID);

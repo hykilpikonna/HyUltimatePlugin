@@ -23,6 +23,7 @@ public class Switches extends Config
         addDefault("AutoUpdate.Enable", true);
         addDefault("AutoUpdate.Repeat", false);
         addDefault("Asinp.Enable", true);
+        addDefault("Abtn.Enable", true);
     }
 
     @Override

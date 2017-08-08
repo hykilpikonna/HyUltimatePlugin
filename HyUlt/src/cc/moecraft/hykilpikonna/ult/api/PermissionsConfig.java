@@ -1,5 +1,6 @@
 package cc.moecraft.hykilpikonna.ult.api;
 
+import cc.moecraft.hykilpikonna.ult.utils.PlaceholderUtils;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
@@ -85,20 +86,39 @@ public abstract class PermissionsConfig extends Config
      */
     public boolean hasPermission(CommandSender player, String path, boolean message)
     {
-        //检测是否需要权限
-        if (getRequired(path))
+        if (getRequired(path) && player instanceof Player && !player.hasPermission(getNode(path)))
         {
-            //如果玩家没有权限
-            if (player instanceof Player && !player.hasPermission(getNode(path)))
-            {
-                //给玩家发送没有权限的消息
-                if (message) player.sendMessage(getMessage(path));
-                //返回假
-                return false;
-            }
+            if (message) player.sendMessage(getMessage(path));
+            return false;
         }
-        //其他情况返回真
         return true;
+    }
+
+    /**
+     * 检测一个玩家是否拥有一个指定的权限, 或者这个指定的权限未启用
+     * @param player 玩家
+     * @param path 配置中的权限点
+     * @return 是否拥有权限
+     */
+    public boolean hasPermissionNotInConfig(CommandSender player, String path, boolean message)
+    {
+        if (player instanceof Player && !player.hasPermission(path))
+        {
+            if (message) player.sendMessage(getMessage(path));
+            return false;
+        }
+        return true;
+    }
+
+    /**
+     * 给一个玩家发送无权限消息
+     *
+     * @param sender 玩家
+     * @param path 权限节点
+     */
+    public void sendNoPermissionMessage(Player sender, String path)
+    {
+        sender.sendMessage(getMessage(path));
     }
 
     @Override
