@@ -6,9 +6,13 @@ package cc.moecraft.hykilpikonna.ult;
  import cc.moecraft.hykilpikonna.ult.commands.HyuCommand;
  import cc.moecraft.hykilpikonna.ult.utils.HyEssentialsDetection;
  import cc.moecraft.hykilpikonna.ult.utils.YumBypass;
+ import net.md_5.bungee.api.chat.ClickEvent;
+ import net.md_5.bungee.api.chat.TextComponent;
  import org.bukkit.Bukkit;
  import org.bukkit.ChatColor;
+ import org.bukkit.command.CommandSender;
  import org.bukkit.configuration.file.YamlConfiguration;
+ import org.bukkit.entity.Player;
  import org.bukkit.plugin.Plugin;
  import org.bukkit.plugin.java.JavaPlugin;
 
@@ -70,6 +74,7 @@ public class Main extends HyPlugin
     {
         HyPluginsDownloadLink CHAT = new HyPluginsDownloadLink("HyUltXChat", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/Build/HyUltXChat.jar");
         HyPluginsDownloadLink FIX = new HyPluginsDownloadLink("HyUltXFix", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/Build/HyUltXFix.jar");
+        HyPluginsDownloadLink FUN = new HyPluginsDownloadLink("HyUltXFun", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/Build/HyUltXFun.jar");
 
         setup();
         setupAutoUpdate();
@@ -185,5 +190,18 @@ public class Main extends HyPlugin
 
     public static ArrayList<HyPlugin> getPlugins() {
         return plugins;
+    }
+
+    public static void sendHelpMessage(CommandSender sender)
+    {
+        TextComponent message = new TextComponent();
+        message.addExtra(messengers.getWithPrefix("line_front") + "\n" + messengers.getPrefix());
+        TextComponent click = new TextComponent();
+        click.addExtra(messengers.get("help_message_text"));
+        click.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, messengers.get("help_message_click_link")));
+        message.addExtra(click);
+        message.addExtra(messengers.getWithPrefix("line_back"));
+        if (sender instanceof Player) ((Player) sender).spigot().sendMessage(message);
+        else sender.sendMessage(message.getText());
     }
 }

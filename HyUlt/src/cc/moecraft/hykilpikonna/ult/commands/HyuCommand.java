@@ -8,9 +8,16 @@ import cc.moecraft.hykilpikonna.ult.api.tabcompleter.TabCompletes;
 import cc.moecraft.hykilpikonna.ult.api.tabcompleter.TabCompletesBuilder;
 import cc.moecraft.hykilpikonna.ult.utils.PluginUtil;
 import cc.moecraft.hykilpikonna.ult.utils.UrlUpdater;
+import net.md_5.bungee.api.chat.ClickEvent;
+import net.md_5.bungee.api.chat.ComponentBuilder;
+import net.md_5.bungee.api.chat.HoverEvent;
+import net.md_5.bungee.api.chat.TextComponent;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+import org.bukkit.plugin.InvalidDescriptionException;
+import org.bukkit.plugin.InvalidPluginException;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.scheduler.BukkitRunnable;
 
@@ -54,7 +61,7 @@ public class HyuCommand extends CommandRunner
     {
         if (args.size() == 0)
         {
-            Main.messengers.sendMessageList(sender, "help_message");
+            Main.sendHelpMessage(sender);
             return;
         }
         String commandName = args.get(0);
@@ -65,7 +72,7 @@ public class HyuCommand extends CommandRunner
                 commandReload(sender, args);
                 break;
             case "install":
-                if (args.size() == 0 || args.size() == 1) commandInstall(sender, args); else Main.messengers.sendMessageList(sender, "help_message");
+                if (args.size() == 0 || args.size() == 1) commandInstall(sender, args); else Main.sendHelpMessage(sender);
                 break;
         }
     }
@@ -117,33 +124,96 @@ public class HyuCommand extends CommandRunner
         switch (args.size())
         {
             case 0:
-                //TODO: 文字GUI
+                sendInstallMessage(sender);
                 break;
             case 1:
                 String arg = args.get(0).toLowerCase();
                 if (arg.contains("-url:") && Main.permissions.hasPermission(sender, "hyult.command.admin.install.url", true))
-                    asyncDownloadFile(sender, arg.replace("-url:", ""));
+                    asyncDownloadFile(sender, arg.replace("-url:", ""), arg.replace("-url:", ""));
                 else if (arg.contains("-hyplugins:") && Main.permissions.hasPermission(sender, "hyult.command.admin.install.hyplugins", true))
                 {
                     String pluginName = arg.replace("-hyplugins:", "");
                     HyPluginsDownloadLink hyPluginsDownloadLink = HyPluginsDownloadLink.getPluginWithName(pluginName);
-                    if (hyPluginsDownloadLink != null) asyncDownloadFile(hyPluginsDownloadLink.getJarURL());
+                    if (hyPluginsDownloadLink != null) asyncDownloadFile(sender, hyPluginsDownloadLink.getJarURL(), pluginName);
                     else Main.messengers.sendMessage(sender, "download_failed_wrong_hyplugin_name");
                 }
-                else Main.messengers.sendMessageList(sender, "help_message");
+                else Main.sendHelpMessage(sender);
                 break;
             default:
-                Main.messengers.sendMessageList(sender, "help_message");
-                //TODO: 加安装完成消息
+                Main.sendHelpMessage(sender);
                 break;
         }
     }
 
-    private void asyncDownloadFile(CommandSender sender, String url)
+    private void sendInstallMessage(CommandSender sender)
+    {
+        sendFrontLine(sender);
+        if (HyPluginsDownloadLink.getNotInstalledPluginsNameList().size() == 0)
+        {
+            Main.messengers.sendMessage(sender, "downloaded_all");
+            sendInstalledPluginsMessage(sender);
+            sendBackLine(sender);
+            return;
+        }
+        TextComponent message = new TextComponent();
+        message.addExtra(Main.messengers.getWithPrefix("download_list_pre") + "\n" + Main.messengers.getPrefix());
+        message.addExtra(Main.messengers.get("download_list_one_plugin_first"));
+        for (String name : HyPluginsDownloadLink.getNotInstalledPluginsNameList())
+        {
+            TextComponent onePlugin = new TextComponent();
+            onePlugin.addExtra(Main.messengers.get("download_list_one_plugin_pre") + name);;
+            onePlugin.addExtra(Main.messengers.get("download_list_one_plugin_suf"));
+            onePlugin.setClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/hyu install -hyplugins:" + name));
+            onePlugin.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new ComponentBuilder(String.format(Main.messengers.get("download_list_one_plugin_hover"), name)).create()));
+            message.addExtra(onePlugin);
+        }
+        if (sender instanceof Player)
+        {
+            message.addExtra("\n" + Main.messengers.getWithPrefix("download_list_suf"));
+            ((Player) sender).spigot().sendMessage(message);
+        }
+        else sender.sendMessage(message.getText());
+        sendInstalledPluginsMessage(sender);
+        sendBackLine(sender);
+    }
+
+    private void sendInstalledPluginsMessage(CommandSender sender)
+    {
+        if (HyPluginsDownloadLink.getInstalledPluginsNameList().size() == 0)
+        {
+            Main.messengers.sendMessage(sender, "installed_list_none");
+            return;
+        }
+        TextComponent message = new TextComponent();
+        message.addExtra(Main.messengers.getWithPrefix("installed_list_pre") + "\n" + Main.messengers.getPrefix());
+        message.addExtra(Main.messengers.get("installed_list_one_plugin_first"));
+        for (String name : HyPluginsDownloadLink.getInstalledPluginsNameList())
+        {
+            TextComponent onePlugin = new TextComponent();
+            onePlugin.addExtra(Main.messengers.get("installed_list_one_plugin_pre"));
+            onePlugin.addExtra(name);
+            onePlugin.addExtra(Main.messengers.get("installed_list_one_plugin_suf"));
+            message.addExtra(onePlugin);
+        }
+        if (sender instanceof Player) ((Player) sender).spigot().sendMessage(message);
+        else sender.sendMessage(message.getText());
+    }
+
+    private void sendFrontLine(CommandSender sender)
+    {
+        Main.messengers.sendMessage(sender, "line_front");
+    }
+
+    private void sendBackLine(CommandSender sender)
+    {
+        Main.messengers.sendMessage(sender, "line_back");
+    }
+
+    private void asyncDownloadFile(CommandSender sender, String url, String pluginName)
     {
         try
         {
-            asyncDownloadFile(new URL(url));
+            asyncDownloadFile(sender, new URL(url), pluginName);
         }
         catch (MalformedURLException e)
         {
@@ -152,17 +222,40 @@ public class HyuCommand extends CommandRunner
         }
     }
 
-    private void asyncDownloadFile(URL url)
+    private void asyncDownloadFile(CommandSender sender, URL url, String pluginName)
     {
         new BukkitRunnable()
         {
             @Override
             public void run()
             {
-                tempDebug("开始下载");
+                sender.sendMessage(String.format(Main.messengers.getWithPrefix("download_start"), pluginName));
                 File file = UrlUpdater.downloadFile(url, "plugins/");
-                PluginUtil.load(file);
+                sender.sendMessage(String.format(Main.messengers.getWithPrefix("download_finish"), pluginName));
+                Plugin plugin = load(file);
+                if (plugin != null) sender.sendMessage(String.format(Main.messengers.getWithPrefix("install_finish"), plugin.getDescription().getName(), plugin.getDescription().getVersion()));
+                else sender.sendMessage(String.format(Main.messengers.getWithPrefix("install_failed"), pluginName));
             }
         }.runTaskAsynchronously(Main.getMain());
+    }
+
+    public static Plugin load(File pluginFile)
+    {
+        Plugin target;
+
+        try
+        {
+            target = Bukkit.getPluginManager().loadPlugin(pluginFile);
+        }
+        catch (InvalidDescriptionException | InvalidPluginException e)
+        {
+            e.printStackTrace();
+            return null;
+        }
+
+        target.onLoad();
+        Bukkit.getPluginManager().enablePlugin(target);
+
+        return target;
     }
 }

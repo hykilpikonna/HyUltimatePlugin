@@ -1,5 +1,7 @@
 package cc.moecraft.hykilpikonna.ult;
 
+import org.bukkit.Bukkit;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -91,5 +93,25 @@ public class HyPluginsDownloadLink
     @Override
     public String toString() {
         return String.format("[%s, %s]", name, jarURL);
+    }
+
+    public static ArrayList<String> getNotInstalledPluginsNameList()
+    {
+        ArrayList<String> out = new ArrayList<>();
+        for (String string : nameList)
+        {
+            if (Bukkit.getPluginManager().getPlugin(string) == null) out.add(string);
+        }
+        return out;
+    }
+
+    public static ArrayList<String> getInstalledPluginsNameList()
+    {
+        ArrayList<String> out = new ArrayList<>();
+        for (String string : nameList)
+        {
+            if (Bukkit.getPluginManager().getPlugin(string) != null) out.add(string);
+        }
+        return out;
     }
 }

@@ -48,7 +48,7 @@ public class ProjectileDamageListener extends Listener
                 if (damager.getShooter() == null) return;
                 Player player = (Player) damager.getShooter();
 
-                if (!Features.getProjectileDamage().getPermissionsConfig().hasPermission(player, "hyult.pd.damage", true)) return;
+                if (!Features.getProjectileDamage().getPermissionsConfig().hasPermission(player, "hyult.pd.damage", false)) return;
                 entity.damage(damage);
 
                 if (entity instanceof Player)

@@ -23,12 +23,8 @@ public class Messengers extends Messenger
     @Override
     public void writeConfig()
     {
-        ArrayList<String> arrayList = new ArrayList<>();
-        arrayList.add(GRAY + "###################" + BLUE + BOLD + "Hy" + AQUA + BOLD + "Ultimate" + GRAY + "###################");
-        arrayList.add(GRAY + "#" + AQUA + "最新帮助界面: ");
-        arrayList.add(GRAY + "#" + BLUE + "https://github.com/hykilpikonna/HyUltimatePlugin/blob/master/Help.yml");
-        arrayList.add(GRAY + "##################################################");
-        addDefault("help_message", arrayList);
+        addDefault("help_message_text", GRAY + "# [最新帮助界面(点我)]");
+        addDefault("help_message_click_link", "https://github.com/hykilpikonna/HyUltimatePlugin/blob/master/Help.yml");
 
         addDefault("reloading", GREEN + "插件正在重新加载....");
         addDefault("reload_complete", GREEN + "插件重载成功!");
@@ -48,6 +44,29 @@ public class Messengers extends Messenger
 
         addDefault("download_failed", RED + "文件下载失败! 详情请看后台");
         addDefault("download_failed_wrong_hyplugin_name", RED + "文件下载失败! 未找到该插件");
+
+        addDefault("download_list_pre", GRAY + "# " + GREEN + "可下载的子插件: ");
+        addDefault("download_list_one_plugin_first", GRAY + "# ");
+        addDefault("download_list_one_plugin_pre", GRAY + "[" + GOLD);
+        addDefault("download_list_one_plugin_hover", AQUA + "点击即可下载并安装%s子插件");
+        addDefault("download_list_one_plugin_suf", GRAY + "] ");
+        addDefault("download_list_suf", GRAY + "# " + "点击上方括号内文字即可一键下载");
+
+        addDefault("downloaded_all", GRAY + "# " + GREEN + "您已下载所有子插件! 无需安装");
+        addDefault("installed_list_none", GRAY + "# " + RED + "没有已安装的子插件!");
+
+        addDefault("installed_list_pre", GRAY + "# " + GREEN + "已安装的子插件: ");
+        addDefault("installed_list_one_plugin_first", GRAY + "# ");
+        addDefault("installed_list_one_plugin_pre", GRAY + "[" + GOLD);
+        addDefault("installed_list_one_plugin_suf", GRAY + "] ");
+
+        addDefault("download_start", GRAY + "开始下载%s...");
+        addDefault("download_finish", GREEN + "%s下载完成!");
+        addDefault("install_finish", GREEN + "插件%s加载完成! 版本: %s");
+        addDefault("install_failed", RED + "插件%s加载失败! 详情看后台");
+
+        addDefault("line_front", GRAY + "#######################################");
+        addDefault("line_back", GRAY + "#######################################");
     }
 
     @Override

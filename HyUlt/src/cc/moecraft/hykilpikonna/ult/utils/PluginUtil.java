@@ -85,18 +85,14 @@ public class PluginUtil {
 
     public static boolean load(File pluginFile)
     {
-        tempDebug("正在加载插件: ");
-        tempDebug("  - File = " + pluginFile.getPath());
         Plugin target;
 
         try
         {
             target = Bukkit.getPluginManager().loadPlugin(pluginFile);
-            tempDebug("加载成功");
         }
         catch (InvalidDescriptionException | InvalidPluginException e)
         {
-            tempDebug("加载失败");
             e.printStackTrace();
             return false;
         }
