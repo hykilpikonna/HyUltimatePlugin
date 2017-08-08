@@ -7,6 +7,8 @@ package cc.moecraft.hykilpikonna.ult;
  import cc.moecraft.hykilpikonna.ult.utils.HyEssentialsDetection;
  import cc.moecraft.hykilpikonna.ult.utils.YumBypass;
  import net.md_5.bungee.api.chat.ClickEvent;
+ import net.md_5.bungee.api.chat.ComponentBuilder;
+ import net.md_5.bungee.api.chat.HoverEvent;
  import net.md_5.bungee.api.chat.TextComponent;
  import org.bukkit.Bukkit;
  import org.bukkit.ChatColor;
@@ -199,6 +201,7 @@ public class Main extends HyPlugin
         TextComponent click = new TextComponent();
         click.addExtra(messengers.get("help_message_text"));
         click.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, messengers.get("help_message_click_link")));
+        click.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new ComponentBuilder(messengers.get("help_message_hover_text")).create()));
         message.addExtra(click);
         message.addExtra("\n" + messengers.getWithPrefix("line_back"));
         if (sender instanceof Player) ((Player) sender).spigot().sendMessage(message);
