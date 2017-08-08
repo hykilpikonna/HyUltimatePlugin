@@ -200,7 +200,7 @@ public class Main extends HyPlugin
         click.addExtra(messengers.get("help_message_text"));
         click.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, messengers.get("help_message_click_link")));
         message.addExtra(click);
-        message.addExtra(messengers.getWithPrefix("line_back"));
+        message.addExtra("\n" + messengers.getWithPrefix("line_back"));
         if (sender instanceof Player) ((Player) sender).spigot().sendMessage(message);
         else sender.sendMessage(message.getText());
     }
