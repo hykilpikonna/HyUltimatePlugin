@@ -1,5 +1,6 @@
 package cc.moecraft.hykilpikonna.ult.api;
 
+import cc.moecraft.hykilpikonna.ult.Main;
 import cc.moecraft.hykilpikonna.ult.utils.PlaceholderUtils;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -58,14 +59,31 @@ public abstract class PermissionsConfig extends Config
     @Override
     public void checkConfig()
     {
-        if (isDefaultConfig()) writeDefaultConfig();
+        boolean save = false;
+        if (isDefaultConfig())
+        {
+            options().copyDefaults(true);
+            writeDefaultConfig();
+            writeMessage();
+            save = true;
+        }
         if (!isLatest())
         {
-            writeMessage();
+            options().copyDefaults(true);
             writeConfig();
+            save = true;
         }
-        if (isAutoOverwriteVersionInfo()) overwriteVersionInfo();
-        save(); reload(); readConfig();
+        if (isAutoOverwriteVersionInfo())
+        {
+            overwriteVersionInfo();
+            save = true;
+        }
+        if (save)
+        {
+            save();
+            reload();
+        }
+        else readConfig();
     }
 
     public void writeMessage()

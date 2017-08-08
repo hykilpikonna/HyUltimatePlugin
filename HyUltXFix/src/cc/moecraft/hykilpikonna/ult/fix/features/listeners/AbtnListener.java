@@ -6,7 +6,9 @@ import cc.moecraft.hykilpikonna.ult.fix.Fix;
 import cc.moecraft.hykilpikonna.ult.fix.features.Features;
 import cc.moecraft.hykilpikonna.ult.fix.features.configs.AbtnConfig;
 import org.bukkit.Location;
+import org.bukkit.Material;
 import org.bukkit.block.Block;
+import org.bukkit.block.BlockFace;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.block.BlockBreakEvent;
@@ -15,6 +17,7 @@ import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.awt.*;
+import java.util.ArrayList;
 
 /**
  * 此类由 Hykilpikonna 在 2017/08/07 创建!
@@ -32,20 +35,26 @@ public class AbtnListener extends Listener
     @EventHandler (ignoreCancelled = true)
     public void onMoveEvent(PlayerMoveEvent event)
     {
-        Main.tempDebug("MoveEvent");
-        if (Features.getABTN().getConfig().getBoolean("TeleportDown"))
+        if (Features.getABTN().getConfig().getBoolean("TeleportDown.Enable"))
         {
-            Main.tempDebug("配置通过");
             Player player = event.getPlayer();
             if (!(Features.getABTN().getConfig().getStringList("EnabledWorlds").contains(player.getLocation().getWorld().getName()))) return;
-            Main.tempDebug("可用世界通过");
             if (!(player.getLocation().getY() >= Features.getABTN().getConfig().getInt("Height"))) return;
-            Main.tempDebug("坐标通过");
             if (Features.getABTN().getPermissionsConfig().hasPermission(player, "hyult.abtn.bypass", false)) return;
-            Main.tempDebug("权限通过");
 
             Location tpLocation = player.getLocation();
             tpLocation.setY(Features.getABTN().getConfig().getInt("TeleportedY"));
+
+            Block block = tpLocation.getBlock();
+            if (Features.getABTN().getConfig().getBoolean("TeleportDown.PlaceBlockOnPlayersFeet"))
+                block.getRelative(BlockFace.DOWN, 1).setType(Material.getMaterial(Features.getABTN().getConfig().getString("TeleportDown.PlaceMaterial")));
+            if (Features.getABTN().getConfig().getBoolean("TeleportDown.RemoveBlockOnPlayersHead"))
+            {
+                ArrayList<String> materialList = (ArrayList<String>) Features.getABTN().getConfig().getStringList("TeleportDown.RemoveBlockList");
+                if (materialList.contains(block.getType().name())) block.setType(Material.AIR);
+                if (materialList.contains(block.getRelative(BlockFace.UP, 1).getType().name())) block.getRelative(BlockFace.UP, 1).setType(Material.AIR);
+            }
+
             player.teleport(tpLocation);
             if (Features.getABTN().getConfig().getBoolean("SendMessage")) Features.getABTN().getMessenger().sendMessage(player, "teleported");
         }
@@ -54,18 +63,13 @@ public class AbtnListener extends Listener
     @EventHandler (ignoreCancelled = true)
     public void onBlockPlaceEvent(BlockPlaceEvent event)
     {
-        Main.tempDebug("BlockPlaceEvent");
         if (Features.getABTN().getConfig().getBoolean("AntiBuild"))
         {
-            Main.tempDebug("配置通过");
             Player player = event.getPlayer();
             Block block = event.getBlock();
             if (!(Features.getABTN().getConfig().getStringList("EnabledWorlds").contains(player.getLocation().getWorld().getName()))) return;
-            Main.tempDebug("可用世界通过");
             if (!(block.getY() > Features.getABTN().getConfig().getInt("Height"))) return;
-            Main.tempDebug("坐标通过");
             if (Features.getABTN().getPermissionsConfig().hasPermission(player, "hyult.abtn.bypass", false))return;
-            Main.tempDebug("权限通过");
 
             event.setCancelled(true);
             if (Features.getABTN().getConfig().getBoolean("SendMessage")) Features.getABTN().getMessenger().sendMessage(player, "build_event_cancelled");

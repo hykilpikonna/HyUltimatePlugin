@@ -2,6 +2,7 @@ package cc.moecraft.hykilpikonna.ult;
 
  import cc.moecraft.hykilpikonna.essentials.updater.UrlUpdater;
  import cc.moecraft.hykilpikonna.ult.api.HyPlugin;
+ import cc.moecraft.hykilpikonna.ult.api.ingame.ActionBarUtils;
  import cc.moecraft.hykilpikonna.ult.commands.HyuCommand;
  import cc.moecraft.hykilpikonna.ult.utils.HyEssentialsDetection;
  import cc.moecraft.hykilpikonna.ult.utils.YumBypass;
@@ -34,14 +35,29 @@ public class Main extends HyPlugin
     public static Permissions permissions;
     private static HyuCommand command;
 
+    private static ActionBarUtils actionBarUtils;
+
+    public static ActionBarUtils getActionBarUtils()
+    {
+        return actionBarUtils;
+    }
+
+    public static void setActionBarUtils(ActionBarUtils actionBarUtils)
+    {
+        Main.actionBarUtils = actionBarUtils;
+    }
+
     @Override
-    public void preInit() {
+    public void preInit()
+    {
         main = this;
         configs = new Configs();
         messengers = new Messengers();
         permissions = new Permissions();
 
         command = new HyuCommand();
+
+        setActionBarUtils(new ActionBarUtils());
 
         if (!(Main.getMain().getConfig().contains("AutoUpdate.YumNetworkCheckBypass")) || Main.getMain().getConfig().getBoolean("AutoUpdate.YumNetworkCheckBypass"))
             YumBypass.bypassYUM("HyUltimatePlugin");
@@ -50,7 +66,8 @@ public class Main extends HyPlugin
     }
 
     @Override
-    public void run() {
+    public void run()
+    {
         HyPluginsDownloadLink CHAT = new HyPluginsDownloadLink("HyUltXChat", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/Build/HyUltXChat.jar");
         HyPluginsDownloadLink FIX = new HyPluginsDownloadLink("HyUltXFix", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/Build/HyUltXFix.jar");
 

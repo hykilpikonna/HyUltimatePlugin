@@ -1,5 +1,6 @@
 package cc.moecraft.hykilpikonna.ult.api;
 
+import cc.moecraft.hykilpikonna.ult.Main;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
@@ -33,10 +34,28 @@ public abstract class Messenger extends Config
     @Override
     public void checkConfig()
     {
-        if (isDefaultConfig()) writeDefaultConfig();
-        if (!isLatest()) writeConfig();
-        if (isAutoOverwriteVersionInfo()) overwriteVersionInfo();
-        setPrefix(prefix()); save(); reload(); readConfig();
+        boolean save = false;
+        if (isDefaultOrNotLatest())
+        {
+            Main.tempDebug("写入信息");
+            options().copyDefaults(true);
+            setPrefix(prefix());
+            writeConfig();
+            save = true;
+        }
+        if (isAutoOverwriteVersionInfo())
+        {
+            overwriteVersionInfo();
+            save = true;
+        }
+        if (save)
+        {
+            Main.tempDebug("保存信息");
+            options().copyDefaults(true);
+            save();
+            reload();
+        }
+        else readConfig();
     }
 
     /**
@@ -162,7 +181,7 @@ public abstract class Messenger extends Config
     public void readConfig() {}
 
     @Override
-    public void writeDefaultConfig() {}
+    public void writeDefaultConfig() {writeConfig();}
 
     public abstract String prefix();
 }

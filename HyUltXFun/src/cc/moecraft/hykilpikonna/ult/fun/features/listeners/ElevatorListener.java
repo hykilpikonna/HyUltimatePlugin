@@ -44,6 +44,7 @@ public class ElevatorListener extends Listener
             int blockY = block.getY();
 
             int index = ElevatorCalculations.getMaterialList().indexOf(block.getType());
+            if (index == -1) return;
 
             if (blockY > ElevatorCalculations.getMaxYList().get(index) || blockY < ElevatorCalculations.getMinYList().get(index)) return;
             if (!ElevatorCalculations.getEnabledWorlds().get(index).contains(block.getWorld().getName())) return;
@@ -82,6 +83,7 @@ public class ElevatorListener extends Listener
             int blockY = block.getY();
 
             int index = ElevatorCalculations.getMaterialList().indexOf(block.getType());
+            if (index == -1) return;
 
             if (blockY > ElevatorCalculations.getMaxYList().get(index) || blockY < ElevatorCalculations.getMinYList().get(index)) return;
             if (!ElevatorCalculations.getEnabledWorlds().get(index).contains(block.getWorld().getName())) return;
@@ -104,7 +106,6 @@ public class ElevatorListener extends Listener
                         if (ElevatorCalculations.getBlock1ExceptionList().contains(blockAtJ.getRelative(UP, 1).getType().name()))
                             if (ElevatorCalculations.getBlock2ExceptionList().contains(blockAtJ.getRelative(UP, 2).getType().name()))
                                 teleport(player, y, index, true);
-                    //TODO: 修复算法
                 }
             }
         }

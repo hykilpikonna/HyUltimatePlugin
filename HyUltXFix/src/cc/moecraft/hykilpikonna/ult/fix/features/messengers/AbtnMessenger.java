@@ -4,7 +4,7 @@ import cc.moecraft.hykilpikonna.ult.Messengers;
 import cc.moecraft.hykilpikonna.ult.api.Messenger;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import static org.bukkit.ChatColor.GREEN;
+import static org.bukkit.ChatColor.RED;
 
 /**
  * 此类由 Hykilpikonna 在 2017/08/07 创建!
@@ -28,8 +28,8 @@ public class AbtnMessenger extends Messenger
     @Override
     public void writeConfig()
     {
-        addDefault("teleported", GREEN + "检测到您在地狱基岩层上面, 已将您传送下去!");
-        addDefault("build_event_cancelled", GREEN + "地狱基岩层上无法建筑!");
-        addDefault("destroy_event_cancelled", GREEN + "地狱基岩层上无法破坏!");
+        addDefault("teleported", RED + "检测到您在地狱基岩层上面, 已将您传送下去!");
+        addDefault("build_event_cancelled", RED + "地狱基岩层上无法建筑!");
+        addDefault("destroy_event_cancelled", RED + "地狱基岩层上无法破坏!");
     }
 }

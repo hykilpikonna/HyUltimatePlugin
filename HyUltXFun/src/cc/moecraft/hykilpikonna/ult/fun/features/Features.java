@@ -3,8 +3,15 @@ package cc.moecraft.hykilpikonna.ult.fun.features;
 import cc.moecraft.hykilpikonna.ult.api.Feature;
 import cc.moecraft.hykilpikonna.ult.fun.Fun;
 import cc.moecraft.hykilpikonna.ult.fun.features.configs.ElevatorConfig;
+import cc.moecraft.hykilpikonna.ult.fun.features.configs.OreGenConfig;
+import cc.moecraft.hykilpikonna.ult.fun.features.configs.ProjectileDamageConfig;
 import cc.moecraft.hykilpikonna.ult.fun.features.listeners.ElevatorListener;
+import cc.moecraft.hykilpikonna.ult.fun.features.listeners.OreGenListener;
+import cc.moecraft.hykilpikonna.ult.fun.features.listeners.ProjectileDamageListener;
+import cc.moecraft.hykilpikonna.ult.fun.features.messengers.ElevatorMessenger;
+import cc.moecraft.hykilpikonna.ult.fun.features.messengers.ProjectileDamageMessenger;
 import cc.moecraft.hykilpikonna.ult.fun.features.permissions.ElevatorPermissions;
+import cc.moecraft.hykilpikonna.ult.fun.features.permissions.ProjectileDamagePermissions;
 
 /**
  * 此类由 Hykilpikonna 在 2017/07/29 创建!
@@ -25,12 +32,18 @@ public class Features
             OreGenerator = new Feature();
             OreGenerator.setId("oregenerator");
             OreGenerator.setFriendlyName("OreGenerator");
+            OreGenerator.setListener(new OreGenListener());
+            OreGenerator.setConfig(new OreGenConfig());
         }
         if (Fun.getInstance().getSwitches().getBoolean("ProjectileDamage.Enable"))
         {
             ProjectileDamage = new Feature();
             ProjectileDamage.setId("projectiledamage");
             ProjectileDamage.setFriendlyName("ProjectileDamage");
+            ProjectileDamage.setMessenger(new ProjectileDamageMessenger());
+            ProjectileDamage.setConfig(new ProjectileDamageConfig());
+            ProjectileDamage.setListener(new ProjectileDamageListener());
+            ProjectileDamage.setPermissionsConfig(new ProjectileDamagePermissions());
         }
         if (Fun.getInstance().getSwitches().getBoolean("Elevator.Enable"))
         {
@@ -40,6 +53,7 @@ public class Features
             Elevator.setConfig(new ElevatorConfig());
             Elevator.setPermissionsConfig(new ElevatorPermissions());
             Elevator.setListener(new ElevatorListener());
+            Elevator.setMessenger(new ElevatorMessenger());
         }
     }
 

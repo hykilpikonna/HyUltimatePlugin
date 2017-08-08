@@ -1,16 +1,22 @@
 package cc.moecraft.hykilpikonna.ult.api;
 
 import cc.moecraft.hykilpikonna.ult.Main;
+import cc.moecraft.hykilpikonna.ult.utils.UrlUpdater;
+import org.apache.commons.lang.Validate;
+import org.bukkit.Bukkit;
+import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Objects;
+import java.util.logging.Level;
 
 import static cc.moecraft.hykilpikonna.ult.Main.tempDebug;
 
@@ -60,7 +66,9 @@ public abstract class Config extends YamlConfiguration
 
         this.configFile = getFileFromDir(dir, fileName, fileExtension);
 
-        loadConfiguration(configFile);
+        load();
+
+        options().copyDefaults(true);
 
         if (!isLatest() && autoBackupWhenPluginUpdate) backup();
 
@@ -118,14 +126,12 @@ public abstract class Config extends YamlConfiguration
         if (isDefaultConfig())
         {
             Main.tempDebug("写入默认配置");
-            options().copyDefaults(true);
             writeDefaultConfig();
             save = true;
         }
         if (!isLatest())
         {
             Main.tempDebug("写入配置");
-            options().copyDefaults(true);
             writeConfig();
             save = true;
         }
@@ -165,7 +171,7 @@ public abstract class Config extends YamlConfiguration
      */
     public void reload()
     {
-        loadConfiguration(configFile);
+        load();
         readConfig();
     }
 
@@ -256,9 +262,6 @@ public abstract class Config extends YamlConfiguration
      */
     public boolean isDefaultConfig()
     {
-        Main.tempDebug("getBoolean(\"DefaultConfig\") = " + getBoolean("DefaultConfig"));
-        //TODO: 删掉
-        Main.tempDebug("contains(\"DefaultConfig\") = " + contains("DefaultConfig"));
         return getBoolean("DefaultConfig") || !(contains("DefaultConfig"));
     }
 
@@ -268,9 +271,6 @@ public abstract class Config extends YamlConfiguration
      */
     public boolean isLatest()
     {
-        Main.tempDebug("getString(\"ConfigVersion\") = " + getString("ConfigVersion"));
-        //TODO: 测试完删掉
-        Main.tempDebug("plugin.getDescription().getVersion() = " + plugin.getDescription().getVersion());
         return getString("ConfigVersion") != null && getString("ConfigVersion").equals(plugin.getDescription().getVersion());
     }
 
@@ -304,13 +304,30 @@ public abstract class Config extends YamlConfiguration
 
     /**
      * 安全的添加一个默认值
-     * @param path 路径
-     * @param object 对象
-     */
+     * //@param path 路径
+     * //@param object 对象
+     *
     @Override
     public void addDefault(String path, Object object)
     {
         if (!contains(path)) super.addDefault(path, object);
+    }*/
+
+    public void load()
+    {
+        try
+        {
+            super.load(configFile);
+        }
+        catch (FileNotFoundException e)
+        {
+            UrlUpdater.createFile(configFile);
+            load();
+        }
+        catch (IOException | InvalidConfigurationException e)
+        {
+            e.printStackTrace();
+        }
     }
 
     public String getDir() {
