@@ -117,18 +117,18 @@ public class HealthCommand extends CommandRunner
         Player targetPlayer = getPlayer(sender, "hyult.health.lock", args, 2);
         if (isInt(args.get(1)))
         {
-            int healthLock= Integer.parseInt(args.get(1));
-            if (healthLock > HealthCalculations.getMaxHealth(targetPlayer))
-            {
-                ArrayList<String> arrayList = new ArrayList<>();
-                arrayList.add("max");
-                arrayList.add(Integer.toString(healthLock));
-                arrayList.add(targetPlayer.getName());
-                commandMax(sender, arrayList);
-            }
-
             if (targetPlayer != null)
             {
+                int healthLock= Integer.parseInt(args.get(1));
+                if (healthLock > HealthCalculations.getMaxHealth(targetPlayer))
+                {
+                    ArrayList<String> arrayList = new ArrayList<>();
+                    arrayList.add("max");
+                    arrayList.add(Integer.toString(healthLock));
+                    arrayList.add(targetPlayer.getName());
+                    commandMax(sender, arrayList);
+                }
+
                 HealthCalculations.lockPlayerHealth(targetPlayer, healthLock);
                 HealthCalculations.setHealth(targetPlayer, healthLock);
                 HealthCalculations.setMaxHealth(targetPlayer, healthLock);

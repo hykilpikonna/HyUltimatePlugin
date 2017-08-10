@@ -1,5 +1,5 @@
 name: HyUltXUtil
-version: 0.1.5.2.2
+version: 0.1.5.5.18
 author: Hykilpikonna
 main: cc.moecraft.hykilpikonna.ult.util.Util
 depend: [HyUltimatePlugin]
@@ -21,14 +21,6 @@ commands:
         description: Set / lock player's food level.
         usage: /<command>
         aliases: [fl, food, hyfood]
-    pullback:
-        description: Set pullback for a player.
-        usage: /<command>
-        aliases: [hypullback, hypb]
-    autorespawn:
-        description: Set a player to autorespawn.
-        usage: /<command>
-        aliases: [hyautores, hyar]
     fishmodifier:
         description: CommandRunner for custom fish.
         usage: /<command>

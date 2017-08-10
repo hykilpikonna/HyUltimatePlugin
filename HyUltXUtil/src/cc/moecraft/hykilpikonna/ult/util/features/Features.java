@@ -1,24 +1,23 @@
 package cc.moecraft.hykilpikonna.ult.util.features;
 
+import cc.moecraft.hykilpikonna.ult.Configs;
 import cc.moecraft.hykilpikonna.ult.api.Feature;
 import cc.moecraft.hykilpikonna.ult.util.Util;
 import cc.moecraft.hykilpikonna.ult.util.features.commands.FoodLevelCommand;
 import cc.moecraft.hykilpikonna.ult.util.features.commands.GetHeadCommand;
 import cc.moecraft.hykilpikonna.ult.util.features.commands.HealthCommand;
 import cc.moecraft.hykilpikonna.ult.util.features.commands.ItemFixCommand;
+import cc.moecraft.hykilpikonna.ult.util.features.configs.AutoRespawnConfig;
 import cc.moecraft.hykilpikonna.ult.util.features.configs.ItemFixConfig;
+import cc.moecraft.hykilpikonna.ult.util.features.configs.PullbackConfig;
 import cc.moecraft.hykilpikonna.ult.util.features.databases.FoodLevelDatabase;
 import cc.moecraft.hykilpikonna.ult.util.features.databases.HealthDatabase;
+import cc.moecraft.hykilpikonna.ult.util.features.listeners.AutoRespawnListener;
 import cc.moecraft.hykilpikonna.ult.util.features.listeners.FoodLevelListener;
 import cc.moecraft.hykilpikonna.ult.util.features.listeners.HealthListener;
-import cc.moecraft.hykilpikonna.ult.util.features.messengers.FoodLevelMessenger;
-import cc.moecraft.hykilpikonna.ult.util.features.messengers.GetHeadMessenger;
-import cc.moecraft.hykilpikonna.ult.util.features.messengers.HealthMessenger;
-import cc.moecraft.hykilpikonna.ult.util.features.messengers.ItemFixMessenger;
-import cc.moecraft.hykilpikonna.ult.util.features.permissions.FoodLevelPermissions;
-import cc.moecraft.hykilpikonna.ult.util.features.permissions.GetHeadPermissions;
-import cc.moecraft.hykilpikonna.ult.util.features.permissions.HealthPermissions;
-import cc.moecraft.hykilpikonna.ult.util.features.permissions.ItemFixPermissions;
+import cc.moecraft.hykilpikonna.ult.util.features.listeners.PullbackListener;
+import cc.moecraft.hykilpikonna.ult.util.features.messengers.*;
+import cc.moecraft.hykilpikonna.ult.util.features.permissions.*;
 
 /**
  * 此类由 Hykilpikonna 在 2017/07/29 创建!
@@ -86,12 +85,20 @@ public class Features
             pullback = new Feature();
             pullback.setId("pullback");
             pullback.setFriendlyName("Pullback");
+            pullback.setConfig(new PullbackConfig());
+            pullback.setMessenger(new PullbackMessenger());
+            pullback.setPermissionsConfig(new PullbackPermissions());
+            pullback.setListener(new PullbackListener());
         }
         if (Util.getInstance().getSwitches().getBoolean("AutoRespawn.Enable"))
         {
             autoRespawn = new Feature();
             autoRespawn.setId("autorespawn");
             autoRespawn.setFriendlyName("AutoRespawn");
+            autoRespawn.setConfig(new AutoRespawnConfig());
+            autoRespawn.setMessenger(new AutoRespawnMessenger());
+            autoRespawn.setPermissionsConfig(new AutoRespawnPermissions());
+            autoRespawn.setListener(new AutoRespawnListener());
         }
         if (Util.getInstance().getSwitches().getBoolean("FishModifier.Enable"))
         {

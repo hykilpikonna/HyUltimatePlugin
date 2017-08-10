@@ -72,7 +72,7 @@ public class FoodLevelCommand extends CommandRunner
 
     private void commandFoodLevel(CommandSender sender, ArrayList<String> args)
     {
-        if (!isInt(args.get(0)))
+        if (isInt(args.get(0)))
         {
             int SatLock = Integer.parseInt(args.get(0)) > 20 ? 20 : Integer.parseInt(args.get(0));
 
