@@ -77,6 +77,7 @@ public class Main extends HyPlugin
         HyPluginsDownloadLink CHAT = new HyPluginsDownloadLink("HyUltXChat", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/Build/HyUltXChat.jar");
         HyPluginsDownloadLink FIX = new HyPluginsDownloadLink("HyUltXFix", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/Build/HyUltXFix.jar");
         HyPluginsDownloadLink FUN = new HyPluginsDownloadLink("HyUltXFun", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/Build/HyUltXFun.jar");
+        HyPluginsDownloadLink UTIL = new HyPluginsDownloadLink("HyUltXUtil", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/Build/HyUltXUtil.jar");
 
         setup();
         setupAutoUpdate();

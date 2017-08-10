@@ -25,7 +25,7 @@ public class Messengers extends Messenger
     {
         addDefault("help_message_text", GRAY + "# [最新帮助界面(点我)]");
         addDefault("help_message_hover_text", AQUA + "点击即可通过浏览器打开最新帮助界面");
-        addDefault("help_message_click_link", "https://github.com/hykilpikonna/HyUltimatePlugin/blob/master/Help.yml");
+        addDefault("help_message_click_link", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/Help.yml");
 
         addDefault("reloading", GREEN + "插件正在重新加载....");
         addDefault("reload_complete", GREEN + "插件重载成功!");

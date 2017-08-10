@@ -1,5 +1,5 @@
 name: "HyUltimatePlugin"
-version: 0.1.7.4.93
+version: 0.1.7.5.94
 description: "Hykilpikonna's combined plugin"
 author: Hykilpikonna
 main: cc.moecraft.hykilpikonna.ult.Main
@@ -9,30 +9,6 @@ commands:
         description: The commandRunner to manage this plugin
         usage: /<commandRunner>
         aliases: [hyultimate, hyult]
-    fix:
-        description: Fix items for players.
-        usage: /<commandRunner>
-        aliases: [hyfix, fixitem]
-    hp:
-        description: Set / lock player's health.
-        usage: /<commandRunner>
-        aliases: [hyhealth, health]
-    sat:
-        description: Set / lock player's food level.
-        usage: /<commandRunner>
-        aliases: [saturation, food, hyfood]
-    pullback:
-        description: Set pullback for a player.
-        usage: /<commandRunner>
-        aliases: [hypullback, hypb]
-    autorespawn:
-        description: Set a player to autorespawn.
-        usage: /<commandRunner>
-        aliases: [hyautores, hyar]
-    fish:
-        description: CommandRunner for custom fish.
-        usage: /<commandRunner>
-        aliases: [hyfish, hyfl, customfish]
 
     hydebug:
         description: CommandRunner debug.

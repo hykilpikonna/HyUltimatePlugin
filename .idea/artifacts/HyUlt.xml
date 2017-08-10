@@ -14,6 +14,9 @@
       <element id="archive" name="HyUltXFun.jar">
         <element id="module-output" name="HyUltXFun" />
       </element>
+      <element id="archive" name="HyUltXUtil.jar">
+        <element id="module-output" name="HyUltXUtil" />
+      </element>
     </root>
   </artifact>
 </component>

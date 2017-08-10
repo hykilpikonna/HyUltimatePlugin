@@ -19,6 +19,7 @@ import static cc.moecraft.hykilpikonna.ult.utils.PluginUtil.reload;
 import static cc.moecraft.hykilpikonna.ult.utils.PluginUtil.unload;
 import static org.bukkit.ChatColor.GREEN;
 import static org.bukkit.ChatColor.RED;
+import static org.bukkit.ChatColor.getLastColors;
 
 /**
  * 此类由 Hykilpikonna 在 2017/07/16 创建!
@@ -329,6 +330,7 @@ public class UrlUpdater
     {
         tempDebug("开始版本比较...");
         tempDebug(String.format("输入 = %s, %s", currentVersion, latestVersion));
+        if (currentVersion == null || latestVersion == null) return 0;
         String[] currentVersionAfterSplit = removeInNumeric(currentVersion).split("\\.");
         String[] latestVersionAfterSplit = removeInNumeric(latestVersion).split("\\.");
 
