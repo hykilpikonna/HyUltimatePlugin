@@ -1,7 +1,7 @@
 Prefix: §7§l[§6§lFishModifier§7§l] §r
 command_console_not_available: Console command is currently not avaliable!
 command_add_success: §aAdded fish to the pool!
-command_add_no_item_in_hand: §cFailed to add fish: you are holding nothing!
+command_add_no_item_in_hand: §cFailed to add fish you are holding nothing!
 command_not_enough_args: §cNot enough args!
 command_not_number: §cNot a number!
 DefaultConfig: false

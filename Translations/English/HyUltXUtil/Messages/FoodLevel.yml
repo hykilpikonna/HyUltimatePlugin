@@ -4,7 +4,7 @@ command_missing_args: §cYou did not input any arguments!
 command_console_not_allowed: §cConsole is not allowed to use this command targeting itself!
 command_player_not_found: §cPlayer %PLAYER% does not exist!
 command_not_numeric: §cThe value you input is not an number!
-command_sat_see: §aPlayer %TARGETPLAYER%'s food level is: %FOOD%.
+command_sat_see: §aPlayer %TARGETPLAYER%'s food level is %FOOD%.
 command_sat_lock_sender: §aPlayer %TARGETPLAYER%'s food level is locked to %FOOD%!
 command_sat_lock_target: §aYour food level is locked to %FOOD%!
 command_sat_unlock_sender: §aPlayer %TARGETPLAYER%'s food level is unlocked!

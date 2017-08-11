@@ -1,7 +1,7 @@
 Prefix: §7§l[§6§lHy§3§lUltimate§7§l] §r
 help_message_text: §7# [Latest Command Help Page (Click Here)]
 help_message_hover_text: §bClick to open the help page with the default browser.
-help_message_click_link: https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/Help.yml
+help_message_click_link: https://www.spigotmc.org/resources/hyultimateplugin.45469/
 reloading: §aReloading....
 reload_complete: §aReload success!
 command_reload_start: §eReloading all configurations...

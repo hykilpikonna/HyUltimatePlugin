@@ -1,6 +1,6 @@
 Prefix: §7§l[§6§lHead§7§l] §r
 console_not_allowed: §cConsole don't have a head!!!!
-failed_to_get_amount: §cFailed to read -amount: data tag!
+failed_to_get_amount: §cFailed to read -amount data tag!
 success: §aYou got %AMOUNT% §b§l%PLAYER%§a's head!
 DefaultConfig: false
 ConfigVersion: 0.1.5.8.23
