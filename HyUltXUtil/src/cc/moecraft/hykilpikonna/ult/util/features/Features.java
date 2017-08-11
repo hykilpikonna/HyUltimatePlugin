@@ -3,19 +3,14 @@ package cc.moecraft.hykilpikonna.ult.util.features;
 import cc.moecraft.hykilpikonna.ult.Configs;
 import cc.moecraft.hykilpikonna.ult.api.Feature;
 import cc.moecraft.hykilpikonna.ult.util.Util;
-import cc.moecraft.hykilpikonna.ult.util.features.commands.FoodLevelCommand;
-import cc.moecraft.hykilpikonna.ult.util.features.commands.GetHeadCommand;
-import cc.moecraft.hykilpikonna.ult.util.features.commands.HealthCommand;
-import cc.moecraft.hykilpikonna.ult.util.features.commands.ItemFixCommand;
+import cc.moecraft.hykilpikonna.ult.util.features.commands.*;
 import cc.moecraft.hykilpikonna.ult.util.features.configs.AutoRespawnConfig;
+import cc.moecraft.hykilpikonna.ult.util.features.configs.FishModifierConfig;
 import cc.moecraft.hykilpikonna.ult.util.features.configs.ItemFixConfig;
 import cc.moecraft.hykilpikonna.ult.util.features.configs.PullbackConfig;
 import cc.moecraft.hykilpikonna.ult.util.features.databases.FoodLevelDatabase;
 import cc.moecraft.hykilpikonna.ult.util.features.databases.HealthDatabase;
-import cc.moecraft.hykilpikonna.ult.util.features.listeners.AutoRespawnListener;
-import cc.moecraft.hykilpikonna.ult.util.features.listeners.FoodLevelListener;
-import cc.moecraft.hykilpikonna.ult.util.features.listeners.HealthListener;
-import cc.moecraft.hykilpikonna.ult.util.features.listeners.PullbackListener;
+import cc.moecraft.hykilpikonna.ult.util.features.listeners.*;
 import cc.moecraft.hykilpikonna.ult.util.features.messengers.*;
 import cc.moecraft.hykilpikonna.ult.util.features.permissions.*;
 
@@ -105,6 +100,11 @@ public class Features
             fishModifier = new Feature();
             fishModifier.setId("fishmodifier");
             fishModifier.setFriendlyName("FishModifier");
+            fishModifier.setMessenger(new FishModifierMessenger());
+            fishModifier.setConfig(new FishModifierConfig());
+            fishModifier.setPermissionsConfig(new FishModifierPermissions());
+            fishModifier.setListener(new FishModifierListener());
+            fishModifier.setCommandRunner(new FishModifierCommand());
         }
     }
 

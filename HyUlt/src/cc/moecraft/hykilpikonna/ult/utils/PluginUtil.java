@@ -26,8 +26,10 @@ package cc.moecraft.hykilpikonna.ult.utils;
  * #L%
  */
 
+import cc.moecraft.hykilpikonna.ult.Main;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
+import org.bukkit.command.CommandSender;
 import org.bukkit.command.PluginCommand;
 import org.bukkit.command.SimpleCommandMap;
 import org.bukkit.event.Event;
@@ -35,8 +37,11 @@ import org.bukkit.plugin.*;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.lang.reflect.Field;
+import java.net.URL;
 import java.net.URLClassLoader;
+import java.net.URLDecoder;
 import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -63,6 +68,60 @@ public class PluginUtil {
         for (Plugin plugin : Bukkit.getPluginManager().getPlugins())
             plugins.add(fullName ? plugin.getDescription().getFullName() : plugin.getName());
         return plugins;
+    }
+
+    public static boolean loadFile(File pluginFile)
+    {
+        Plugin target = null;
+        String name = pluginFile.getName();
+        try
+        {
+            try
+            {
+                target = Bukkit.getPluginManager().loadPlugin(pluginFile);
+            }
+            catch (Exception e) { e.printStackTrace(); return false; }
+            if (target == null) return false;
+            target.onLoad();
+            Bukkit.getPluginManager().enablePlugin(target);
+            return true;
+        }
+        catch (Exception e) { e.printStackTrace(); }
+        return false;
+    }
+
+    public static boolean loadFileName(String name)
+    {
+        String filename = name;
+        if (!name.endsWith(".jar")) {
+            filename = name + ".jar";
+        }
+        File pluginDir = new File("plugins");
+        File updateDir = new File(pluginDir, "update");
+        if (!pluginDir.isDirectory()) return false;
+        File pluginFile = new File(pluginDir, filename);
+        if ((!pluginFile.isFile()) && (!new File(updateDir, filename).isFile()))
+        {
+            pluginFile = null;
+            for (File file : pluginDir.listFiles())
+            {
+                if (file.getName().endsWith(".jar"))
+                {
+                    try
+                    {
+                        PluginDescriptionFile desc = Main.getMain().getPluginLoader().getPluginDescription(file);
+                        if (desc.getName().equalsIgnoreCase(name))
+                        {
+                            pluginFile = file;
+                            break;
+                        }
+                    }
+                    catch (InvalidDescriptionException ignored) {}
+                }
+            }
+            if (pluginFile == null) return false;
+        }
+        return loadFile(pluginFile);
     }
     
     public static boolean load(String name) {
@@ -137,6 +196,28 @@ public class PluginUtil {
             unload(plugin);
             load(plugin.getName());
         }
+    }
+
+    public static boolean delete(Plugin plugin)
+    {
+        return (unload(plugin)) && (getPluginFile(plugin).delete());
+    }
+
+    public static File getPluginFile(Plugin plugin)
+    {
+        File file = null;
+        ClassLoader cl = plugin.getClass().getClassLoader();
+        if ((cl instanceof URLClassLoader))
+        {
+            URLClassLoader ucl = (URLClassLoader)cl;
+            URL url = ucl.getURLs()[0];
+            try
+            {
+                file = new File(URLDecoder.decode(url.getFile(), "UTF-8"));
+            }
+            catch (UnsupportedEncodingException localUnsupportedEncodingException) {}
+        }
+        return file;
     }
 
     public static boolean unload(Plugin plugin) {

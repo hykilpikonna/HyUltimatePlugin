@@ -28,7 +28,7 @@ import java.util.ArrayList;
 
 import static cc.moecraft.hykilpikonna.ult.Main.tempDebug;
 import static cc.moecraft.hykilpikonna.ult.utils.ArrayUtils.getTheRestToString;
-import static cc.moecraft.hykilpikonna.ult.utils.PluginUtil.reload;
+import static cc.moecraft.hykilpikonna.ult.utils.PluginUtil.*;
 
 /**
  * 此类由 Hykilpikonna 在 2017/08/01 创建!
@@ -74,7 +74,55 @@ public class HyuCommand extends CommandRunner
             case "install":
                 if (args.size() == 0 || args.size() == 1) commandInstall(sender, args); else Main.sendHelpMessage(sender);
                 break;
+            case "unload":
+                if (args.size() == 1) commandUnload(sender, args); else Main.sendHelpMessage(sender);
+                break;
+            case "delete":
+                if (args.size() == 1) commandDelete(sender, args); else Main.sendHelpMessage(sender);
+                break;
+            case "load":
+                if (args.size() >= 1) commandLoad(sender, args); else Main.sendHelpMessage(sender);
+                break;
         }
+    }
+
+    private void commandLoad(CommandSender sender, ArrayList<String> args)
+    {
+        if (!Main.permissions.hasPermissionNotInConfig(sender, "hyult.command.admin.load", true)) return;
+        String pluginName = getTheRestToString(args, 0);
+        sender.sendMessage(String.format(Main.messengers.getWithPrefix("command_load_specific_start"), pluginName));
+        if (loadFileName(pluginName)) sender.sendMessage(String.format(Main.messengers.getWithPrefix("command_load_specific_complete"), pluginName)); else sender.sendMessage(String.format(Main.messengers.getWithPrefix("command_load_specific_err_not_found"), pluginName));
+    }
+
+    private void commandDelete(CommandSender sender, ArrayList<String> args)
+    {
+        String pluginName = getTheRestToString(args, 0);
+        Plugin plugin = Bukkit.getPluginManager().getPlugin(pluginName);
+        if (plugin == null)
+        {
+            sender.sendMessage(String.format(Main.messengers.getWithPrefix("command_unload_specific_err_not_found"), pluginName));
+            return;
+        }
+        if (!Main.permissions.hasPermissionNotInConfig(sender, "hyult.command.admin.delete", true)) return;
+        sender.sendMessage(String.format(Main.messengers.getWithPrefix("command_unload_specific_start"), pluginName));
+        delete(plugin);
+        sender.sendMessage(String.format(Main.messengers.getWithPrefix("command_unload_specific_complete"), pluginName));
+        sender.sendMessage(String.format(Main.messengers.getWithPrefix("command_delete_specific_complete"), pluginName));
+    }
+
+    private void commandUnload(CommandSender sender, ArrayList<String> args)
+    {
+        String pluginName = getTheRestToString(args, 0);
+        Plugin plugin = Bukkit.getPluginManager().getPlugin(pluginName);
+        if (plugin == null)
+        {
+            sender.sendMessage(String.format(Main.messengers.getWithPrefix("command_unload_specific_err_not_found"), pluginName));
+            return;
+        }
+        if (!Main.permissions.hasPermissionNotInConfig(sender, "hyult.command.admin.unload", true)) return;
+        sender.sendMessage(String.format(Main.messengers.getWithPrefix("command_unload_specific_start"), pluginName));
+        unload(plugin);
+        sender.sendMessage(String.format(Main.messengers.getWithPrefix("command_unload_specific_complete"), pluginName));
     }
 
     private void commandReload(CommandSender sender, ArrayList<String> args)
@@ -165,6 +213,7 @@ public class HyuCommand extends CommandRunner
             onePlugin.addExtra(Main.messengers.get("download_list_one_plugin_suf"));
             onePlugin.setClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/hyu install -hyplugins:" + name));
             onePlugin.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new ComponentBuilder(String.format(Main.messengers.get("download_list_one_plugin_hover"), name)).create()));
+            //TODO: 修复不自动刷新的问题
             message.addExtra(onePlugin);
         }
         if (sender instanceof Player)

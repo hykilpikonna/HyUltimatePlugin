@@ -48,6 +48,9 @@ public class Configs extends Config
 
         addDefault("Plugins.HyUltXFun.PluginYmlURL", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/out/production/HyUltXFun/plugin.yml");
         addDefault("Plugins.HyUltXFun.JarURL", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/Build/HyUltXFun.jar");
+
+        addDefault("Plugins.HyUltXUtil.PluginYmlURL", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/out/production/HyUltXUtil/plugin.yml");
+        addDefault("Plugins.HyUltXUtil.JarURL", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/Build/HyUltXUtil.jar");
     }
 
     @Override

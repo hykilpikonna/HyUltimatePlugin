@@ -1,5 +1,5 @@
 name: "HyUltimatePlugin"
-version: 0.1.7.5.103
+version: 0.1.7.9.113
 description: "Hykilpikonna's combined plugin"
 author: Hykilpikonna
 main: cc.moecraft.hykilpikonna.ult.Main
@@ -9,7 +9,6 @@ commands:
         description: The commandRunner to manage this plugin
         usage: /<commandRunner>
         aliases: [hyultimate, hyult]
-
     hydebug:
         description: CommandRunner debug.
         usage: /<commandRunner>

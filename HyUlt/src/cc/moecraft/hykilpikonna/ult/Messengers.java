@@ -68,6 +68,16 @@ public class Messengers extends Messenger
 
         addDefault("line_front", GRAY + "#######################################");
         addDefault("line_back", GRAY + "#######################################");
+
+        addDefault("command_unload_specific_start", YELLOW + "正在卸载%s插件...");
+        addDefault("command_unload_specific_err_not_found", RED + "卸载失败, 未找到%s插件.");
+        addDefault("command_unload_specific_complete", GREEN + "%s插件卸载成功!");
+
+        addDefault("command_load_specific_start", YELLOW + "正在加载%s插件...");
+        addDefault("command_load_specific_err_not_found", RED + "加载失败, 未找到%s插件.");
+        addDefault("command_load_specific_complete", GREEN + "%s插件加载成功!");
+
+        addDefault("command_delete_specific_complete", GREEN + "%s插件删除成功!");
     }
 
     @Override

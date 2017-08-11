@@ -24,5 +24,9 @@ public class Permissions extends PermissionsConfig
 
         add("hyult.command.admin.install.url", true);
         add("hyult.command.admin.install.hyplugins", true);
+
+        add("hyult.command.admin.load", true);
+        add("hyult.command.admin.unload", true);
+        add("hyult.command.admin.delete", true);
     }
 }

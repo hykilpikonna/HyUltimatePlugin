@@ -1,6 +1,8 @@
 package cc.moecraft.hykilpikonna.ult.api;
 
 import cc.moecraft.hykilpikonna.ult.Main;
+import cc.moecraft.hykilpikonna.ult.api.ingame.Command;
+import cc.moecraft.hykilpikonna.ult.api.ingame.CommandType;
 import cc.moecraft.hykilpikonna.ult.utils.UrlUpdater;
 import org.apache.commons.lang.Validate;
 import org.bukkit.Bukkit;
@@ -12,9 +14,12 @@ import org.bukkit.plugin.java.JavaPlugin;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.CookieHandler;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 import java.util.Objects;
 import java.util.logging.Level;
 
@@ -328,6 +333,15 @@ public abstract class Config extends YamlConfiguration
         {
             e.printStackTrace();
         }
+    }
+
+    public Command getCommand(String path)
+    {
+        CommandType commandType = CommandType.valueOf(getString(path + ".CommandType"));
+        String command = getString(path + ".Command");
+        Boolean op = commandType == CommandType.PLAYER && getBoolean(path + "RunAsOp");
+
+        return new Command(commandType, command, op);
     }
 
     public String getDir() {
