@@ -7,43 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2643750-8be0-4570-af96-bc971080d381" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/api/ingame/Command.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/api/ingame/CommandType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/calculations/FishModifierCalculations.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/commands/FishModifierCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/configs/FishModifierConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/listeners/FishModifierListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/messengers/FishModifierMessenger.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/others/Fish.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/others/FishBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/others/FishType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/permissions/FishModifierPermissions.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Build/HyUlt.jar" afterPath="$PROJECT_DIR$/Build/HyUlt.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Build/HyUltXChat.jar" afterPath="$PROJECT_DIR$/Build/HyUltXChat.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Build/HyUltXFix.jar" afterPath="$PROJECT_DIR$/Build/HyUltXFix.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Build/HyUltXFun.jar" afterPath="$PROJECT_DIR$/Build/HyUltXFun.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Build/HyUltXUtil.jar" afterPath="$PROJECT_DIR$/Build/HyUltXUtil.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyUlt/cc/moecraft/hykilpikonna/ult/Configs.class" afterPath="$PROJECT_DIR$/out/production/HyUlt/cc/moecraft/hykilpikonna/ult/Configs.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyUlt/cc/moecraft/hykilpikonna/ult/Messengers.class" afterPath="$PROJECT_DIR$/out/production/HyUlt/cc/moecraft/hykilpikonna/ult/Messengers.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyUlt/cc/moecraft/hykilpikonna/ult/Permissions.class" afterPath="$PROJECT_DIR$/out/production/HyUlt/cc/moecraft/hykilpikonna/ult/Permissions.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyUlt/cc/moecraft/hykilpikonna/ult/api/Config.class" afterPath="$PROJECT_DIR$/out/production/HyUlt/cc/moecraft/hykilpikonna/ult/api/Config.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyUlt/cc/moecraft/hykilpikonna/ult/commands/HyuCommand$1.class" afterPath="$PROJECT_DIR$/out/production/HyUlt/cc/moecraft/hykilpikonna/ult/commands/HyuCommand$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyUlt/cc/moecraft/hykilpikonna/ult/commands/HyuCommand.class" afterPath="$PROJECT_DIR$/out/production/HyUlt/cc/moecraft/hykilpikonna/ult/commands/HyuCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyUlt/cc/moecraft/hykilpikonna/ult/utils/PluginUtil.class" afterPath="$PROJECT_DIR$/out/production/HyUlt/cc/moecraft/hykilpikonna/ult/utils/PluginUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyUltXUtil/cc/moecraft/hykilpikonna/ult/util/features/Features.class" afterPath="$PROJECT_DIR$/out/production/HyUltXUtil/cc/moecraft/hykilpikonna/ult/util/features/Features.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Help.yml" afterPath="$PROJECT_DIR$/Help.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/Configs.java" afterPath="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/Configs.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/Messengers.java" afterPath="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/Messengers.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/Permissions.java" afterPath="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/Permissions.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/api/Config.java" afterPath="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/api/Config.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/commands/HyuCommand.java" afterPath="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/commands/HyuCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/utils/PluginUtil.java" afterPath="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/utils/PluginUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUlt/src/plugin.yml" afterPath="$PROJECT_DIR$/HyUlt/src/plugin.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/Features.java" afterPath="$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/Features.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUltXUtil/src/plugin.yml" afterPath="$PROJECT_DIR$/HyUltXUtil/src/plugin.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyUlt/plugin.yml" afterPath="$PROJECT_DIR$/out/production/HyUlt/plugin.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyUltXUtil/plugin.yml" afterPath="$PROJECT_DIR$/out/production/HyUltXUtil/plugin.yml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -54,12 +18,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="plugin.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="plugin.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HyUlt/src/plugin.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="19">
               <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="20" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FishModifierConfig.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/configs/FishModifierConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2997">
+              <caret line="196" column="83" lean-forward="false" selection-start-line="196" selection-start-column="83" selection-end-line="196" selection-end-column="83" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -301,6 +277,21 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="HyUltimatePlugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HyUltXUtil" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HyUltimatePlugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HyUltXUtil" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
+              <item name="configs" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -450,12 +441,12 @@
       <workItem from="1502031138200" duration="28260000" />
       <workItem from="1502167608169" duration="8880000" />
       <workItem from="1502183645902" duration="591000" />
-      <workItem from="1502193294504" duration="57315000" />
+      <workItem from="1502193294504" duration="57560000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141710000" />
+    <option name="totallyTimeSpent" value="141955000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1097,18 +1088,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/configs/FishModifierConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1815">
-          <caret line="196" column="83" lean-forward="false" selection-start-line="196" selection-start-column="83" selection-end-line="196" selection-end-column="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1252#1253#0" expanded="true" />
-            <element signature="e#1351#1352#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HyUltXUtil/src/plugin.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -1122,6 +1101,16 @@
         <state relative-caret-position="19">
           <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/configs/FishModifierConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2997">
+          <caret line="196" column="83" lean-forward="false" selection-start-line="196" selection-start-column="83" selection-end-line="196" selection-end-column="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
