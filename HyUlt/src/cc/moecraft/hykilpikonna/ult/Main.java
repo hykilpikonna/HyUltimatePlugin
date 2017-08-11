@@ -153,7 +153,7 @@ public class Main extends HyPlugin
     public static void tempDebug(String string)
     //TODO: 加开关
     {
-        //if (getMain().getConfig().getBoolean("Debug"))
+        if (false)
             Bukkit.getConsoleSender().sendMessage("[" +
                     ChatColor.RED +
                     "DEBUG" +
