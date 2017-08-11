@@ -57,4 +57,9 @@ public class PlaceholderUtils
             string.add(i, ChatColor.YELLOW + frontAndBack.get(0) + name + frontAndBack.get(1) + ChatColor.RESET);
         }
     }
+
+    public static String replacePlayerPlaceholder(Player player, String input)
+    {
+        return input.replace("%PLAYER%", player.getName());
+    }
 }

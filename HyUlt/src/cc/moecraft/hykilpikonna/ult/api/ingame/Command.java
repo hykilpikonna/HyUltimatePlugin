@@ -7,6 +7,8 @@ import org.bukkit.entity.Player;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+import static cc.moecraft.hykilpikonna.ult.utils.PlaceholderUtils.replacePlayerPlaceholder;
+
 /**
  * 此类由 Hykilpikonna 在 2017/08/11 创建!
  * Created by Hykilpikonna on 2017/08/11!
@@ -33,6 +35,7 @@ public class Command
 
     public void sendCommand(Player player)
     {
+        String command = replacePlayerPlaceholder(player, this.command);
         if (commandType == CommandType.PLAYER)
             if (op)
                 if (player.isOp()) player.chat(command);

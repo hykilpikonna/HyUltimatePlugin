@@ -1,0 +1,16 @@
+Prefix: §7§l[§6§lFood Level§7§l] §r
+value_more_then_2048: §cValue cannot be over 2048, reduced to 2048!
+command_missing_args: §cYou did not input any arguments!
+command_console_not_allowed: §cConsole is not allowed to use this command targeting itself!
+command_player_not_found: §cPlayer %PLAYER% does not exist!
+command_not_numeric: §cThe value you input is not an number!
+command_sat_see: §aPlayer %TARGETPLAYER%'s food level is: %FOOD%.
+command_sat_lock_sender: §aPlayer %TARGETPLAYER%'s food level is locked to %FOOD%!
+command_sat_lock_target: §aYour food level is locked to %FOOD%!
+command_sat_unlock_sender: §aPlayer %TARGETPLAYER%'s food level is unlocked!
+command_sat_unlock_target: §aYour food level is unlocked!
+command_sat_set_self: §aYour food level is set to %FOOD%!
+command_sat_set_sender: §aPlayer %TARGETPLAYER%'s food level is set to %FOOD%!
+command_sat_set_target: §aYour food level is set to %FOOD%!
+DefaultConfig: false
+ConfigVersion: 0.1.5.8.23

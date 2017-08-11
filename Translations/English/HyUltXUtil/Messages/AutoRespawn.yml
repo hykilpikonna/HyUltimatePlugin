@@ -1,0 +1,4 @@
+Prefix: §7§l[§6§lAuto Respawn§7§l] §r
+respawn_success: §aYou are now alive!
+DefaultConfig: false
+ConfigVersion: 0.1.5.8.23

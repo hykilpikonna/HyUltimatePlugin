@@ -1,0 +1,59 @@
+Prefix: §7§l[§6§lPDamage§7§l] §r
+projectile:
+  Egg: Egg
+  SnowBall: SnowBall
+  EnderPearl: EnderPearl
+hit_player: §aYour %PROJECTILE% has hit §e%PLAYER%§a, dealed %DAMAGE% damage, %HEALTH% health remaining
+hit_entity: §aYour %PROJECTILE% has hit a §e%ENTITY%§a, dealed %DAMAGE% damage, %HEALTH% health remaining
+entity_Bat_name: bat
+entity_Blaze_name: blaze
+entity_Cat_name: cat
+entity_CaveSpider_name: cave spider
+entity_Chicken_name: chicken
+entity_Cow_name: cow
+entity_Creeper_name: creeper
+entity_Donkey_name: donkey
+entity_ElderGuardian_name: elder guardian
+entity_EnderDragon_name: ender dragon
+entity_Enderman_name: enderman
+entity_Endermite_name: endermite
+entity_Evoker_name: evoker
+entity_Ghast_name: ghast
+entity_Giant_name: giant
+entity_Guardian_name: guardian
+entity_Horse_name: horse
+entity_Husk_name: husk
+entity_KillerBunny_name: killer bunny
+entity_LavaSlime_name: lava slime
+entity_Llama_name: llama
+entity_Mule_name: mule
+entity_MushroomCow_name: mushroom cow
+entity_Ozelot_name: ozelot
+entity_Pig_name: pig
+entity_PigZombie_name: pig man
+entity_PolarBear_name: polar bear
+entity_Rabbit_name: rabbit
+entity_Sheep_name: sheep
+entity_Shulker_name: shulker
+entity_Silverfish_name: silver fish
+entity_Skeleton_name: skeleton
+entity_SkeletonHorse_name: skeleton horse
+entity_Slime_name: slime
+entity_SnowMan_name: snowman
+entity_Spider_name: spider
+entity_Squid_name: squid
+entity_Stray_name: stray
+entity_Vex_name: vex
+entity_Villager_name: villager
+entity_VillagerGolem_name: golem
+entity_VindicationIllager_name: vindicator
+entity_Witch_name: witch
+entity_WitherBoss_name: wither boss
+entity_WitherSkeleton_name: wither skeleton
+entity_Wolf_name: wolf
+entity_Zombie_name: zombie
+entity_ZombieHorse_name: zombie horse
+entity_ZombieVillager_name: zombie villager
+entity_generic_name: unknown entity
+DefaultConfig: false
+ConfigVersion: 0.1.4.5

@@ -1,0 +1,44 @@
+Prefix: §7§l[§6§lHy§3§lUltimate§7§l] §r
+help_message_text: §7# [Latest Command Help Page (Click Here)]
+help_message_hover_text: §bClick to open the help page with the default browser.
+help_message_click_link: https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/Help.yml
+reloading: §aReloading....
+reload_complete: §aReload success!
+command_reload_start: §eReloading all configurations...
+command_reload_complete: §aAll HyUlt plugin configurations reload success!
+command_reload_hyplugins_start: §eReloading all HyUlt plugins...
+command_reload_hyplugins_complete: §aAll HyUlt plugins reload success!
+command_reload_all_start: §eReloading all plugins...
+command_reload_all_complete: §aAll plugins reload success!
+command_reload_specific_start: §eReloading %s plugin...
+command_reload_specific_err_not_found: §cReload failed, %s plugin not found.
+command_reload_specific_complete: §aPlugin %s reload success!
+download_failed: §cFile download failed! Additional info avaliable at console.
+download_failed_wrong_hyplugin_name: §cFile download failed! Plugin not found!
+download_list_pre: '§7# §aAvaliable HyUlt Plugins: '
+download_list_one_plugin_first: '§7# '
+download_list_one_plugin_pre: §7[§6
+download_list_one_plugin_hover: §bClick here to install %s plugin
+download_list_one_plugin_suf: '§7] '
+download_list_suf: §7# Click on those plugin names to install.
+downloaded_all: §7# §aYou already downloaded all HyUlt plugins!
+installed_list_none: §7# §cNo HyUlt plugins installed!
+installed_list_pre: '§7# §aInstalled HyUlt plugins: '
+installed_list_one_plugin_first: '§7# '
+installed_list_one_plugin_pre: §7[§6
+installed_list_one_plugin_suf: '§7] '
+download_start: §7Starting download%s...
+download_finish: §aPlugin %s download complete!
+install_finish: '§aPlugin %s has loaded! Version: %s'
+install_failed: §cPlugin %s failed to load! Additional info avaliable at console.
+line_front: §7#######################################
+line_back: §7#######################################
+command_unload_specific_start: §eUnloading plugin %s...
+command_unload_specific_err_not_found: §cFailed to unload, plugin %s not found.
+command_unload_specific_complete: §aPlugin %s unload complete!
+command_load_specific_start: §eLoading plugin %s...
+command_load_specific_err_not_found: §cFailed to load, plugin %s not found.
+command_load_specific_complete: §aPlugin %s load complete!
+command_delete_specific_complete: §aPlugin %s deleted!
+DefaultConfig: false
+ConfigVersion: 0.1.7.8.107

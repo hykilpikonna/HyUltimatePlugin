@@ -1,0 +1,7 @@
+Prefix: §7§l[§6§l防卡地狱门§7§l] §r
+teleport: 因为检测到您可能被卡在传送门里面了, 所以您已被传送到传送点
+command_error: §c指令错误
+command_console_not_allowed: §c后台不能设置传送点
+command_setspawn_success: §a您已将传送点设置为[%WORLD%, %X%, %Y%, %Z%, %YAW%, %PITCH%]
+DefaultConfig: false
+ConfigVersion: 0.1.5.14

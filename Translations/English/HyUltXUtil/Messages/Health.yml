@@ -1,0 +1,18 @@
+Prefix: §7§l[§6§lHealth§7§l] §r
+value_more_then_2048: §cValue cannot be over 2048, reduced to 2048!
+command_missing_args: §cYou did not input any arguments!
+command_console_not_allowed: §cConsole is not allowed to use this command targeting itself!
+command_player_not_found: §cPlayer %PLAYER% does not exist!
+command_not_numeric: §cThe value you input is not an number!
+command_health_see: §aPlayer %TARGETPLAYER% has %HEALTH% health.
+command_health_lock_sender: §aPlayer %TARGETPLAYER%'s health is locked to %HEALTHLOCK%!
+command_health_lock_target: §aYour health is locked to %HEALTHLOCK%!
+command_health_unlock_sender: §aPlayer %TARGETPLAYER%'s health is unlocked!
+command_health_unlock_target: §aYour health is unlocked!
+command_health_max_sender: §aPlayer %TARGETPLAYER%'s max health is set to %MAX%!
+command_health_max_target: §aYour max health is set to %MAX%!
+command_health_set_self: §aYour health is set to %HEALTH%!
+command_health_set_sender: §aPlayer %TARGETPLAYER%'s health is set to %HEALTH%!
+command_health_set_target: §aYour health is set to %HEALTH%!
+DefaultConfig: false
+ConfigVersion: 0.1.5.8.23

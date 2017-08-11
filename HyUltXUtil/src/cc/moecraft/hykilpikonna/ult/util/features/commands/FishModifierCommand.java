@@ -5,6 +5,7 @@ import cc.moecraft.hykilpikonna.ult.api.tabcompleter.TabCompletes;
 import cc.moecraft.hykilpikonna.ult.api.tabcompleter.TabCompletesBuilder;
 import cc.moecraft.hykilpikonna.ult.util.Util;
 import cc.moecraft.hykilpikonna.ult.util.features.Features;
+import cc.moecraft.hykilpikonna.ult.util.features.others.FishType;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -56,6 +57,7 @@ public class FishModifierCommand extends CommandRunner
                 if (getAllVersionItemInHand(player) != null)
                 {
                     String path = args.get(1);
+                    getFishModifier().getConfig().set("Items." + path + ".Types", FishType.ITEM);
                     getFishModifier().getConfig().set("Items." + path + ".ChanceInPercent", chance);
                     getFishModifier().getConfig().set("Items." + path + ".ItemStack", getAllVersionItemInHand(player));
                     getFishModifier().getConfig().save();

@@ -1,0 +1,70 @@
+FillAllTheRest:
+  Enable: true
+  Types:
+  - ITEM
+  ItemStack:
+    ==: org.bukkit.inventory.ItemStack
+    type: RAW_FISH
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      lore:
+      - §9Yet another...
+      - §9Normal raw fish...
+EnabledWorlds:
+- world
+- world_nether
+Items:
+  fishOne:
+    ChanceInPercent: 10
+    Types:
+    - ITEM
+    - COMMAND
+    - MESSAGE
+    ItemStack:
+      ==: org.bukkit.inventory.ItemStack
+      type: RAW_FISH
+      damage: 2
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §9Fish one get one free!
+    Commands:
+    - CommandType: PLAYER
+      Command: /say I got a fish by fishing! (default command, contact admin to change it!)
+      RunAsOp: false
+    - CommandType: CONSOLE
+      Command: say %PLAYER% got a fish! (default console command, contact admin to change it!)
+    Messages:
+    - Good job! (default message!)
+  knockbackFish:
+    ChanceInPercent: 5
+    Types:
+    - ITEM
+    ItemStack:
+      ==: org.bukkit.inventory.ItemStack
+      type: RAW_FISH
+      damage: 1
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §9Yet another...
+        - §9Normal knockback fish!
+        enchants:
+          KNOCKBACK: 1
+  cookedFish:
+    ChanceInPercent: 5
+    Types:
+    - ITEM
+    ItemStack:
+      ==: org.bukkit.inventory.ItemStack
+      type: COOKED_FISH
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §9It's already cooked...
+DefaultConfig: false
+ConfigVersion: 0.1.5.8.23

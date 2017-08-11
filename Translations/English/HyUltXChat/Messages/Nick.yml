@@ -1,0 +1,11 @@
+Prefix: §7§l[§6§lNicknames§7§l] §r
+command_missing_args: §cNot enough args
+command_player_not_found: §cPlayer %PLAYER% does not exist!
+command_length_unqualified: §cUnqualified length, have to be in between %MIN% - %MAX%
+command_console_not_allowed: §cConsole is not allowed to use this command to itself
+command_see_self: §bYour nick is: %NICK%
+command_see_other: §bPlayer %TARGETPLAYER%'s nick is: %NICK%
+command_set_other: §aSuccessfully set %TARGETPLAYER%'s nick to %NICK%
+command_set_self: §aYour nick is now set to: §r%NICK%
+DefaultConfig: false
+ConfigVersion: 0.1.5.27

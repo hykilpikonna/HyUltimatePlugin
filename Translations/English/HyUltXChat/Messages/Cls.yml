@@ -1,0 +1,7 @@
+Prefix: §7§l[§6§lClear Chat§7§l] §r
+console_unallowed_cls_self: §cConsole cannot clear itself!
+cls_all_success: §aCleared chat screen for all players!
+cls_player_success: §aCleared chat screen for %PLAYER%!
+cls_player_not_found: §cFailed, Player %PLAYER% is not online!
+DefaultConfig: false
+ConfigVersion: 0.1.5.27

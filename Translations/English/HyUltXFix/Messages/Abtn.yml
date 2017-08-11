@@ -1,0 +1,6 @@
+Prefix: §7§l[§6§lABTN§7§l] §r
+teleported: §cYou were moving on top of the nether. Teleporting down!
+build_event_cancelled: §cBuilding on top of the nether is not allowed!
+destroy_event_cancelled: §cBreaking blocks on top of the nether is not allowed!
+DefaultConfig: false
+ConfigVersion: 0.1.5.14

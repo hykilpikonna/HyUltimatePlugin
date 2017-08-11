@@ -110,7 +110,7 @@ public class FishModifierConfig extends Config
 
         addDefault("Items.一对鱼.ChanceInPercent", 10);
         addDefault("Items.一对鱼.Types", new String[]{FishType.ITEM.name(), FishType.COMMAND.name(), FishType.MESSAGE.name()});
-        addDefault("Items.一对鱼.ItemStack", itemStackGen(Material.RAW_FISH, 1, 2, null, new String[]{BLUE + "很普通...", BLUE + "很普通的一对小丑鱼..."}, false, null, null));
+        addDefault("Items.一对鱼.ItemStack", itemStackGen(Material.RAW_FISH, 2, 2, null, new String[]{BLUE + "很普通...", BLUE + "很普通的一对小丑鱼..."}, false, null, null));
         List<Map<String, Object>> mapList = new ArrayList<>();
         mapList.add(new Command(CommandType.PLAYER, "/say 我钓上了一条鱼! (默认指令, 请联系服主更改配置!)", false).serialize());
         mapList.add(new Command(CommandType.CONSOLE, "say 啦啦啦 (默认后台指令, 请联系服主更改配置!)", false).serialize());

@@ -33,7 +33,7 @@ public class AutoRespawnConfig extends Config
     @Override
     public void writeDefaultConfig()
     {
-        addDefault("UseDelay", true);
+        addDefault("UseDelay", false);
         addDefault("DelayInTicks", 60);
     }
 }

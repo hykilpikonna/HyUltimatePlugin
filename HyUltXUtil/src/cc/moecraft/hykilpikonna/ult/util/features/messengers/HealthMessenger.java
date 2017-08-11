@@ -30,7 +30,6 @@ public class HealthMessenger extends Messenger
     @Override
     public void writeConfig()
     {
-        addDefault("listener_registered", "[事件监听器][注册]HealthAndSaturation已经注册监听");
         addDefault("value_more_then_2048", RED + "您输入的血量数值大于2048, 已自动设置为2048.");
         addDefault("command_missing_args", RED + "您没有输入参数");
         addDefault("command_console_not_allowed", String.format("%s后台不能对自己使用此指令, 需要指定一个目标", RED));

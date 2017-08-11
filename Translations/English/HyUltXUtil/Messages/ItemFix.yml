@@ -1,0 +1,12 @@
+Prefix: §7§l[§6§lItem Fix§7§l] §r
+fix_self_console_unallowed: §cConsole don't have an inventory!!!
+fix_all_self_console_unallowed: §cConsole don't have an inventory!!!
+fix_player_not_found: §cPlayer not found!
+fix_self_success: §aYou fixed your item in hand!
+fix_all_self_success: §aYou fixed all of your items, %COUNT% of them are unfixable!
+fix_all_other_success_sender: §aYou fixed all of %TARGETPLAYER%'s items, %COUNT% of them are unfixable!
+fix_all_other_success_target: §a%PLAYER% fixed all of your items, %COUNT% of them are unfixable!
+fix_other_success_sender: §aYou fixed %TARGETPLAYER%'s item in hand!
+fix_other_success_target: §a%PLAYER% Fixed your item in hand!
+DefaultConfig: false
+ConfigVersion: 0.1.5.8.23

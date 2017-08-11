@@ -1,0 +1,39 @@
+EnabledBlocks:
+  IronBlock:
+    MaterialID: IRON_BLOCK
+    Permission:
+      Required: false
+      Node: hyult.elevator.ironblock
+    MaxHeight: 100
+    MinHeight: 3
+    MaxY: 255
+    MinY: 1
+    Sound: ENTITY_ENDERMEN_TELEPORT
+    SendMessage: true
+    MessageUp: §aYou were teleported to the upper floor!
+    MessageDown: §aYou were teleported to the lower floor!
+    EnabledWorlds: &id001
+    - world
+    - world_nether
+  GoldBlock:
+    MaterialID: GOLD_BLOCK
+    Permission:
+      Required: false
+      Node: hyult.elevator.goldblock
+    MaxHeight: 150
+    MinHeight: 3
+    MaxY: 255
+    MinY: 1
+    Sound: ENTITY_ENDERMEN_TELEPORT
+    SendMessage: true
+    MessageUp: §aYou were teleported to the upper floor!
+    MessageDown: §aYou were teleported to the lower floor!
+    EnabledWorlds: *id001
+Detection:
+  BlockOneException:
+  - AIR
+  - CARPET
+  BlockTwoException:
+  - AIR
+DefaultConfig: false
+ConfigVersion: 0.1.4.5
