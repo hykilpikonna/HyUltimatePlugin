@@ -9,18 +9,13 @@
     <list default="true" id="b2643750-8be0-4570-af96-bc971080d381" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Build/HyUlt.jar" afterPath="$PROJECT_DIR$/Build/HyUlt.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Build/HyUltXUtil.jar" afterPath="$PROJECT_DIR$/Build/HyUltXUtil.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyUlt/cc/moecraft/hykilpikonna/ult/Main.class" afterPath="$PROJECT_DIR$/out/production/HyUlt/cc/moecraft/hykilpikonna/ult/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyUlt/cc/moecraft/hykilpikonna/ult/api/ingame/Command.class" afterPath="$PROJECT_DIR$/out/production/HyUlt/cc/moecraft/hykilpikonna/ult/api/ingame/Command.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyUlt/cc/moecraft/hykilpikonna/ult/utils/PlaceholderUtils.class" afterPath="$PROJECT_DIR$/out/production/HyUlt/cc/moecraft/hykilpikonna/ult/utils/PlaceholderUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyUltXUtil/cc/moecraft/hykilpikonna/ult/util/features/commands/FishModifierCommand.class" afterPath="$PROJECT_DIR$/out/production/HyUltXUtil/cc/moecraft/hykilpikonna/ult/util/features/commands/FishModifierCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyUltXUtil/cc/moecraft/hykilpikonna/ult/util/features/configs/AutoRespawnConfig.class" afterPath="$PROJECT_DIR$/out/production/HyUltXUtil/cc/moecraft/hykilpikonna/ult/util/features/configs/AutoRespawnConfig.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyUltXUtil/cc/moecraft/hykilpikonna/ult/util/features/configs/FishModifierConfig.class" afterPath="$PROJECT_DIR$/out/production/HyUltXUtil/cc/moecraft/hykilpikonna/ult/util/features/configs/FishModifierConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/Main.java" afterPath="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/api/ingame/Command.java" afterPath="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/api/ingame/Command.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/utils/PlaceholderUtils.java" afterPath="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/utils/PlaceholderUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/commands/FishModifierCommand.java" afterPath="$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/commands/FishModifierCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/configs/AutoRespawnConfig.java" afterPath="$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/configs/AutoRespawnConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/configs/FishModifierConfig.java" afterPath="$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/configs/FishModifierConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/messengers/FoodLevelMessenger.java" afterPath="$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/messengers/FoodLevelMessenger.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/messengers/HealthMessenger.java" afterPath="$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/messengers/HealthMessenger.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,71 +36,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Features.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/Features.java">
+      <file leaf-file-name="PlaceholderUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/utils/PlaceholderUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2014">
-              <caret line="106" column="68" lean-forward="false" selection-start-line="106" selection-start-column="68" selection-end-line="106" selection-end-column="68" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="484">
+              <caret line="52" column="33" lean-forward="true" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FishModifierCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/commands/FishModifierCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="60" column="95" lean-forward="false" selection-start-line="60" selection-start-column="95" selection-end-line="60" selection-end-column="95" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FishModifierConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/configs/FishModifierConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-81">
-              <caret line="112" column="75" lean-forward="false" selection-start-line="112" selection-start-column="75" selection-end-line="112" selection-end-column="75" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Command.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Command.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/api/ingame/Command.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="46" column="60" lean-forward="true" selection-start-line="46" selection-start-column="60" selection-end-line="46" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FoodLevelMessenger.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/messengers/FoodLevelMessenger.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HealthMessenger.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/messengers/HealthMessenger.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+            <state relative-caret-position="218">
+              <caret line="37" column="5" lean-forward="false" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,9 +61,21 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="155" column="18" lean-forward="true" selection-start-line="155" selection-start-column="18" selection-end-line="155" selection-end-column="18" />
+            <state relative-caret-position="465">
+              <caret line="168" column="27" lean-forward="true" selection-start-line="168" selection-start-column="27" selection-end-line="168" selection-end-column="27" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FishModifierConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/configs/FishModifierConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="117" column="64" lean-forward="false" selection-start-line="117" selection-start-column="64" selection-end-line="117" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -252,15 +209,15 @@
         <option value="$PROJECT_DIR$/HyUltXUtil/src/plugin.yml" />
         <option value="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/commands/HyuCommand.java" />
         <option value="$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/others/Fish.java" />
-        <option value="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/Main.java" />
         <option value="$PROJECT_DIR$/HyUlt/src/plugin.yml" />
         <option value="$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/commands/FishModifierCommand.java" />
         <option value="$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/configs/AutoRespawnConfig.java" />
-        <option value="$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/configs/FishModifierConfig.java" />
-        <option value="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/utils/PlaceholderUtils.java" />
-        <option value="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/api/ingame/Command.java" />
         <option value="$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/messengers/FoodLevelMessenger.java" />
         <option value="$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/messengers/HealthMessenger.java" />
+        <option value="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/utils/PlaceholderUtils.java" />
+        <option value="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/Main.java" />
+        <option value="$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/configs/FishModifierConfig.java" />
+        <option value="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/api/ingame/Command.java" />
       </list>
     </option>
   </component>
@@ -555,12 +512,12 @@
       <workItem from="1502031138200" duration="28260000" />
       <workItem from="1502167608169" duration="8880000" />
       <workItem from="1502183645902" duration="591000" />
-      <workItem from="1502193294504" duration="62018000" />
+      <workItem from="1502193294504" duration="66622000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146413000" />
+    <option name="totallyTimeSpent" value="151017000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -673,11 +630,11 @@
         <state relative-caret-position="627">
           <caret line="33" column="90" lean-forward="false" selection-start-line="33" selection-start-column="90" selection-end-line="33" selection-end-column="90" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#567#568#0" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#697#698#0" expanded="true" />
-            <element signature="e#743#744#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#567#568#0" expanded="false" />
+            <element signature="e#649#650#0" expanded="false" />
+            <element signature="e#697#698#0" expanded="false" />
+            <element signature="e#743#744#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -699,7 +656,7 @@
         <state relative-caret-position="465">
           <caret line="53" column="101" lean-forward="false" selection-start-line="53" selection-start-column="101" selection-end-line="53" selection-end-column="101" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -709,7 +666,7 @@
         <state relative-caret-position="570">
           <caret line="36" column="102" lean-forward="true" selection-start-line="36" selection-start-column="95" selection-end-line="36" selection-end-column="102" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -719,7 +676,7 @@
         <state relative-caret-position="470">
           <caret line="66" column="33" lean-forward="false" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -791,9 +748,9 @@
         <state relative-caret-position="361">
           <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#609#610#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#609#610#0" expanded="false" />
+            <element signature="e#650#651#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -803,9 +760,9 @@
         <state relative-caret-position="342">
           <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#600#601#0" expanded="false" />
+            <element signature="e#641#642#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -835,13 +792,13 @@
         <state relative-caret-position="589">
           <caret line="31" column="20" lean-forward="false" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#537#538#0" expanded="true" />
-            <element signature="e#623#624#0" expanded="true" />
-            <element signature="e#671#672#0" expanded="true" />
-            <element signature="e#715#716#0" expanded="true" />
-            <element signature="e#766#767#0" expanded="true" />
-            <element signature="e#829#830#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#537#538#0" expanded="false" />
+            <element signature="e#623#624#0" expanded="false" />
+            <element signature="e#671#672#0" expanded="false" />
+            <element signature="e#715#716#0" expanded="false" />
+            <element signature="e#766#767#0" expanded="false" />
+            <element signature="e#829#830#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -851,11 +808,11 @@
         <state relative-caret-position="437">
           <caret line="23" column="38" lean-forward="false" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-            <element signature="e#601#602#0" expanded="true" />
-            <element signature="e#652#653#0" expanded="true" />
-            <element signature="e#699#700#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#515#516#0" expanded="false" />
+            <element signature="e#601#602#0" expanded="false" />
+            <element signature="e#652#653#0" expanded="false" />
+            <element signature="e#699#700#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -865,7 +822,7 @@
         <state relative-caret-position="1914">
           <caret line="130" column="0" lean-forward="false" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -875,9 +832,9 @@
         <state relative-caret-position="731">
           <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#676#677#0" expanded="true" />
-            <element signature="e#717#718#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#676#677#0" expanded="false" />
+            <element signature="e#717#718#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -887,7 +844,7 @@
         <state relative-caret-position="508">
           <caret line="90" column="68" lean-forward="true" selection-start-line="90" selection-start-column="68" selection-end-line="90" selection-end-column="68" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -897,13 +854,13 @@
         <state relative-caret-position="589">
           <caret line="31" column="42" lean-forward="false" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
-            <element signature="e#614#615#0" expanded="true" />
-            <element signature="e#662#663#0" expanded="true" />
-            <element signature="e#706#707#0" expanded="true" />
-            <element signature="e#757#758#0" expanded="true" />
-            <element signature="e#824#825#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#531#532#0" expanded="false" />
+            <element signature="e#614#615#0" expanded="false" />
+            <element signature="e#662#663#0" expanded="false" />
+            <element signature="e#706#707#0" expanded="false" />
+            <element signature="e#757#758#0" expanded="false" />
+            <element signature="e#824#825#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -927,9 +884,9 @@
         <state relative-caret-position="138">
           <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#691#692#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#650#651#0" expanded="false" />
+            <element signature="e#691#692#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -939,9 +896,9 @@
         <state relative-caret-position="594">
           <caret line="37" column="34" lean-forward="false" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#473#474#0" expanded="true" />
-            <element signature="e#568#569#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#473#474#0" expanded="false" />
+            <element signature="e#568#569#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -959,11 +916,11 @@
         <state relative-caret-position="456">
           <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#640#641#0" expanded="true" />
-            <element signature="e#691#692#0" expanded="true" />
-            <element signature="e#739#740#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#553#554#0" expanded="false" />
+            <element signature="e#640#641#0" expanded="false" />
+            <element signature="e#691#692#0" expanded="false" />
+            <element signature="e#739#740#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -981,11 +938,11 @@
         <state relative-caret-position="518">
           <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
-            <element signature="e#714#715#0" expanded="true" />
-            <element signature="e#758#759#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#579#580#0" expanded="false" />
+            <element signature="e#666#667#0" expanded="false" />
+            <element signature="e#714#715#0" expanded="false" />
+            <element signature="e#758#759#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1037,8 +994,8 @@
         <state relative-caret-position="-219">
           <caret line="90" column="51" lean-forward="true" selection-start-line="90" selection-start-column="51" selection-end-line="90" selection-end-column="51" />
           <folding>
-            <element signature="e#2119#2120#0" expanded="true" />
-            <element signature="e#2207#2208#0" expanded="true" />
+            <element signature="e#2119#2120#0" expanded="false" />
+            <element signature="e#2207#2208#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1082,8 +1039,8 @@
         <state relative-caret-position="85">
           <caret line="94" column="31" lean-forward="false" selection-start-line="94" selection-start-column="31" selection-end-line="94" selection-end-column="31" />
           <folding>
-            <element signature="e#6345#6346#0" expanded="true" />
-            <element signature="e#6420#6421#0" expanded="true" />
+            <element signature="e#6345#6346#0" expanded="false" />
+            <element signature="e#6420#6421#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1093,9 +1050,9 @@
         <state relative-caret-position="427">
           <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#672#673#0" expanded="true" />
-            <element signature="e#713#714#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#672#673#0" expanded="false" />
+            <element signature="e#713#714#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1116,38 +1073,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="155" column="18" lean-forward="true" selection-start-line="155" selection-start-column="18" selection-end-line="155" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HyUlt/src/plugin.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/configs/AutoRespawnConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="608">
           <caret line="35" column="36" lean-forward="false" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/Features.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2014">
-          <caret line="106" column="68" lean-forward="false" selection-start-line="106" selection-start-column="68" selection-end-line="106" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1162,28 +1093,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/configs/FishModifierConfig.java">
+    <entry file="file://$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/messengers/HealthMessenger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-81">
-          <caret line="112" column="75" lean-forward="false" selection-start-line="112" selection-start-column="75" selection-end-line="112" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/utils/PlaceholderUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="60" column="18" lean-forward="false" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/api/ingame/Command.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="46" column="60" lean-forward="true" selection-start-line="46" selection-start-column="60" selection-end-line="46" selection-end-column="60" />
+        <state relative-caret-position="394">
+          <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1200,10 +1113,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/messengers/HealthMessenger.java">
+    <entry file="file://$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/Features.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        <state relative-caret-position="2014">
+          <caret line="106" column="68" lean-forward="false" selection-start-line="106" selection-start-column="68" selection-end-line="106" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HyUlt/src/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/utils/PlaceholderUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="52" column="33" lean-forward="true" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="168" column="27" lean-forward="true" selection-start-line="168" selection-start-column="27" selection-end-line="168" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HyUltXUtil/src/cc/moecraft/hykilpikonna/ult/util/features/configs/FishModifierConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="117" column="64" lean-forward="false" selection-start-line="117" selection-start-column="64" selection-end-line="117" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/api/ingame/Command.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="37" column="5" lean-forward="false" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

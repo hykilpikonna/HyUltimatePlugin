@@ -7,6 +7,7 @@ import org.bukkit.entity.Player;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+import static cc.moecraft.hykilpikonna.ult.Main.tempDebug;
 import static cc.moecraft.hykilpikonna.ult.utils.PlaceholderUtils.replacePlayerPlaceholder;
 
 /**
