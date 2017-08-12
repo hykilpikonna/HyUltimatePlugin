@@ -24,6 +24,7 @@ public class Switches extends Config
         addDefault("AutoUpdate.Repeat", false);
         addDefault("Asinp.Enable", true);
         addDefault("Abtn.Enable", true);
+        addDefault("CurseOfVanishingFix.Enable", true);
     }
 
     @Override
