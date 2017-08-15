@@ -1,29 +1,26 @@
 package cc.moecraft.hykilpikonna.ult;
 
  import cc.moecraft.hykilpikonna.essentials.updater.UrlUpdater;
- import cc.moecraft.hykilpikonna.ult.api.HyPlugin;
- import cc.moecraft.hykilpikonna.ult.api.ingame.ActionBarUtils;
- import cc.moecraft.hykilpikonna.ult.commands.HyuCommand;
- import cc.moecraft.hykilpikonna.ult.utils.HyEssentialsDetection;
- import cc.moecraft.hykilpikonna.ult.utils.YumBypass;
- import net.md_5.bungee.api.chat.ClickEvent;
- import net.md_5.bungee.api.chat.ComponentBuilder;
- import net.md_5.bungee.api.chat.HoverEvent;
- import net.md_5.bungee.api.chat.TextComponent;
- import org.bukkit.Bukkit;
- import org.bukkit.ChatColor;
- import org.bukkit.command.CommandSender;
- import org.bukkit.configuration.file.YamlConfiguration;
- import org.bukkit.entity.Player;
- import org.bukkit.plugin.Plugin;
- import org.bukkit.plugin.java.JavaPlugin;
+import cc.moecraft.hykilpikonna.ult.api.HyPlugin;
+import cc.moecraft.hykilpikonna.ult.api.ingame.ActionBarUtils;
+import cc.moecraft.hykilpikonna.ult.commands.HyuCommand;
+import cc.moecraft.hykilpikonna.ult.utils.HyEssentialsDetection;
+import cc.moecraft.hykilpikonna.ult.utils.YumBypass;
+import net.md_5.bungee.api.chat.ClickEvent;
+import net.md_5.bungee.api.chat.ComponentBuilder;
+import net.md_5.bungee.api.chat.HoverEvent;
+import net.md_5.bungee.api.chat.TextComponent;
+import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+import org.bukkit.plugin.Plugin;
 
- import java.io.File;
- import java.io.IOException;
- import java.util.ArrayList;
+import java.io.File;
+import java.util.ArrayList;
 
- import static cc.moecraft.hykilpikonna.ult.Setup.*;
- import static cc.moecraft.hykilpikonna.ult.utils.PluginUtil.reload;
+import static cc.moecraft.hykilpikonna.ult.Setup.*;
+import static cc.moecraft.hykilpikonna.ult.utils.PluginUtil.reload;
 
  /**
  * 此类由 Hykilpikonna 在 2017/06/21 创建!
@@ -53,11 +50,14 @@ public class Main extends HyPlugin
         Main.actionBarUtils = actionBarUtils;
     }
 
+    public static boolean debug = false;
+
     @Override
     public void preInit()
     {
         main = this;
         configs = new Configs();
+        debug = configs.getBoolean("Debug");
         messengers = new Messengers();
         permissions = new Permissions();
 
@@ -78,6 +78,7 @@ public class Main extends HyPlugin
         HyPluginsDownloadLink FIX = new HyPluginsDownloadLink("HyUltXFix", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/Build/HyUltXFix.jar");
         HyPluginsDownloadLink FUN = new HyPluginsDownloadLink("HyUltXFun", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/Build/HyUltXFun.jar");
         HyPluginsDownloadLink UTIL = new HyPluginsDownloadLink("HyUltXUtil", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/Build/HyUltXUtil.jar");
+        HyPluginsDownloadLink COMMAND = new HyPluginsDownloadLink("HyUltXCommand", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/Build/HyUltXCommand.jar");
 
         setup();
         setupAutoUpdate();
@@ -151,9 +152,8 @@ public class Main extends HyPlugin
     }
 
     public static void tempDebug(String string)
-    //TODO: 加开关
     {
-        if (true)
+        if (debug)
             Bukkit.getConsoleSender().sendMessage("[" +
                     ChatColor.RED +
                     "DEBUG" +

@@ -3,6 +3,8 @@ package cc.moecraft.hykilpikonna.ult.utils;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+import java.util.List;
+
 /**
  * 此类由 Hykilpikonna 在 2017/06/24 创建!
  * Created by Hykilpikonna on 2017/06/24!
@@ -63,5 +65,16 @@ public class PlayerUtils
     public static boolean isPlayer(CommandSender sender)
     {
         return sender instanceof Player;
+    }
+
+    /**
+     * 给一个发送者发送一个消息List
+     *
+     * @param commandSender 发送者
+     * @param list 消息
+     */
+    public static void sendMessageList(CommandSender commandSender, List<String> list)
+    {
+        list.forEach(commandSender::sendMessage);
     }
 }

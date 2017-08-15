@@ -1,7 +1,6 @@
 package cc.moecraft.hykilpikonna.ult;
 
 import cc.moecraft.hykilpikonna.ult.api.Config;
-import org.bukkit.plugin.java.JavaPlugin;
 
 /**
  * 此类由 Hykilpikonna 在 2017/07/30 创建!
@@ -23,6 +22,8 @@ public class Configs extends Config
     @Override
     public void writeConfig()
     {
+        addDefault("Debug", false);
+
         addDefault("AutoUpdate.Enable", true);
         addDefault("AutoUpdate.CheckDelay", 3200);
 
@@ -51,6 +52,9 @@ public class Configs extends Config
 
         addDefault("Plugins.HyUltXUtil.PluginYmlURL", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/out/production/HyUltXUtil/plugin.yml");
         addDefault("Plugins.HyUltXUtil.JarURL", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/Build/HyUltXUtil.jar");
+
+        addDefault("Plugins.HyUltXCommand.PluginYmlURL", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/out/production/HyUltXCommand/plugin.yml");
+        addDefault("Plugins.HyUltXCommand.JarURL", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/Build/HyUltXCommand.jar");
     }
 
     @Override

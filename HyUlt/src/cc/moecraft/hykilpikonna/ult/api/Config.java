@@ -4,26 +4,16 @@ import cc.moecraft.hykilpikonna.ult.Main;
 import cc.moecraft.hykilpikonna.ult.api.ingame.Command;
 import cc.moecraft.hykilpikonna.ult.api.ingame.CommandType;
 import cc.moecraft.hykilpikonna.ult.utils.UrlUpdater;
-import org.apache.commons.lang.Validate;
-import org.bukkit.Bukkit;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.YamlConfiguration;
-import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.net.CookieHandler;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
-import java.util.logging.Level;
-
-import static cc.moecraft.hykilpikonna.ult.Main.tempDebug;
 
 /**
  * 此类由 Hykilpikonna 在 2017/07/25 创建!
@@ -342,6 +332,13 @@ public abstract class Config extends YamlConfiguration
         Boolean op = commandType == CommandType.PLAYER && getBoolean(path + "RunAsOp");
 
         return new Command(commandType, command, op);
+    }
+
+    public ArrayList<String> getKeys(String path)
+    {
+        ArrayList<String> output = new ArrayList<>();
+        output.addAll(getConfigurationSection(path).getKeys(false));
+        return output;
     }
 
     public String getDir() {

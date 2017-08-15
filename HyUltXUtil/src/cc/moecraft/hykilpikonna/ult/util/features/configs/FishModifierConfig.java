@@ -39,7 +39,7 @@ public class FishModifierConfig extends Config
     {
         staticEnabledWorldList.addAll(getStringList("EnabledWorlds"));
 
-        keys = getKeys();
+        keys = getKeys("Items");
         fishList = getItems();
         chanceList = getChanceList();
 
@@ -160,15 +160,6 @@ public class FishModifierConfig extends Config
             }
         }
     }
-
-    private ArrayList<String> getKeys()
-    {
-        ArrayList<String> output = new ArrayList<>();
-        output.addAll(getConfigurationSection("Items").getKeys(false));
-        return output;
-    }
-
-
 
     private ArrayList<Fish> getItems()
     {

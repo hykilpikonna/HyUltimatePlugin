@@ -8,7 +8,6 @@ import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import sun.plugin2.main.server.Plugin;
 
 import java.util.ArrayList;
 
@@ -91,6 +90,5 @@ public class NickCommand extends CommandRunner
                 }   
                 break;
         }
-        return;
     }
 }
