@@ -2,7 +2,7 @@ package cc.moecraft.hykilpikonna.ult.command.features.blockcommand;
 
 import cc.moecraft.hykilpikonna.ult.Main;
 import cc.moecraft.hykilpikonna.ult.api.Listener;
-import cc.moecraft.hykilpikonna.ult.command.Command;
+import cc.moecraft.hykilpikonna.ult.command.HyUltXCommand;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerCommandPreprocessEvent;
 
@@ -16,17 +16,13 @@ public class BlockCommandListener extends Listener
 {
     public BlockCommandListener()
     {
-        super(Command.getInstance());
+        super(HyUltXCommand.getInstance());
     }
 
     @EventHandler (ignoreCancelled = true)
     public void onEvent(PlayerCommandPreprocessEvent event)
     {
         String command = event.getMessage().split(" ").length > 0 ? event.getMessage().split(" ")[0] : "";
-        Main.tempDebug("指令事件触发:");
-        Main.tempDebug("  - event.getMessage() = " + event.getMessage());
-        Main.tempDebug("  - command = " + command);
-        Main.tempDebug("  - blocked = " + BlockCommandStaticVariables.getBlockedCommandNames().toString());
         if (!(BlockCommandStaticVariables.getBlockedCommandNames().contains(command))) return;
         if (BlockCommandStaticVariables.getBlockedCommands().get(BlockCommandStaticVariables.getBlockedCommandNames().indexOf(command)).check(event.getPlayer())) event.setCancelled(true);
     }

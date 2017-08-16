@@ -1,7 +1,7 @@
 package cc.moecraft.hykilpikonna.ult.command.features.blockcommand;
 
 import cc.moecraft.hykilpikonna.ult.api.Config;
-import cc.moecraft.hykilpikonna.ult.command.Command;
+import cc.moecraft.hykilpikonna.ult.command.HyUltXCommand;
 import cc.moecraft.hykilpikonna.ult.command.features.Features;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -18,7 +18,7 @@ public class BlockCommandConfig extends Config
 {
     public BlockCommandConfig()
     {
-        super(Command.getInstance(), "Features", Features.getBlockCommand().getFriendlyName());
+        super(HyUltXCommand.getInstance(), "Features", Features.getBlockCommand().getFriendlyName());
     }
 
     @Override

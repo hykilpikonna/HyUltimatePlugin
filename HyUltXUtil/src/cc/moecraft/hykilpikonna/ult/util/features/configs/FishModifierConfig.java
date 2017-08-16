@@ -177,16 +177,8 @@ public class FishModifierConfig extends Config
         FishBuilder fishBuilder = new FishBuilder(fishTypes);
         if (fishTypes.contains(FishType.ITEM)) fishBuilder.setItemStack(getItemStack(path + ".ItemStack"));
         if (fishTypes.contains(FishType.MESSAGE)) fishBuilder.setMessages((ArrayList<String>) getStringList(path + ".Messages"));
-        if (fishTypes.contains(FishType.COMMAND)) fishBuilder.setCommands(getCommandList(path + ".Commands"));
+        if (fishTypes.contains(FishType.COMMAND)) fishBuilder.setCommands(Command.getCommandList(this, path + ".Commands"));
         return fishBuilder.build();
-    }
-
-    private ArrayList<Command> getCommandList(String path)
-    {
-        List<Map<?, ?>> mapList = getMapList(path);
-        ArrayList<Command> output = new ArrayList<>();
-        for (Map<?, ?> map : mapList) output.add(Command.deserializeWithUnknownMap(map));
-        return output;
     }
 
     private ArrayList<Double> getChanceList()

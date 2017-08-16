@@ -12,7 +12,7 @@ public class Switches extends Config
 {
     public Switches()
     {
-        super(Command.getInstance(), "", "Switches");
+        super(HyUltXCommand.getInstance(), "", "Switches");
     }
 
     @Override
@@ -25,6 +25,7 @@ public class Switches extends Config
         addDefault("AutoUpdate.Repeat", false);
 
         addDefault("BlockCommand.Enable", true);
+        addDefault("CommandMapping.Enable", true);
     }
 
     @Override

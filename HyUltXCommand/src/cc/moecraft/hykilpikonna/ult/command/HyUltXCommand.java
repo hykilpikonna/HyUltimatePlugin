@@ -12,14 +12,14 @@ import java.io.File;
  * Twitter: @Hykilpikonna
  * QQ/Wechat: 871674895
  */
-public class Command extends HyPlugin
+public class HyUltXCommand extends HyPlugin
 {
-    private static Command instance;
+    private static HyUltXCommand instance;
 
     private Switches switches;
     private Features features;
 
-    public static Command getInstance()
+    public static HyUltXCommand getInstance()
     {
         return instance;
     }

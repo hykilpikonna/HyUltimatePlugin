@@ -3,19 +3,14 @@ package cc.moecraft.hykilpikonna.ult.api;
 import cc.moecraft.hykilpikonna.ult.api.tabcompleter.TabCompletes;
 import cc.moecraft.hykilpikonna.ult.utils.ArrayUtils;
 import cc.moecraft.hykilpikonna.ult.utils.StringUtils;
-import com.sun.xml.internal.fastinfoset.util.StringArray;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabCompleter;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.util.StringUtil;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-
-import static cc.moecraft.hykilpikonna.ult.Main.tempDebug;
 
 /**
  * 此类由 Hykilpikonna 在 2017/07/28 创建!
@@ -119,11 +114,6 @@ public abstract class CommandRunner implements TabCompleter, CommandExecutor
     @Override
     public List<String> onTabComplete(CommandSender sender, Command commandRunner, String alias, String[] args)
     {
-        tempDebug("自动补全事件被触发");
-        tempDebug("  - CommandSender = " + sender.toString());
-        tempDebug("  - Command = " + commandRunner.toString());
-        tempDebug("  - Alias = " + alias);
-        tempDebug("  - Args = " + Arrays.toString(args));
         return getTabCompletes().get(args);
     }
 

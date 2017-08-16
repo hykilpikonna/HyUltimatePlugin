@@ -11,15 +11,10 @@ import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
 import java.util.UUID;
 
-import static cc.moecraft.hykilpikonna.ult.Main.getMain;
-import static cc.moecraft.hykilpikonna.ult.Main.tempDebug;
-import static cc.moecraft.hykilpikonna.ult.Main.tempLog;
-import static cc.moecraft.hykilpikonna.ult.utils.PluginUtil.load;
-import static cc.moecraft.hykilpikonna.ult.utils.PluginUtil.reload;
-import static cc.moecraft.hykilpikonna.ult.utils.PluginUtil.unload;
+import static cc.moecraft.hykilpikonna.ult.Main.*;
+import static cc.moecraft.hykilpikonna.ult.utils.PluginUtil.*;
 import static org.bukkit.ChatColor.GREEN;
 import static org.bukkit.ChatColor.RED;
-import static org.bukkit.ChatColor.getLastColors;
 
 /**
  * 此类由 Hykilpikonna 在 2017/07/16 创建!

@@ -116,29 +116,24 @@ public abstract class Config extends YamlConfiguration
      */
     public void checkConfig()
     {
-        Main.tempDebug(" --- " + configFile + " --- ");
         boolean save = false;
         if (isDefaultConfig())
         {
-            Main.tempDebug("写入默认配置");
             writeDefaultConfig();
             save = true;
         }
         if (!isLatest())
         {
-            Main.tempDebug("写入配置");
             writeConfig();
             save = true;
         }
         if (autoOverwriteVersionInfo)
         {
-            Main.tempDebug("覆盖版本信息");
             overwriteVersionInfo();
             save = true;
         }
         if (save)
         {
-            Main.tempDebug("保存");
             save();
         }
         if (save) reload();

@@ -1,5 +1,5 @@
 name: HyUltXCommand
-version: 0.1.0.0.0
+version: 0.1.2.5.14
 author: Hykilpikonna
-main: cc.moecraft.hykilpikonna.ult.command.Command
+main: cc.moecraft.hykilpikonna.ult.command.HyUltXCommand
 depend: [HyUltimatePlugin]

@@ -1,15 +1,13 @@
 package cc.moecraft.hykilpikonna.ult.api;
 
-import cc.moecraft.hykilpikonna.ult.Main;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.ArrayList;
 
 import static cc.moecraft.hykilpikonna.ult.utils.StringUtils.convertColorCode;
-import static org.bukkit.ChatColor.*;
+import static org.bukkit.ChatColor.RED;
 
 /**
  * 此类由 Hykilpikonna 在 2017/07/07 创建!
@@ -37,7 +35,6 @@ public abstract class Messenger extends Config
         boolean save = false;
         if (isDefaultOrNotLatest())
         {
-            Main.tempDebug("写入信息");
             options().copyDefaults(true);
             setPrefix(prefix());
             writeConfig();
@@ -50,7 +47,6 @@ public abstract class Messenger extends Config
         }
         if (save)
         {
-            Main.tempDebug("保存信息");
             options().copyDefaults(true);
             save();
             reload();

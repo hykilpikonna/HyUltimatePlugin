@@ -1,13 +1,11 @@
 package cc.moecraft.hykilpikonna.ult.api.ingame;
 
+import cc.moecraft.hykilpikonna.ult.api.Config;
 import org.bukkit.Bukkit;
-import org.bukkit.configuration.serialization.ConfigurationSerializable;
 import org.bukkit.entity.Player;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.*;
 
-import static cc.moecraft.hykilpikonna.ult.Main.tempDebug;
 import static cc.moecraft.hykilpikonna.ult.utils.PlaceholderUtils.replacePlayerPlaceholder;
 
 /**
@@ -30,7 +28,7 @@ public class Command
     public Command(CommandType type, String command, Boolean op)
     {
         this.commandType = type;
-        this.command = command;
+        this.command = removeSlash(command);
         this.op = op;
     }
 
@@ -39,9 +37,9 @@ public class Command
         String command = replacePlayerPlaceholder(player, this.command);
         if (commandType == CommandType.PLAYER)
             if (op)
-                if (player.isOp()) player.chat(command);
-                else sendOpCommand(player, command);
-            else player.chat(command);
+                if (player.isOp()) player.chat("/" + command);
+                else sendOpCommand(player, "/" + command);
+            else player.chat("/" + command);
         else if (commandType == CommandType.CONSOLE) Bukkit.dispatchCommand(Bukkit.getConsoleSender(), command);
     }
 
@@ -103,5 +101,26 @@ public class Command
         Boolean op = commandType == CommandType.PLAYER ? (Boolean) args.get("RunAsOp") : false;
 
         return new Command(commandType, command, op);
+    }
+
+    public static ArrayList<Command> getCommandList(Config config, String path)
+    {
+        ArrayList<Command> output = new ArrayList<>();
+        config.getMapList(path).forEach(map -> output.add(Command.deserializeWithUnknownMap(map)));
+        return output;
+    }
+
+    @Override
+    public String toString()
+    {
+        return String.format("{TYPE = %s, COMMAND = %s, OP = %s}", commandType.name(), command, op.toString());
+    }
+
+    public String removeSlash(String original)
+    {
+        StringBuilder output = new StringBuilder();
+        output.append(original.charAt(0) == '/' ? "" : original.charAt(0));
+        for (int i = 1; i < original.length(); i++) output.append(original.charAt(i));
+        return output.toString();
     }
 }
