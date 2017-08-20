@@ -4,6 +4,9 @@ import cc.moecraft.hykilpikonna.ult.api.Feature;
 import cc.moecraft.hykilpikonna.ult.command.HyUltXCommand;
 import cc.moecraft.hykilpikonna.ult.command.features.blockcommand.BlockCommandConfig;
 import cc.moecraft.hykilpikonna.ult.command.features.blockcommand.BlockCommandListener;
+import cc.moecraft.hykilpikonna.ult.command.features.commandloop.CommandLoopCommand;
+import cc.moecraft.hykilpikonna.ult.command.features.commandloop.CommandLoopMessenger;
+import cc.moecraft.hykilpikonna.ult.command.features.commandloop.CommandLoopPermissions;
 import cc.moecraft.hykilpikonna.ult.command.features.commandmapping.CommandMappingConfig;
 import cc.moecraft.hykilpikonna.ult.command.features.commandmapping.CommandMappingListener;
 
@@ -17,6 +20,7 @@ public class Features
 {
     private static Feature blockCommand;
     private static Feature commandMapping;
+    private static Feature commandLoop;
 
     public Features()
     {
@@ -36,6 +40,15 @@ public class Features
             getCommandMapping().setConfig(new CommandMappingConfig());
             getCommandMapping().setListener(new CommandMappingListener());
         }
+        if (HyUltXCommand.getInstance().getSwitches().getBoolean("CommandLoop.Enable"))
+        {
+            commandLoop = new Feature();
+            commandLoop.setId("commandloop");
+            commandLoop.setFriendlyName("CommandLoop");
+            commandLoop.setMessenger(new CommandLoopMessenger());
+            commandLoop.setPermissionsConfig(new CommandLoopPermissions());
+            commandLoop.setCommandRunner(new CommandLoopCommand());
+        }
     }
 
     public static Feature getBlockCommand() {
@@ -44,5 +57,13 @@ public class Features
 
     public static Feature getCommandMapping() {
         return commandMapping;
+    }
+
+    public static Feature getCommandLoop() {
+        return commandLoop;
+    }
+
+    public static void setCommandLoop(Feature commandLoop) {
+        Features.commandLoop = commandLoop;
     }
 }

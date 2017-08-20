@@ -21,6 +21,7 @@ public class CommandMapping
     private String bypassPermission;
     private ArrayList<String> customMessage;
     private ArrayList<String> blockedWorlds;
+    private String permission;
 
     public CommandMapping(String fromCommand, ArrayList<Command> toCommand, ArrayList<CommandMappingProperties> properties)
     {
@@ -37,6 +38,7 @@ public class CommandMapping
      */
     public ArrayList<Command> check(String fromCommand, Player player)
     {
+        if (permission != null && !player.hasPermission(permission)) return null;
         if (!(fromCommand.equals(this.fromCommand))) return null;
         if (properties.contains(CommandMappingProperties.BYPASSABLE) && bypassPermission != null && player.hasPermission(bypassPermission)) return null;
         if (properties.contains(CommandMappingProperties.WORLD) && !(blockedWorlds.contains(player.getWorld().getName()))) return null;
@@ -101,5 +103,9 @@ public class CommandMapping
 
     public void setToCommand(ArrayList<Command> toCommand) {
         this.toCommand = toCommand;
+    }
+
+    public void setPermission(String permission) {
+        this.permission = permission;
     }
 }

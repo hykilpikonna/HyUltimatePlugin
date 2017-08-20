@@ -49,9 +49,9 @@ public abstract class Messenger extends Config
         {
             options().copyDefaults(true);
             save();
-            reload();
+            load();
         }
-        else readConfig();
+        readConfig();
     }
 
     /**

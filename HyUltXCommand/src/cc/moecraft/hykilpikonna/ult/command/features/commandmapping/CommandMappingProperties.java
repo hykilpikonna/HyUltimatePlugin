@@ -8,7 +8,7 @@ package cc.moecraft.hykilpikonna.ult.command.features.commandmapping;
  */
 public enum CommandMappingProperties
 {
-    BYPASSABLE, SEND_MESSAGE, CUSTOM_MESSAGE, WORLD;
+    BYPASSABLE, SEND_MESSAGE, CUSTOM_MESSAGE, WORLD, PERMISSION;
 
     @Override
     public String toString() {

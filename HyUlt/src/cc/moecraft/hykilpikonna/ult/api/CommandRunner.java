@@ -114,7 +114,8 @@ public abstract class CommandRunner implements TabCompleter, CommandExecutor
     @Override
     public List<String> onTabComplete(CommandSender sender, Command commandRunner, String alias, String[] args)
     {
-        return getTabCompletes().get(args);
+        if (!enableTabComplete || args == null || args.length == 0) return new ArrayList<>();
+        return ArrayUtils.removeDuplicates(getTabCompletes().get(args));
     }
 
     public String getName() {

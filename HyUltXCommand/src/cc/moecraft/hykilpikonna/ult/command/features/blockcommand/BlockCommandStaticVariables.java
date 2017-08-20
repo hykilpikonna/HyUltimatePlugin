@@ -12,8 +12,8 @@ public class BlockCommandStaticVariables
 {
     private static String defaultMessage = "";
 
-    private static ArrayList<BlockedCommand> blockedCommands = new ArrayList<>();
-    private static ArrayList<String> blockedCommandNames = new ArrayList<>();
+    private static ArrayList<BlockedCommand> blockedCommands;
+    private static ArrayList<String> blockedCommandNames;
     
     public static String getDefaultMessage()
     {

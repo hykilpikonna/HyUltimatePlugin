@@ -27,6 +27,9 @@ public class CommandMappingConfig extends Config
     @Override
     public void readConfig()
     {
+        CommandMappingStaticVariables.setCommandMappingNames(new ArrayList<>());
+        CommandMappingStaticVariables.setCommandMappings(new ArrayList<>());
+
         CommandMappingStaticVariables.setDefaultMessage(getString("DefaultMessage"));
         getKeys("CommandMappings").forEach(key ->
         {
@@ -38,6 +41,7 @@ public class CommandMappingConfig extends Config
             if (mappedCommand.getProperties().contains(CommandMappingProperties.BYPASSABLE)) mappedCommand.setBypassPermission(getString(String.format("CommandMappings.%s.BypassPermission", key)));
             if (mappedCommand.getProperties().contains(CommandMappingProperties.CUSTOM_MESSAGE)) mappedCommand.setCustomMessage((ArrayList<String>) getStringList(String.format("CommandMappings.%s.Message", key)));
             if (mappedCommand.getProperties().contains(CommandMappingProperties.WORLD)) mappedCommand.setEnabledWorlds((ArrayList<String>) getStringList(String.format("CommandMappings.%s.EnabledWorlds", key)));
+            if (mappedCommand.getProperties().contains(CommandMappingProperties.PERMISSION)) mappedCommand.setPermission(getString(String.format("CommandMappings.%s.Permission", key)));
             CommandMappingStaticVariables.getCommandMappings().add(mappedCommand);
         });
     }
@@ -81,8 +85,26 @@ public class CommandMappingConfig extends Config
             tempALForCommand1.add(new Command(CommandType.PLAYER, "/say 测试世界指令").serialize());
             addDefault("CommandMappings.aWorldCommand.ToCommands", tempALForCommand1);
             addDefault("CommandMappings.aWorldCommand.Properties", new String[] {CommandMappingProperties.SEND_MESSAGE.name(), CommandMappingProperties.CUSTOM_MESSAGE.name(), CommandMappingProperties.WORLD.name()});
-            addDefault("CommandMappings.aWorldCommand.Message",  new String[] {"我是一条只有在指定世界拦截的指令"});
+            addDefault("CommandMappings.aWorldCommand.Message",  new String[] {"我是一条只有在指定世界转发的指令"});
             addDefault("CommandMappings.aWorldCommand.EnabledWorlds",  new String[] {Bukkit.getWorlds().get(0).getName()});
+        }
+
+        {
+            addDefault("CommandMappings.diediedie.FromCommand", "/diediedie");
+            ArrayList<Map<String, Object>> tempALForCommand1 = new ArrayList<>();
+            tempALForCommand1.add(new Command(CommandType.PLAYER, "/hyc loop start -period:1 -time:200 -command:{/entity custom arrow -dirx:%r:-360,360/r% -diry:%r:-360,360/r% -dirz:%r:-360,360/r% -fireticks:10000 -critical:true -msg:false} -command:{/entity custom arrow -dirx:%r:-360,360/r% -diry:%r:-360,360/r% -dirz:%r:-360,360/r% -fireticks:10000 -critical:true -msg:false} -command:{/entity custom arrow -dirx:%r:-360,360/r% -diry:%r:-360,360/r% -dirz:%r:-360,360/r% -fireticks:10000 -critical:true -msg:false} -command:{/entity custom arrow -dirx:%r:-360,360/r% -diry:%r:-360,360/r% -dirz:%r:-360,360/r% -fireticks:10000 -critical:true -msg:false} -endcommand:{/killall arrow}").serialize());
+            addDefault("CommandMappings.diediedie.ToCommands", tempALForCommand1);
+            addDefault("CommandMappings.diediedie.Properties", new String[] {CommandMappingProperties.PERMISSION.name()});
+            addDefault("CommandMappings.diediedie.Permission", "hyu.example.diediedie");
+        }
+
+        {
+            addDefault("CommandMappings.arrowrain.FromCommand", "/arrowrain");
+            ArrayList<Map<String, Object>> tempALForCommand1 = new ArrayList<>();
+            tempALForCommand1.add(new Command(CommandType.PLAYER, "/hyc loop start -period:1 -time:200 -command:{/entity custom arrow -dirx:%rd:-0.5,0.5/rd% -diry:0 -dirz:%rd:-0.5,0.5/rd% -fireticks:10000 -critical:true -msg:false} -command:{/entity custom arrow -dirx:%rd:-0.5,0.5/rd% -diry:0 -dirz:%rd:-0.5,0.5/rd% -fireticks:10000 -critical:true -msg:false} -endcommand:{/killall arrow}").serialize());
+            addDefault("CommandMappings.arrowrain.ToCommands", tempALForCommand1);
+            addDefault("CommandMappings.arrowrain.Properties", new String[] {CommandMappingProperties.PERMISSION.name()});
+            addDefault("CommandMappings.arrowrain.Permission", "hyu.example.arrowrain");
         }
     }
 

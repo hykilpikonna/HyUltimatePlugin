@@ -20,6 +20,9 @@
       <element id="archive" name="HyUltXCommand.jar">
         <element id="module-output" name="HyUltXCommand" />
       </element>
+      <element id="archive" name="HyUltXEssentials.jar">
+        <element id="module-output" name="HyUltXEssentials" />
+      </element>
     </root>
   </artifact>
 </component>

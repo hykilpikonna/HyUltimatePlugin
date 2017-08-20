@@ -1,6 +1,5 @@
 package cc.moecraft.hykilpikonna.ult.command.features.blockcommand;
 
-import cc.moecraft.hykilpikonna.ult.Main;
 import cc.moecraft.hykilpikonna.ult.api.Listener;
 import cc.moecraft.hykilpikonna.ult.command.HyUltXCommand;
 import org.bukkit.event.EventHandler;
@@ -26,4 +25,13 @@ public class BlockCommandListener extends Listener
         if (!(BlockCommandStaticVariables.getBlockedCommandNames().contains(command))) return;
         if (BlockCommandStaticVariables.getBlockedCommands().get(BlockCommandStaticVariables.getBlockedCommandNames().indexOf(command)).check(event.getPlayer())) event.setCancelled(true);
     }
+
+    /*@EventHandler
+    public void test(ProjectileLaunchEvent event)
+    {
+        if (event.getEntity() instanceof Arrow)
+        {
+            ((Player) event.getEntity().getShooter()).sendMessage("Arrow.Velocity = " + event.getEntity().getVelocity().toString());
+        }
+    }*/
 }

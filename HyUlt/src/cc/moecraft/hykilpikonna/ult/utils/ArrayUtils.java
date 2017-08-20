@@ -6,6 +6,8 @@ import org.bukkit.World;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
 
 import static cc.moecraft.hykilpikonna.ult.Main.getMain;
 import static cc.moecraft.hykilpikonna.ult.Setup.loglogger;
@@ -202,6 +204,16 @@ public class ArrayUtils
     {
         ArrayList<String> output= new ArrayList<>();
         Collections.addAll(output, stringArray);
+        return output;
+    }
+
+    public static ArrayList<String> removeDuplicates(ArrayList<String> original)
+    {
+        if (original == null || original.size() == 0) return new ArrayList<>();
+        ArrayList<String> output = new ArrayList<>();
+        Set<String> hs = new HashSet<>();
+        hs.addAll(original);
+        output.addAll(hs);
         return output;
     }
 }

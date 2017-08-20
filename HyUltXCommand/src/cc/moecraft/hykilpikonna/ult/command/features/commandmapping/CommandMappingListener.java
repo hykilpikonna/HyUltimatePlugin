@@ -1,6 +1,5 @@
 package cc.moecraft.hykilpikonna.ult.command.features.commandmapping;
 
-import cc.moecraft.hykilpikonna.ult.Main;
 import cc.moecraft.hykilpikonna.ult.api.Listener;
 import cc.moecraft.hykilpikonna.ult.api.ingame.Command;
 import cc.moecraft.hykilpikonna.ult.command.HyUltXCommand;
@@ -26,14 +25,9 @@ public class CommandMappingListener extends Listener
     public void onEvent(PlayerCommandPreprocessEvent event)
     {
         String command = event.getMessage().split(" ").length > 0 ? event.getMessage().split(" ")[0] : "";
-        Main.tempDebug("指令事件触发:");
-        Main.tempDebug("  - event.getMessage() = " + event.getMessage());
-        Main.tempDebug("  - command = " + command);
-        Main.tempDebug("  - blocked = " + CommandMappingStaticVariables.getCommandMappingNames().toString());
         if (!(CommandMappingStaticVariables.getCommandMappingNames().contains(command))) return;
         ArrayList<Command> toCommands = CommandMappingStaticVariables.getCommandMappings().get(CommandMappingStaticVariables.getCommandMappingNames().indexOf(command)).check(command, event.getPlayer());
         if (toCommands == null) return;
-        Main.tempDebug("  - tocommand = " + toCommands.toString());
         event.setCancelled(true);
         toCommands.forEach(toCommand -> {toCommand.sendCommand(event.getPlayer());});
     }

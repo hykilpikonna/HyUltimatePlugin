@@ -4,12 +4,8 @@ import cc.moecraft.hykilpikonna.ult.utils.PlaceholderUtils;
 
 import java.util.ArrayList;
 
-import static cc.moecraft.hykilpikonna.ult.Main.tempDebug;
-import static cc.moecraft.hykilpikonna.ult.Main.tempLog;
 import static cc.moecraft.hykilpikonna.ult.utils.ArrayUtils.stringArrayToArrayList;
 import static cc.moecraft.hykilpikonna.ult.utils.StringUtils.removeSpace;
-import static org.bukkit.ChatColor.GREEN;
-import static org.bukkit.ChatColor.RED;
 
 /**
  * 此类由 Hykilpikonna 在 2017/07/29 创建!
@@ -66,16 +62,7 @@ public class TabCompletes
 
     public ArrayList<String> get(String[] args)
     {
-        tempDebug("正在获取Tab补全列表...");
-        if (greatestSize < args.length)
-        {
-            tempDebug("返回空, 原因为 greatestSize < args.length");
-            tempDebug("GreatestSize = " + greatestSize);
-            tempDebug("CommandMap = " + commandMap.toString());
-            return new ArrayList<>();
-        }
-        tempDebug("GreatestSize = " + greatestSize);
-        tempDebug("CommandMap = " + commandMap.toString());
+        if (greatestSize < args.length) return new ArrayList<>();
         return filterOutAllNonMatching(commandMap, stringArrayToArrayList(args));
     }
 
@@ -106,17 +93,9 @@ public class TabCompletes
      */
     public ArrayList<String> filterOutAllNonMatching(ArrayList<ArrayList<String>> strings, ArrayList<String> command)
     {
-        tempDebug("递归次数: " + count);
-        tempDebug("这次递归的变量:");
-        tempDebug("  - Strings = " + strings.toString());
-        tempDebug("  - Command = " + command.toString());
-        tempDebug("  - Command.size() = " + command.size());
         //递归结束器
         if (command.size() == 0)
         {
-            tempDebug("结束递归");
-            tempDebug("输出 = " + getOneRow(0, strings));
-            tempDebug("替换占位符后 = " + PlaceholderUtils.replaceTabPlaceholders(getOneRow(0, strings)));
             count = 0;
             return PlaceholderUtils.replaceTabPlaceholders(getOneRow(0, strings));
         }
@@ -129,29 +108,13 @@ public class TabCompletes
         {
             ArrayList<String> oneString = new ArrayList<>();
             oneString.addAll(strings.get(i));
-            tempDebug("循环次数 = " + i);
-            tempDebug("  - oneString = " + oneString);
             if (oneString.size() > 0)
             {
                 if (oneString.get(0).contains(thisCommand))
                 {
                     if (count >  0) oneString.remove(0);
-                    tempDebug(GREEN + "  - 已添加到输出: " + oneString);
                     output.add(oneString);
                 }
-                else
-                {
-                    tempDebug(RED + "  - 未添加到输出, 原因: !oneString.get(0).contains(thisCommand)");
-                    tempDebug("      - oneString.get(0) = " + oneString.get(0));
-                    tempDebug("      - thisCommand = " + thisCommand);
-                }
-            }
-            else
-            {
-                tempDebug(RED + "  - 未添加到输出, 原因: !oneString.size() > 0");
-                tempDebug("      - oneString.get(0) = " + oneString.get(0));
-                tempDebug("      - thisCommand = " + thisCommand);
-                tempDebug("      - oneString.size() = " + oneString.size());
             }
         }
         //递归

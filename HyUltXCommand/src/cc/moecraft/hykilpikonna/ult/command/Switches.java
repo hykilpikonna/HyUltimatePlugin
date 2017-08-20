@@ -26,6 +26,7 @@ public class Switches extends Config
 
         addDefault("BlockCommand.Enable", true);
         addDefault("CommandMapping.Enable", true);
+        addDefault("CommandLoop.Enable", true);
     }
 
     @Override

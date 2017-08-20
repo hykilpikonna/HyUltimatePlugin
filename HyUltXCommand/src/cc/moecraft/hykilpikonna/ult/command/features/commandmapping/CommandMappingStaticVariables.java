@@ -12,8 +12,8 @@ public class CommandMappingStaticVariables
 {
     private static String defaultMessage = "";
 
-    private static ArrayList<CommandMapping> commandMappings = new ArrayList<>();
-    private static ArrayList<String> commandMappingNames = new ArrayList<>();
+    private static ArrayList<CommandMapping> commandMappings;
+    private static ArrayList<String> commandMappingNames;
     
     public static String getDefaultMessage()
     {

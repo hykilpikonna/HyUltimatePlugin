@@ -1,5 +1,11 @@
 name: HyUltXCommand
-version: 0.1.2.5.14
+version: 0.1.3.1.19
 author: Hykilpikonna
 main: cc.moecraft.hykilpikonna.ult.command.HyUltXCommand
 depend: [HyUltimatePlugin]
+softdepend: [Vault]
+commands:
+  hyc:
+    description: The command
+    usage: /<command> loop start [-delay:<int>] [-period:<int>] [-time:<int>] [-command:{<String>}]
+    aliases: [commands]

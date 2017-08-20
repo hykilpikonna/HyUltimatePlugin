@@ -136,8 +136,8 @@ public abstract class Config extends YamlConfiguration
         {
             save();
         }
-        if (save) reload();
-        else readConfig();
+        if (save) load();
+        readConfig();
     }
 
     /**
@@ -162,7 +162,7 @@ public abstract class Config extends YamlConfiguration
     public void reload()
     {
         load();
-        readConfig();
+        checkConfig();
     }
 
     /**

@@ -79,6 +79,7 @@ public class Main extends HyPlugin
         HyPluginsDownloadLink FUN = new HyPluginsDownloadLink("HyUltXFun", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/Build/HyUltXFun.jar");
         HyPluginsDownloadLink UTIL = new HyPluginsDownloadLink("HyUltXUtil", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/Build/HyUltXUtil.jar");
         HyPluginsDownloadLink COMMAND = new HyPluginsDownloadLink("HyUltXCommand", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/Build/HyUltXCommand.jar");
+        HyPluginsDownloadLink ESSENTIALS = new HyPluginsDownloadLink("HyUltXEssentials", "https://raw.githubusercontent.com/hykilpikonna/HyUltimatePlugin/master/Build/HyUltXEssentials.jar");
 
         setup();
         setupAutoUpdate();

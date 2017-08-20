@@ -24,6 +24,9 @@ public class BlockCommandConfig extends Config
     @Override
     public void readConfig()
     {
+        BlockCommandStaticVariables.setBlockedCommandNames(new ArrayList<>());
+        BlockCommandStaticVariables.setBlockedCommands(new ArrayList<>());
+
         BlockCommandStaticVariables.setDefaultMessage(getString("DefaultMessage"));
         getKeys("BlockedCommands").forEach(key -> {
             BlockedCommand blockedCommand = new BlockedCommand(getString(String.format("BlockedCommands.%s.Command", key)), getBlockedCommandPropertiesList(String.format("BlockedCommands.%s.Properties", key)));
