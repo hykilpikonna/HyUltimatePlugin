@@ -92,7 +92,12 @@ public class CommandMappingConfig extends Config
         {
             addDefault("CommandMappings.diediedie.FromCommand", "/diediedie");
             ArrayList<Map<String, Object>> tempALForCommand1 = new ArrayList<>();
-            tempALForCommand1.add(new Command(CommandType.PLAYER, "/hyc loop start -period:1 -time:200 -command:{/entity custom arrow -dirx:%r:-360,360/r% -diry:%r:-360,360/r% -dirz:%r:-360,360/r% -fireticks:10000 -critical:true -msg:false} -command:{/entity custom arrow -dirx:%r:-360,360/r% -diry:%r:-360,360/r% -dirz:%r:-360,360/r% -fireticks:10000 -critical:true -msg:false} -command:{/entity custom arrow -dirx:%r:-360,360/r% -diry:%r:-360,360/r% -dirz:%r:-360,360/r% -fireticks:10000 -critical:true -msg:false} -command:{/entity custom arrow -dirx:%r:-360,360/r% -diry:%r:-360,360/r% -dirz:%r:-360,360/r% -fireticks:10000 -critical:true -msg:false} -endcommand:{/killall arrow}").serialize());
+            tempALForCommand1.add(new Command(CommandType.PLAYER, "/hyc loop start -period:1 -time:160 " +
+                    "-command:{/entity custom arrow -dirx:%r:-360,360/r% -diry:%r:-360,360/r% -dirz:%r:-360,360/r% -fireticks:10000 -critical:true -msg:false -damage:15} " +
+                    "-command:{/entity custom arrow -dirx:%r:-360,360/r% -diry:%r:-360,360/r% -dirz:%r:-360,360/r% -fireticks:10000 -critical:true -msg:false -damage:15} " +
+                    "-command:{/entity custom arrow -dirx:%r:-360,360/r% -diry:%r:-360,360/r% -dirz:%r:-360,360/r% -fireticks:10000 -critical:true -msg:false -damage:15} " +
+                    "-command:{/entity custom arrow -dirx:%r:-360,360/r% -diry:%r:-360,360/r% -dirz:%r:-360,360/r% -fireticks:10000 -critical:true -msg:false -damage:15} " +
+                    "-endcommand:{/killall arrow}").serialize());
             addDefault("CommandMappings.diediedie.ToCommands", tempALForCommand1);
             addDefault("CommandMappings.diediedie.Properties", new String[] {CommandMappingProperties.PERMISSION.name()});
             addDefault("CommandMappings.diediedie.Permission", "hyu.example.diediedie");
@@ -101,7 +106,10 @@ public class CommandMappingConfig extends Config
         {
             addDefault("CommandMappings.arrowrain.FromCommand", "/arrowrain");
             ArrayList<Map<String, Object>> tempALForCommand1 = new ArrayList<>();
-            tempALForCommand1.add(new Command(CommandType.PLAYER, "/hyc loop start -period:1 -time:200 -command:{/entity custom arrow -dirx:%rd:-0.5,0.5/rd% -diry:0 -dirz:%rd:-0.5,0.5/rd% -fireticks:10000 -critical:true -msg:false} -command:{/entity custom arrow -dirx:%rd:-0.5,0.5/rd% -diry:0 -dirz:%rd:-0.5,0.5/rd% -fireticks:10000 -critical:true -msg:false} -endcommand:{/killall arrow}").serialize());
+            tempALForCommand1.add(new Command(CommandType.PLAYER, "/hyc loop start -period:1 -time:200 " +
+                    "-command:{/entity custom arrow -dirx:%rd:-0.5,0.5/rd% -diry:0 -dirz:%rd:-0.5,0.5/rd% -fireticks:10000 -critical:true -msg:false -damage:15} " +
+                    "-command:{/entity custom arrow -dirx:%rd:-0.5,0.5/rd% -diry:0 -dirz:%rd:-0.5,0.5/rd% -fireticks:10000 -critical:true -msg:false -damage:15} " +
+                    "-endcommand:{/killall arrow}").serialize());
             addDefault("CommandMappings.arrowrain.ToCommands", tempALForCommand1);
             addDefault("CommandMappings.arrowrain.Properties", new String[] {CommandMappingProperties.PERMISSION.name()});
             addDefault("CommandMappings.arrowrain.Permission", "hyu.example.arrowrain");

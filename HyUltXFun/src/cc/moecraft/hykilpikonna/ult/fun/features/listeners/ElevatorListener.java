@@ -5,18 +5,14 @@ import cc.moecraft.hykilpikonna.ult.fun.Fun;
 import cc.moecraft.hykilpikonna.ult.fun.features.Features;
 import cc.moecraft.hykilpikonna.ult.fun.features.calculations.ElevatorCalculations;
 import org.bukkit.Location;
-import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.event.player.PlayerToggleSneakEvent;
-import org.bukkit.plugin.java.JavaPlugin;
 
-import java.awt.*;
 import java.util.ArrayList;
 
-import static cc.moecraft.hykilpikonna.ult.utils.ArrayUtils.*;
 import static org.bukkit.block.BlockFace.DOWN;
 import static org.bukkit.block.BlockFace.UP;
 
@@ -76,7 +72,7 @@ public class ElevatorListener extends Listener
     public void onJumpEvent(PlayerMoveEvent event)
     {
         Player player = event.getPlayer();
-        if (Features.getElevator().getPermissionsConfig().hasPermission(player, "hyult.elevator.use", true) && (event.getFrom().getY() < event.getTo().getY()))
+        if ((event.getFrom().getY() < event.getTo().getY()) && Features.getElevator().getPermissionsConfig().hasPermission(player, "hyult.elevator.use", true))
         {
             Block block = player.getLocation().getBlock().getRelative(DOWN, 2);
             if (block == null) return;

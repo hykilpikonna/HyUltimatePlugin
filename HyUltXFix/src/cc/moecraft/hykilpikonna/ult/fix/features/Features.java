@@ -2,6 +2,8 @@ package cc.moecraft.hykilpikonna.ult.fix.features;
 
 import cc.moecraft.hykilpikonna.ult.api.Feature;
 import cc.moecraft.hykilpikonna.ult.fix.Fix;
+import cc.moecraft.hykilpikonna.ult.fix.features.antientityexplode.AntiEntityExplodeConfig;
+import cc.moecraft.hykilpikonna.ult.fix.features.antientityexplode.AntiEntityExplodeListener;
 import cc.moecraft.hykilpikonna.ult.fix.features.commands.AsinpCommands;
 import cc.moecraft.hykilpikonna.ult.fix.features.configs.AbtnConfig;
 import cc.moecraft.hykilpikonna.ult.fix.features.configs.AsinpConfigs;
@@ -14,8 +16,6 @@ import cc.moecraft.hykilpikonna.ult.fix.features.permissions.AbtnPermissions;
 import cc.moecraft.hykilpikonna.ult.fix.features.permissions.AsinpPermissions;
 import cc.moecraft.hykilpikonna.ult.fix.features.permissions.CurseOfVanishingFixPermissions;
 
-import static cc.moecraft.hykilpikonna.ult.Main.tempDebug;
-
 /**
  * 此类由 Hykilpikonna 在 2017/07/29 创建!
  * Created by Hykilpikonna on 2017/07/29!
@@ -27,6 +27,7 @@ public class Features
     private static Feature ASINP;
     private static Feature ABTN;
     private static Feature curseOfVanishingFix;
+    private static Feature antiEntityExplode;
 
     public Features()
     {
@@ -59,6 +60,14 @@ public class Features
             curseOfVanishingFix.setListener(new CurseOfVanishingFixListener());
             curseOfVanishingFix.setPermissionsConfig(new CurseOfVanishingFixPermissions());
         }
+        if (Fix.getInstance().getSwitches().getBoolean("AntiEntityExplode.Enable"))
+        {
+            curseOfVanishingFix = new Feature();
+            curseOfVanishingFix.setId("antientityexplode");
+            curseOfVanishingFix.setFriendlyName("AntiEntityExplode");
+            curseOfVanishingFix.setListener(new AntiEntityExplodeListener());
+            curseOfVanishingFix.setConfig(new AntiEntityExplodeConfig());
+        }
     }
 
     public static Feature getASINP()
@@ -74,5 +83,9 @@ public class Features
     public static Feature getCurseOfVanishingFix()
     {
         return curseOfVanishingFix;
+    }
+
+    public static Feature getAntiEntityExplode() {
+        return antiEntityExplode;
     }
 }

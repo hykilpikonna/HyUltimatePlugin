@@ -45,15 +45,15 @@ public class EntityCommand extends CommandRunner
         {
             Location location = ((Player) sender).getLocation().clone();
             int amount = 1;
-            boolean msg = true;
+            boolean msg = true, glow = false;
 
             //Projectiles
             double dirx = 0, diry = 0, dirz = 0;
             boolean dirrel = true;
 
             //Arrow
-            boolean critical = false, bounce = false;
-            int fireTicks = 0;
+            boolean critical = false, bounce = false, changeDamage = false;
+            int fireTicks = 0, damage = 0;
 
             for (int i = 2; i < args.size(); i++)
             {
@@ -63,6 +63,7 @@ public class EntityCommand extends CommandRunner
                 else if (arg.contains("-y:")) try { location.setY(Double.parseDouble(arg.replace("-y:", ""))); } catch (Exception ignored) { sendFailedToReadTagMessage(sender, arg); return; }
                 else if (arg.contains("-z:")) try { location.setZ(Double.parseDouble(arg.replace("-z:", ""))); } catch (Exception ignored) { sendFailedToReadTagMessage(sender, arg); return; }
                 else if (arg.contains("-amount:")) try { amount = Integer.parseInt(arg.replace("-amount:", "")); } catch (Exception ignored) { sendFailedToReadTagMessage(sender, arg); return; }
+                else if (arg.contains("-glow:")) try { glow = Boolean.parseBoolean(arg.replace("-glow:", "")); } catch (Exception ignored) { sendFailedToReadTagMessage(sender, arg); return; }
                 else if (arg.contains("-msg:")) try { msg = Boolean.parseBoolean(arg.replace("-msg:", "")); } catch (Exception ignored) { sendFailedToReadTagMessage(sender, arg); return; }
 
                 //Projectiles
@@ -75,6 +76,7 @@ public class EntityCommand extends CommandRunner
                 else if (arg.contains("-critical:")) try { critical = Boolean.parseBoolean(arg.replace("-critical:", "")); } catch (Exception ignored) { sendFailedToReadTagMessage(sender, arg); return; }
                 else if (arg.contains("-bounce:")) try { bounce = Boolean.parseBoolean(arg.replace("-bounce:", "")); } catch (Exception ignored) { sendFailedToReadTagMessage(sender, arg); return; }
                 else if (arg.contains("-fireticks:")) try { fireTicks = Integer.parseInt(arg.replace("-fireticks:", "")); } catch (Exception ignored) { sendFailedToReadTagMessage(sender, arg); return; }
+                else if (arg.contains("-damage:")) try { changeDamage = true; damage = Integer.parseInt(arg.replace("-damage:", "")); } catch (Exception ignored) { sendFailedToReadTagMessage(sender, arg); return; }
             }
             Vector direction;
             if (dirrel) direction = new Vector(dirx, diry, dirz).add(((Player) sender).getEyeLocation().getDirection().multiply(2.8));
@@ -88,7 +90,7 @@ public class EntityCommand extends CommandRunner
                 case "common":
                     try
                     {
-                        for (; temoAmount > 0; temoAmount--) CommonEntities.fromName(args.get(1)).spawn(((Player) sender).getWorld(), Bukkit.getServer(), location);
+                        for (; temoAmount > 0; temoAmount--) CommonEntities.fromName(args.get(1)).spawn(((Player) sender).getWorld(), Bukkit.getServer(), location, glow);
                     }
                     catch (CommonEntities.CommonEntitiesException e)
                     {
@@ -113,8 +115,10 @@ public class EntityCommand extends CommandRunner
                             arrow.setCritical(critical);
                             arrow.setFireTicks(fireTicks);
                             arrow.setBounce(bounce);
+                            arrow.setTicksLived(100);
                             arrow.getWorld().playSound(arrow.getLocation(), Sound.ENTITY_ARROW_SHOOT, 1.5f, 1f);
-                            //arrow.
+                            arrow.setPickupStatus(Arrow.PickupStatus.CREATIVE_ONLY);
+                            if (changeDamage) arrow.spigot().setDamage(damage);
                         }
                     }
                     else if (entities == CustomEntities.FIREBALL)
@@ -125,6 +129,7 @@ public class EntityCommand extends CommandRunner
                             arrow.setFireTicks(fireTicks);
                             arrow.setBounce(bounce);
                             arrow.getWorld().playSound(arrow.getLocation(), Sound.ENTITY_ARROW_SHOOT, 1.5f, 1f);
+
                         }
                     }
                     else if (entities == CustomEntities.DRAGON_FIREBALL)

@@ -25,6 +25,7 @@ public class Switches extends Config
         addDefault("Asinp.Enable", true);
         addDefault("Abtn.Enable", true);
         addDefault("CurseOfVanishingFix.Enable", true);
+        addDefault("AntiEntityExplode.Enable", true);
     }
 
     @Override

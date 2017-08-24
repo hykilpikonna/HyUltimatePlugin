@@ -125,10 +125,11 @@ public enum CommonEntities
         return Collections.unmodifiableSet(hashMap.keySet());
     }
 
-    public Entity spawn(final World world, final Server server, final Location loc) throws CommonEntitiesException
+    public Entity spawn(final World world, final Server server, final Location loc, boolean glow) throws CommonEntitiesException
     {
         final Entity entity = world.spawn(loc, this.bukkitType.getEntityClass());
         if (entity == null) throw new CommonEntitiesException();
+        entity.setGlowing(glow);
         return entity;
     }
 
