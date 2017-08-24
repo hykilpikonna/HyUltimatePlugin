@@ -62,11 +62,11 @@ public class Features
         }
         if (Fix.getInstance().getSwitches().getBoolean("AntiEntityExplode.Enable"))
         {
-            curseOfVanishingFix = new Feature();
-            curseOfVanishingFix.setId("antientityexplode");
-            curseOfVanishingFix.setFriendlyName("AntiEntityExplode");
-            curseOfVanishingFix.setListener(new AntiEntityExplodeListener());
-            curseOfVanishingFix.setConfig(new AntiEntityExplodeConfig());
+            antiEntityExplode = new Feature();
+            antiEntityExplode.setId("antientityexplode");
+            antiEntityExplode.setFriendlyName("AntiEntityExplode");
+            antiEntityExplode.setListener(new AntiEntityExplodeListener());
+            antiEntityExplode.setConfig(new AntiEntityExplodeConfig());
         }
     }
 

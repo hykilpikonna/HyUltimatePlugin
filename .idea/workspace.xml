@@ -7,30 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2643750-8be0-4570-af96-bc971080d381" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/antientityexplode/AntiEntityExplodeConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/antientityexplode/AntiEntityExplodeListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Build/HyUlt.jar" afterPath="$PROJECT_DIR$/Build/HyUlt.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Build/HyUltXChat.jar" afterPath="$PROJECT_DIR$/Build/HyUltXChat.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Build/HyUltXCommand.jar" afterPath="$PROJECT_DIR$/Build/HyUltXCommand.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Build/HyUltXEssentials.jar" afterPath="$PROJECT_DIR$/Build/HyUltXEssentials.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Build/HyUltXFix.jar" afterPath="$PROJECT_DIR$/Build/HyUltXFix.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Build/HyUltXFun.jar" afterPath="$PROJECT_DIR$/Build/HyUltXFun.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Build/HyUltXUtil.jar" afterPath="$PROJECT_DIR$/Build/HyUltXUtil.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyUltXCommand/cc/moecraft/hykilpikonna/ult/command/features/commandmapping/CommandMappingConfig.class" afterPath="$PROJECT_DIR$/out/production/HyUltXCommand/cc/moecraft/hykilpikonna/ult/command/features/commandmapping/CommandMappingConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyUltXEssentials/cc/moecraft/hykilpikonna/ult/essentials/features/entity/CommonEntities$CommonEntitiesException.class" afterPath="$PROJECT_DIR$/out/production/HyUltXEssentials/cc/moecraft/hykilpikonna/ult/essentials/features/entity/CommonEntities$CommonEntitiesException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyUltXEssentials/cc/moecraft/hykilpikonna/ult/essentials/features/entity/CommonEntities$Enemies.class" afterPath="$PROJECT_DIR$/out/production/HyUltXEssentials/cc/moecraft/hykilpikonna/ult/essentials/features/entity/CommonEntities$Enemies.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyUltXEssentials/cc/moecraft/hykilpikonna/ult/essentials/features/entity/CommonEntities.class" afterPath="$PROJECT_DIR$/out/production/HyUltXEssentials/cc/moecraft/hykilpikonna/ult/essentials/features/entity/CommonEntities.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyUltXEssentials/cc/moecraft/hykilpikonna/ult/essentials/features/entity/EntityCommand.class" afterPath="$PROJECT_DIR$/out/production/HyUltXEssentials/cc/moecraft/hykilpikonna/ult/essentials/features/entity/EntityCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Help.yml" afterPath="$PROJECT_DIR$/Help.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUlt/src/plugin.yml" afterPath="$PROJECT_DIR$/HyUlt/src/plugin.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUltXCommand/src/cc/moecraft/hykilpikonna/ult/command/features/commandmapping/CommandMappingConfig.java" afterPath="$PROJECT_DIR$/HyUltXCommand/src/cc/moecraft/hykilpikonna/ult/command/features/commandmapping/CommandMappingConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUltXEssentials/src/cc/moecraft/hykilpikonna/ult/essentials/features/entity/CommonEntities.java" afterPath="$PROJECT_DIR$/HyUltXEssentials/src/cc/moecraft/hykilpikonna/ult/essentials/features/entity/CommonEntities.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUltXEssentials/src/cc/moecraft/hykilpikonna/ult/essentials/features/entity/EntityCommand.java" afterPath="$PROJECT_DIR$/HyUltXEssentials/src/cc/moecraft/hykilpikonna/ult/essentials/features/entity/EntityCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/Switches.java" afterPath="$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/Switches.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/Features.java" afterPath="$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/Features.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUltXFix/src/plugin.yml" afterPath="$PROJECT_DIR$/HyUltXFix/src/plugin.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUltXFun/src/cc/moecraft/hykilpikonna/ult/fun/features/listeners/ElevatorListener.java" afterPath="$PROJECT_DIR$/HyUltXFun/src/cc/moecraft/hykilpikonna/ult/fun/features/listeners/ElevatorListener.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -77,11 +55,17 @@
       <file leaf-file-name="Features.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/Features.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="693">
-              <caret line="68" column="70" lean-forward="false" selection-start-line="68" selection-start-column="70" selection-end-line="68" selection-end-column="70" />
+            <state relative-caret-position="313">
+              <caret line="69" column="9" lean-forward="true" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
               <folding>
-                <element signature="e#3658#3659#0" expanded="true" />
-                <element signature="e#3698#3699#0" expanded="true" />
+                <element signature="e#3398#3399#0" expanded="true" />
+                <element signature="e#3426#3427#0" expanded="true" />
+                <element signature="e#3469#3470#0" expanded="true" />
+                <element signature="e#3496#3497#0" expanded="true" />
+                <element signature="e#3554#3555#0" expanded="true" />
+                <element signature="e#3596#3597#0" expanded="true" />
+                <element signature="e#3648#3649#0" expanded="true" />
+                <element signature="e#3688#3689#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,8 +74,8 @@
       <file leaf-file-name="AntiEntityExplodeListener.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/antientityexplode/AntiEntityExplodeListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="342">
+              <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#591#592#0" expanded="true" />
@@ -168,9 +152,9 @@
       <find>diediedie</find>
       <find>reload</find>
       <find>\) \{</find>
+      <find>curseOfVanishingFix</find>
     </findStrings>
     <replaceStrings>
-      <replace>getPullback().getConfig()</replace>
       <replace>private static</replace>
       <replace>getPermissionsConfig()</replace>
       <replace>etFishModifier().getMessenger().sendMessage</replace>
@@ -200,6 +184,7 @@
       <replace>entityCommand</replace>
       <replace>arrowrain</replace>
       <replace>\)\n    \{</replace>
+      <replace>antiEntityExplode</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -260,9 +245,9 @@
         <option value="$PROJECT_DIR$/HyUltXFun/src/cc/moecraft/hykilpikonna/ult/fun/features/listeners/ElevatorListener.java" />
         <option value="$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/Switches.java" />
         <option value="$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/antientityexplode/AntiEntityExplodeListener.java" />
-        <option value="$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/Features.java" />
         <option value="$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/antientityexplode/AntiEntityExplodeConfig.java" />
         <option value="$PROJECT_DIR$/HyUltXFix/src/plugin.yml" />
+        <option value="$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/Features.java" />
         <option value="$PROJECT_DIR$/HyUlt/src/plugin.yml" />
       </list>
     </option>
@@ -599,12 +584,12 @@
       <workItem from="1503314459920" duration="156000" />
       <workItem from="1503324727638" duration="2915000" />
       <workItem from="1503393603613" duration="1233000" />
-      <workItem from="1503536412485" duration="3002000" />
+      <workItem from="1503536412485" duration="3249000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="276854000" />
+    <option name="totallyTimeSpent" value="277101000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -647,6 +632,35 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27292112" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="557" y="311" width="1876" height="230" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32849163" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24147122" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -964,13 +978,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/Features.java">
+    <entry file="file://$PROJECT_DIR$/HyUltXFix/src/plugin.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="68" column="70" lean-forward="false" selection-start-line="68" selection-start-column="70" selection-end-line="68" selection-end-column="70" />
+        <state relative-caret-position="19">
+          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/antientityexplode/AntiEntityExplodeListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
           <folding>
-            <element signature="e#3658#3659#0" expanded="true" />
-            <element signature="e#3698#3699#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
+            <element signature="e#631#632#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -989,23 +1012,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/antientityexplode/AntiEntityExplodeListener.java">
+    <entry file="file://$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/Features.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="313">
+          <caret line="69" column="9" lean-forward="true" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#591#592#0" expanded="true" />
-            <element signature="e#631#632#0" expanded="true" />
+            <element signature="e#3398#3399#0" expanded="true" />
+            <element signature="e#3426#3427#0" expanded="true" />
+            <element signature="e#3469#3470#0" expanded="true" />
+            <element signature="e#3496#3497#0" expanded="true" />
+            <element signature="e#3554#3555#0" expanded="true" />
+            <element signature="e#3596#3597#0" expanded="true" />
+            <element signature="e#3648#3649#0" expanded="true" />
+            <element signature="e#3688#3689#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HyUltXFix/src/plugin.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
