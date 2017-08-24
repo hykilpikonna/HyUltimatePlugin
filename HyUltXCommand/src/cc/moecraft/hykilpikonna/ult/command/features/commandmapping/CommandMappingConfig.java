@@ -107,12 +107,24 @@ public class CommandMappingConfig extends Config
             addDefault("CommandMappings.arrowrain.FromCommand", "/arrowrain");
             ArrayList<Map<String, Object>> tempALForCommand1 = new ArrayList<>();
             tempALForCommand1.add(new Command(CommandType.PLAYER, "/hyc loop start -period:1 -time:200 " +
-                    "-command:{/entity custom arrow -dirx:%rd:-0.5,0.5/rd% -diry:0 -dirz:%rd:-0.5,0.5/rd% -fireticks:10000 -critical:true -msg:false -damage:15} " +
-                    "-command:{/entity custom arrow -dirx:%rd:-0.5,0.5/rd% -diry:0 -dirz:%rd:-0.5,0.5/rd% -fireticks:10000 -critical:true -msg:false -damage:15} " +
+                    "-command:{/entity custom arrow -dirx:%rd:-0.5,0.5/rd% -dirz:%rd:-0.5,0.5/rd% -fireticks:10000 -critical:true -msg:false -damage:15} " +
+                    "-command:{/entity custom arrow -dirx:%rd:-0.5,0.5/rd% -dirz:%rd:-0.5,0.5/rd% -fireticks:10000 -critical:true -msg:false -damage:15} " +
                     "-endcommand:{/killall arrow}").serialize());
             addDefault("CommandMappings.arrowrain.ToCommands", tempALForCommand1);
             addDefault("CommandMappings.arrowrain.Properties", new String[] {CommandMappingProperties.PERMISSION.name()});
             addDefault("CommandMappings.arrowrain.Permission", "hyu.example.arrowrain");
+        }
+
+        {
+            addDefault("CommandMappings.glowingskullrain.FromCommand", "/glowingskullrain");
+            ArrayList<Map<String, Object>> tempALForCommand1 = new ArrayList<>();
+            tempALForCommand1.add(new Command(CommandType.PLAYER, "/hyc loop start -period:1 -time:200 " +
+                    "-command:{/entity custom wither_skull -dirx:%rd:-0.5,0.5/rd% -dirz:%rd:-0.5,0.5/rd% -msg:false -glow:true} " +
+                    "-command:{/entity custom wither_skull -dirx:%rd:-0.5,0.5/rd% -dirz:%rd:-0.5,0.5/rd% -msg:false -glow:true} " +
+                    "-endcommand:{/killall arrow}").serialize());
+            addDefault("CommandMappings.glowingskullrain.ToCommands", tempALForCommand1);
+            addDefault("CommandMappings.glowingskullrain.Properties", new String[] {CommandMappingProperties.PERMISSION.name()});
+            addDefault("CommandMappings.glowingskullrain.Permission", "hyu.example.glowingskullrain");
         }
     }
 

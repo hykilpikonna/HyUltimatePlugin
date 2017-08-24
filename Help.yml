@@ -112,6 +112,7 @@
 #       [-dirx:<发射方向x>]
 #       [-diry:<发射方向y>]
 #       [-dirz:<发射方向z>]
+#       [-dirmultiply:<力度加成>]
 #       [-dirrel:<是否使用相对方向偏移, 默认true>]
 #   Arrow:
 #       [-critical:<是否会心一击, 默认false>]

@@ -48,7 +48,7 @@ public class EntityCommand extends CommandRunner
             boolean msg = true, glow = false;
 
             //Projectiles
-            double dirx = 0, diry = 0, dirz = 0;
+            double dirx = 0, diry = 0, dirz = 0, dirMultiply = 2.8;
             boolean dirrel = true;
 
             //Arrow
@@ -70,6 +70,7 @@ public class EntityCommand extends CommandRunner
                 else if (arg.contains("-dirx:")) try { dirx = Double.parseDouble(arg.replace("-dirx:", "")); } catch (Exception ignored) { sendFailedToReadTagMessage(sender, arg); return; }
                 else if (arg.contains("-diry:")) try { diry = Double.parseDouble(arg.replace("-diry:", "")); } catch (Exception ignored) { sendFailedToReadTagMessage(sender, arg); return; }
                 else if (arg.contains("-dirz:")) try { dirz = Double.parseDouble(arg.replace("-dirz:", "")); } catch (Exception ignored) { sendFailedToReadTagMessage(sender, arg); return; }
+                else if (arg.toLowerCase().contains("-dirmultiply:")) try { dirMultiply = Double.parseDouble(arg.toLowerCase().replace("-dirmultiply:", "")); } catch (Exception ignored) { sendFailedToReadTagMessage(sender, arg); return; }
                 else if (arg.contains("-dirrel:")) try { dirrel = Boolean.parseBoolean(arg.replace("-dirrel:", "")); } catch (Exception ignored) { sendFailedToReadTagMessage(sender, arg); return; }
 
                 //Arrow
@@ -79,7 +80,7 @@ public class EntityCommand extends CommandRunner
                 else if (arg.contains("-damage:")) try { changeDamage = true; damage = Integer.parseInt(arg.replace("-damage:", "")); } catch (Exception ignored) { sendFailedToReadTagMessage(sender, arg); return; }
             }
             Vector direction;
-            if (dirrel) direction = new Vector(dirx, diry, dirz).add(((Player) sender).getEyeLocation().getDirection().multiply(2.8));
+            if (dirrel) direction = new Vector(dirx, diry, dirz).add(((Player) sender).getEyeLocation().getDirection().multiply(dirMultiply));
             else direction = new Vector(dirx, diry, dirz);
 
             //临时

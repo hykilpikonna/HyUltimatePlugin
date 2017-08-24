@@ -7,12 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2643750-8be0-4570-af96-bc971080d381" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Build/HyUlt.jar" afterPath="$PROJECT_DIR$/Build/HyUlt.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Build/HyUltXEssentials.jar" afterPath="$PROJECT_DIR$/Build/HyUltXEssentials.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyUltXEssentials/cc/moecraft/hykilpikonna/ult/essentials/features/entity/EntityCommand.class" afterPath="$PROJECT_DIR$/out/production/HyUltXEssentials/cc/moecraft/hykilpikonna/ult/essentials/features/entity/EntityCommand.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUlt/src/plugin.yml" afterPath="$PROJECT_DIR$/HyUlt/src/plugin.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUltXCommand/src/cc/moecraft/hykilpikonna/ult/command/features/commandmapping/CommandMappingConfig.java" afterPath="$PROJECT_DIR$/HyUltXCommand/src/cc/moecraft/hykilpikonna/ult/command/features/commandmapping/CommandMappingConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUltXEssentials/src/cc/moecraft/hykilpikonna/ult/essentials/features/entity/EntityCommand.java" afterPath="$PROJECT_DIR$/HyUltXEssentials/src/cc/moecraft/hykilpikonna/ult/essentials/features/entity/EntityCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUltXEssentials/src/plugin.yml" afterPath="$PROJECT_DIR$/HyUltXEssentials/src/plugin.yml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,31 +44,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="CommandMappingConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HyUltXCommand/src/cc/moecraft/hykilpikonna/ult/command/features/commandmapping/CommandMappingConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="551">
+              <caret line="122" column="81" lean-forward="false" selection-start-line="122" selection-start-column="81" selection-end-line="122" selection-end-column="81" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="plugin.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HyUltXEssentials/src/plugin.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="19">
               <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EntityCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HyUltXEssentials/src/cc/moecraft/hykilpikonna/ult/essentials/features/entity/EntityCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1829">
-              <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomEntities.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HyUltXEssentials/src/cc/moecraft/hykilpikonna/ult/essentials/features/entity/CustomEntities.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="25" column="15" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -88,7 +76,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>command.sat.</find>
       <find>messenger.get</find>
       <find>getMain().getConfig()</find>
       <find>features.Pullback.</find>
@@ -118,9 +105,9 @@
       <find>reload</find>
       <find>curseOfVanishingFix</find>
       <find>\) \{</find>
+      <find>arrowrain</find>
     </findStrings>
     <replaceStrings>
-      <replace>private static</replace>
       <replace>getPermissionsConfig()</replace>
       <replace>etFishModifier().getMessenger().sendMessage</replace>
       <replace>getFishModifier().getMessenger().sendMessage</replace>
@@ -150,6 +137,7 @@
       <replace>arrowrain</replace>
       <replace>antiEntityExplode</replace>
       <replace>\)\n    \{</replace>
+      <replace>glowingskullrain</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -202,7 +190,6 @@
         <option value="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/api/Messenger.java" />
         <option value="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/api/PermissionsConfig.java" />
         <option value="$PROJECT_DIR$/HyUltXEssentials/src/cc/moecraft/hykilpikonna/ult/essentials/features/entity/CommonEntities.java" />
-        <option value="$PROJECT_DIR$/HyUltXCommand/src/cc/moecraft/hykilpikonna/ult/command/features/commandmapping/CommandMappingConfig.java" />
         <option value="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/utils/PlaceholderUtils.java" />
         <option value="$PROJECT_DIR$/HyUltXFun/src/cc/moecraft/hykilpikonna/ult/fun/features/listeners/ElevatorListener.java" />
         <option value="$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/Switches.java" />
@@ -211,9 +198,10 @@
         <option value="$PROJECT_DIR$/HyUltXFix/src/plugin.yml" />
         <option value="$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/Features.java" />
         <option value="$PROJECT_DIR$/HyUltXEssentials/src/cc/moecraft/hykilpikonna/ult/essentials/features/entity/CustomEntities.java" />
-        <option value="$PROJECT_DIR$/HyUltXEssentials/src/cc/moecraft/hykilpikonna/ult/essentials/features/entity/EntityCommand.java" />
-        <option value="$PROJECT_DIR$/HyUlt/src/plugin.yml" />
         <option value="$PROJECT_DIR$/HyUltXEssentials/src/plugin.yml" />
+        <option value="$PROJECT_DIR$/HyUltXEssentials/src/cc/moecraft/hykilpikonna/ult/essentials/features/entity/EntityCommand.java" />
+        <option value="$PROJECT_DIR$/HyUltXCommand/src/cc/moecraft/hykilpikonna/ult/command/features/commandmapping/CommandMappingConfig.java" />
+        <option value="$PROJECT_DIR$/HyUlt/src/plugin.yml" />
       </list>
     </option>
   </component>
@@ -274,85 +262,33 @@
           <expand>
             <path>
               <item name="HyUltimatePlugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HyUlt" type="462c0819:PsiDirectoryNode" />
+              <item name="HyUltXCommand" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HyUltimatePlugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HyUlt" type="462c0819:PsiDirectoryNode" />
+              <item name="HyUltXCommand" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HyUltimatePlugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HyUlt" type="462c0819:PsiDirectoryNode" />
+              <item name="HyUltXCommand" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ult" type="462c0819:PsiDirectoryNode" />
+              <item name="command" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HyUltimatePlugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HyUlt" type="462c0819:PsiDirectoryNode" />
+              <item name="HyUltXCommand" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ult" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HyUltimatePlugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HyUlt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ult" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="ingame" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HyUltimatePlugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HyUlt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ult" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="tabcompleter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HyUltimatePlugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HyUlt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ult" type="462c0819:PsiDirectoryNode" />
-              <item name="commands" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HyUltimatePlugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HyUlt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ult" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HyUltimatePlugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HyUltXEssentials" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HyUltimatePlugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HyUltXEssentials" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HyUltimatePlugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HyUltXEssentials" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="essentials" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HyUltimatePlugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HyUltXEssentials" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="essentials" type="462c0819:PsiDirectoryNode" />
+              <item name="command" type="462c0819:PsiDirectoryNode" />
               <item name="features" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HyUltimatePlugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HyUltXEssentials" type="462c0819:PsiDirectoryNode" />
+              <item name="HyUltXCommand" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="essentials" type="462c0819:PsiDirectoryNode" />
+              <item name="command" type="462c0819:PsiDirectoryNode" />
               <item name="features" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="commandmapping" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HyUltimatePlugin" type="b2602c69:ProjectViewProjectNode" />
@@ -541,12 +477,12 @@
       <workItem from="1503314459920" duration="156000" />
       <workItem from="1503324727638" duration="2915000" />
       <workItem from="1503393603613" duration="1233000" />
-      <workItem from="1503536412485" duration="4901000" />
+      <workItem from="1503536412485" duration="5964000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="278753000" />
+    <option name="totallyTimeSpent" value="279816000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -570,6 +506,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -580,13 +517,12 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -852,14 +788,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HyUltXCommand/src/cc/moecraft/hykilpikonna/ult/command/features/commandmapping/CommandMappingConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1767">
-          <caret line="102" column="75" lean-forward="false" selection-start-line="102" selection-start-column="75" selection-end-line="102" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/utils/PlaceholderUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1767">
@@ -951,18 +879,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HyUltXEssentials/src/cc/moecraft/hykilpikonna/ult/essentials/features/entity/CustomEntities.java">
+    <entry file="file://$PROJECT_DIR$/HyUltXFun/src/cc/moecraft/hykilpikonna/ult/fun/features/listeners/ElevatorListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="25" column="15" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="15" />
+        <state relative-caret-position="503">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HyUltXEssentials/src/cc/moecraft/hykilpikonna/ult/essentials/features/entity/EntityCommand.java">
+    <entry file="file://$PROJECT_DIR$/HyUltXEssentials/src/cc/moecraft/hykilpikonna/ult/essentials/features/entity/CustomEntities.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1829">
-          <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+        <state relative-caret-position="228">
+          <caret line="25" column="15" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -975,10 +903,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HyUltXFun/src/cc/moecraft/hykilpikonna/ult/fun/features/listeners/ElevatorListener.java">
+    <entry file="file://$PROJECT_DIR$/HyUltXEssentials/src/cc/moecraft/hykilpikonna/ult/essentials/features/entity/EntityCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+        <state relative-caret-position="247">
+          <caret line="49" column="25" lean-forward="true" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HyUltXCommand/src/cc/moecraft/hykilpikonna/ult/command/features/commandmapping/CommandMappingConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="122" column="81" lean-forward="false" selection-start-line="122" selection-start-column="81" selection-end-line="122" selection-end-column="81" />
           <folding />
         </state>
       </provider>
