@@ -101,14 +101,14 @@
 #                             [-y:<y 相对坐标偏移>]
 #                             [-z:<z 相对坐标偏移>]
 #                             [-amount:<数量, 默认为1>]
-#                             [-glowing:<是否发光, 默认为false>]
+#                             [-glow:<是否发光, 默认为false>]
 #                             [-msg:<是否发送消息, 默认为true>]
 #
 #[P]相对坐标生成自定义实体: /entity custom <实体名(支持Tab补全)>
 #                             [支持所有常见实体的Tag, 其他Tag见下面实体列表]
 #
 #自定义生成实体Tag列表:
-#   投掷物 (Arrow, Snowball, Fireball, Dragon_Fireball, Small_Fireball, Egg):
+#   投掷物 (Arrow, Snowball, Fireball, Dragon_Fireball, Small_Fireball, Egg, Wither_Skull, Ender_Pearl):
 #       [-dirx:<发射方向x>]
 #       [-diry:<发射方向y>]
 #       [-dirz:<发射方向z>]

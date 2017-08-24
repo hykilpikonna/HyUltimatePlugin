@@ -111,7 +111,7 @@ public class EntityCommand extends CommandRunner
                     {
                         for (; temoAmount > 0; temoAmount--)
                         {
-                            Arrow arrow = (Arrow) ((Player) sender).launchProjectile(Arrow.class, direction);
+                            Arrow arrow = ((Player) sender).launchProjectile(Arrow.class, direction);
                             arrow.setCritical(critical);
                             arrow.setFireTicks(fireTicks);
                             arrow.setBounce(bounce);
@@ -119,6 +119,7 @@ public class EntityCommand extends CommandRunner
                             arrow.getWorld().playSound(arrow.getLocation(), Sound.ENTITY_ARROW_SHOOT, 1.5f, 1f);
                             arrow.setPickupStatus(Arrow.PickupStatus.CREATIVE_ONLY);
                             if (changeDamage) arrow.spigot().setDamage(damage);
+                            arrow.setGlowing(glow);
                         }
                     }
                     else if (entities == CustomEntities.FIREBALL)
@@ -129,7 +130,7 @@ public class EntityCommand extends CommandRunner
                             arrow.setFireTicks(fireTicks);
                             arrow.setBounce(bounce);
                             arrow.getWorld().playSound(arrow.getLocation(), Sound.ENTITY_ARROW_SHOOT, 1.5f, 1f);
-
+                            arrow.setGlowing(glow);
                         }
                     }
                     else if (entities == CustomEntities.DRAGON_FIREBALL)
@@ -140,6 +141,7 @@ public class EntityCommand extends CommandRunner
                             arrow.setFireTicks(fireTicks);
                             arrow.setBounce(bounce);
                             arrow.getWorld().playSound(arrow.getLocation(), Sound.ENTITY_ARROW_SHOOT, 1.5f, 1f);
+                            arrow.setGlowing(glow);
                         }
                     }
                     else if (entities == CustomEntities.WITHER_SKULL)
@@ -150,6 +152,7 @@ public class EntityCommand extends CommandRunner
                             arrow.setFireTicks(fireTicks);
                             arrow.setBounce(bounce);
                             arrow.getWorld().playSound(arrow.getLocation(), Sound.ENTITY_ARROW_SHOOT, 1.5f, 1f);
+                            arrow.setGlowing(glow);
                         }
                     }
                     else if (entities == CustomEntities.ENDER_PEARL)
@@ -160,6 +163,7 @@ public class EntityCommand extends CommandRunner
                             arrow.setFireTicks(fireTicks);
                             arrow.setBounce(bounce);
                             arrow.getWorld().playSound(arrow.getLocation(), Sound.ENTITY_ARROW_SHOOT, 1.5f, 1f);
+                            arrow.setGlowing(glow);
                         }
                     }
                     else if (entities == CustomEntities.SMALL_FIREBALL)
@@ -170,6 +174,7 @@ public class EntityCommand extends CommandRunner
                             arrow.setFireTicks(fireTicks);
                             arrow.setBounce(bounce);
                             arrow.getWorld().playSound(arrow.getLocation(), Sound.ENTITY_ARROW_SHOOT, 1.5f, 1f);
+                            arrow.setGlowing(glow);
                         }
                     }
                     else if (entities == CustomEntities.SNOWBALL)
@@ -180,6 +185,7 @@ public class EntityCommand extends CommandRunner
                             arrow.setFireTicks(fireTicks);
                             arrow.setBounce(bounce);
                             arrow.getWorld().playSound(arrow.getLocation(), Sound.ENTITY_ARROW_SHOOT, 1.5f, 1f);
+                            arrow.setGlowing(glow);
                         }
                     }
                     else if (entities == CustomEntities.EGG)
@@ -190,6 +196,7 @@ public class EntityCommand extends CommandRunner
                             arrow.setFireTicks(fireTicks);
                             arrow.setBounce(bounce);
                             arrow.getWorld().playSound(arrow.getLocation(), Sound.ENTITY_ARROW_SHOOT, 1.5f, 1f);
+                            arrow.setGlowing(glow);
                         }
                     }
                     else
