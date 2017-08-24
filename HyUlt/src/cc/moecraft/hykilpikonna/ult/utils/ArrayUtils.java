@@ -61,13 +61,13 @@ public class ArrayUtils
      */
     public static String getTheRestToString(String[] strings, int index)
     {
-        String output = "";
+        StringBuilder output = new StringBuilder();
         for (int i = index; i < strings.length; i++)
         {
-            output += (i == strings.length - 1) ? strings[i] : strings[i] + " ";
+            output.append((i == strings.length - 1) ? strings[i] : strings[i] + " ");
         }
         loglogger.Debug("[工具处理]其余的字符串是: " + output + ";");
-        return output;
+        return output.toString();
     }
 
     /**
@@ -81,7 +81,7 @@ public class ArrayUtils
         StringBuilder output = new StringBuilder();
         for (int i = index; i < strings.size(); i++)
         {
-            output.append(strings.get(i));
+            output.append((i == strings.size() - 1) ? strings.get(i) : strings.get(i) + " ");
         }
         loglogger.Debug("[工具处理]其余的字符串是: " + output);
         return output.toString();
@@ -95,13 +95,13 @@ public class ArrayUtils
      */
     public static String getTheRestToString(String string, int index)
     {
-        String output = "";
+        StringBuilder output = new StringBuilder();
         for (int i = index; i < string.length(); i++)
         {
-            output += string.charAt(i);
+            output.append(string.charAt(i));
         }
         loglogger.Debug("[工具处理]其余的字符串是: " + output);
-        return output;
+        return output.toString();
     }
 
     /**

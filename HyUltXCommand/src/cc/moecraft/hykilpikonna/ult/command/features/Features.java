@@ -9,6 +9,9 @@ import cc.moecraft.hykilpikonna.ult.command.features.commandloop.CommandLoopMess
 import cc.moecraft.hykilpikonna.ult.command.features.commandloop.CommandLoopPermissions;
 import cc.moecraft.hykilpikonna.ult.command.features.commandmapping.CommandMappingConfig;
 import cc.moecraft.hykilpikonna.ult.command.features.commandmapping.CommandMappingListener;
+import cc.moecraft.hykilpikonna.ult.command.features.sendercommand.SenderCommandCommand;
+import cc.moecraft.hykilpikonna.ult.command.features.sendercommand.SenderCommandMessenger;
+import cc.moecraft.hykilpikonna.ult.command.features.sendercommand.SenderCommandPermissions;
 
 /**
  * 此类由 Hykilpikonna 在 2017/08/13 创建!
@@ -19,6 +22,7 @@ import cc.moecraft.hykilpikonna.ult.command.features.commandmapping.CommandMappi
 public class Features
 {
     private static Feature blockCommand;
+    private static Feature senderCommand;
     private static Feature commandMapping;
     private static Feature commandLoop;
 
@@ -49,6 +53,15 @@ public class Features
             commandLoop.setPermissionsConfig(new CommandLoopPermissions());
             commandLoop.setCommandRunner(new CommandLoopCommand());
         }
+        if (HyUltXCommand.getInstance().getSwitches().getBoolean("SenderCommand.Enable"))
+        {
+            senderCommand = new Feature();
+            senderCommand.setId("pcmd");
+            senderCommand.setFriendlyName("SenderCommand");
+            senderCommand.setMessenger(new SenderCommandMessenger());
+            senderCommand.setPermissionsConfig(new SenderCommandPermissions());
+            senderCommand.setCommandRunner(new SenderCommandCommand());
+        }
     }
 
     public static Feature getBlockCommand() {
@@ -63,7 +76,7 @@ public class Features
         return commandLoop;
     }
 
-    public static void setCommandLoop(Feature commandLoop) {
-        Features.commandLoop = commandLoop;
+    public static Feature getSenderCommand() {
+        return senderCommand;
     }
 }

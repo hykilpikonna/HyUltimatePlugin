@@ -62,7 +62,10 @@ public class ElevatorListener extends Listener
                     if (blockAtJ.getType().equals(block.getType()))
                         if (ElevatorCalculations.getBlock1ExceptionList().contains(blockAtJ.getRelative(UP, 1).getType().name()))
                             if (ElevatorCalculations.getBlock2ExceptionList().contains(blockAtJ.getRelative(UP, 2).getType().name()))
+                            {
                                 teleport(player, y, index, false);
+                                break;
+                            }
                 } 
             }
         }
@@ -101,7 +104,10 @@ public class ElevatorListener extends Listener
                     if (blockAtJ.getType().equals(block.getType()))
                         if (ElevatorCalculations.getBlock1ExceptionList().contains(blockAtJ.getRelative(UP, 1).getType().name()))
                             if (ElevatorCalculations.getBlock2ExceptionList().contains(blockAtJ.getRelative(UP, 2).getType().name()))
+                            {
                                 teleport(player, y, index, true);
+                                break;
+                            }
                 }
             }
         }

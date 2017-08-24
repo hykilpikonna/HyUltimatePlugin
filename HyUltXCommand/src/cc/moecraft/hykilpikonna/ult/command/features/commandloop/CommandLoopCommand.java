@@ -1,5 +1,6 @@
 package cc.moecraft.hykilpikonna.ult.command.features.commandloop;
 
+import cc.moecraft.hykilpikonna.ult.Main;
 import cc.moecraft.hykilpikonna.ult.api.CommandRunner;
 import cc.moecraft.hykilpikonna.ult.api.ingame.PlayerCommand;
 import cc.moecraft.hykilpikonna.ult.command.HyUltXCommand;
@@ -25,7 +26,11 @@ public class CommandLoopCommand extends CommandRunner
     @Override
     public void runCommand(CommandSender sender, org.bukkit.command.Command command, String alias, ArrayList<String> args)
     {
-        if (args.size() <= 1) return;
+        if (args.size() <= 1)
+        {
+            Main.sendHelpMessage(sender);
+            return;
+        }
         if (!(args.get(0).equals("loop"))) return;
         switch (args.get(1))
         {
