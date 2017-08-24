@@ -8,7 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b2643750-8be0-4570-af96-bc971080d381" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUlt/src/plugin.yml" afterPath="$PROJECT_DIR$/HyUlt/src/plugin.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/Features.java" afterPath="$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/Features.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUltXEssentials/src/cc/moecraft/hykilpikonna/ult/essentials/features/entity/CustomEntities.java" afterPath="$PROJECT_DIR$/HyUltXEssentials/src/cc/moecraft/hykilpikonna/ult/essentials/features/entity/CustomEntities.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUltXEssentials/src/cc/moecraft/hykilpikonna/ult/essentials/features/entity/EntityCommand.java" afterPath="$PROJECT_DIR$/HyUltXEssentials/src/cc/moecraft/hykilpikonna/ult/essentials/features/entity/EntityCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyUltXEssentials/src/plugin.yml" afterPath="$PROJECT_DIR$/HyUltXEssentials/src/plugin.yml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,7 +24,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="plugin.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="plugin.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HyUlt/src/plugin.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="19">
@@ -32,81 +34,32 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="EntityCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HyUltXEssentials/src/cc/moecraft/hykilpikonna/ult/essentials/features/entity/EntityCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1990">
+              <caret line="193" column="21" lean-forward="true" selection-start-line="193" selection-start-column="21" selection-end-line="193" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ElevatorListener.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HyUltXFun/src/cc/moecraft/hykilpikonna/ult/fun/features/listeners/ElevatorListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="47">
+            <state relative-caret-position="617">
               <caret line="57" column="31" lean-forward="true" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Switches.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/Switches.java">
+      <file leaf-file-name="CustomEntities.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HyUltXEssentials/src/cc/moecraft/hykilpikonna/ult/essentials/features/entity/CustomEntities.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="27" column="50" lean-forward="false" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
+            <state relative-caret-position="228">
+              <caret line="25" column="15" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="15" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Features.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/Features.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="69" column="9" lean-forward="true" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
-              <folding>
-                <element signature="e#3398#3399#0" expanded="true" />
-                <element signature="e#3426#3427#0" expanded="true" />
-                <element signature="e#3469#3470#0" expanded="true" />
-                <element signature="e#3496#3497#0" expanded="true" />
-                <element signature="e#3554#3555#0" expanded="true" />
-                <element signature="e#3596#3597#0" expanded="true" />
-                <element signature="e#3648#3649#0" expanded="true" />
-                <element signature="e#3688#3689#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AntiEntityExplodeListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/antientityexplode/AntiEntityExplodeListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#591#592#0" expanded="true" />
-                <element signature="e#631#632#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plugin.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HyUltXFix/src/plugin.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AntiEntityExplodeConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/antientityexplode/AntiEntityExplodeConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#608#609#0" expanded="true" />
-                <element signature="e#709#710#0" expanded="true" />
-                <element signature="e#760#761#0" expanded="true" />
-                <element signature="e#817#818#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -151,8 +104,8 @@
       <find>blockCommand</find>
       <find>diediedie</find>
       <find>reload</find>
-      <find>\) \{</find>
       <find>curseOfVanishingFix</find>
+      <find>\) \{</find>
     </findStrings>
     <replaceStrings>
       <replace>private static</replace>
@@ -183,8 +136,8 @@
       <replace>CustomEntities</replace>
       <replace>entityCommand</replace>
       <replace>arrowrain</replace>
-      <replace>\)\n    \{</replace>
       <replace>antiEntityExplode</replace>
+      <replace>\)\n    \{</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -219,8 +172,6 @@
         <option value="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/utils/ArrayUtils.java" />
         <option value="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/api/tabcompleter/TabCompletes.java" />
         <option value="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/api/CommandRunner.java" />
-        <option value="$PROJECT_DIR$/HyUltXEssentials/src/cc/moecraft/hykilpikonna/ult/essentials/features/entity/CustomEntities.java" />
-        <option value="$PROJECT_DIR$/HyUltXEssentials/src/plugin.yml" />
         <option value="$PROJECT_DIR$/HyUltXEssentials/src/cc/moecraft/hykilpikonna/ult/essentials/features/entity/EntityMessenger.java" />
         <option value="$PROJECT_DIR$/HyUltXEssentials/src/cc/moecraft/hykilpikonna/ult/essentials/features/entity/EntityPermissions.java" />
         <option value="$PROJECT_DIR$/HyUltXEssentials/src/cc/moecraft/hykilpikonna/ult/essentials/features/Features.java" />
@@ -239,7 +190,6 @@
         <option value="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/api/Messenger.java" />
         <option value="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/api/PermissionsConfig.java" />
         <option value="$PROJECT_DIR$/HyUltXEssentials/src/cc/moecraft/hykilpikonna/ult/essentials/features/entity/CommonEntities.java" />
-        <option value="$PROJECT_DIR$/HyUltXEssentials/src/cc/moecraft/hykilpikonna/ult/essentials/features/entity/EntityCommand.java" />
         <option value="$PROJECT_DIR$/HyUltXCommand/src/cc/moecraft/hykilpikonna/ult/command/features/commandmapping/CommandMappingConfig.java" />
         <option value="$PROJECT_DIR$/HyUlt/src/cc/moecraft/hykilpikonna/ult/utils/PlaceholderUtils.java" />
         <option value="$PROJECT_DIR$/HyUltXFun/src/cc/moecraft/hykilpikonna/ult/fun/features/listeners/ElevatorListener.java" />
@@ -248,6 +198,9 @@
         <option value="$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/antientityexplode/AntiEntityExplodeConfig.java" />
         <option value="$PROJECT_DIR$/HyUltXFix/src/plugin.yml" />
         <option value="$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/Features.java" />
+        <option value="$PROJECT_DIR$/HyUltXEssentials/src/cc/moecraft/hykilpikonna/ult/essentials/features/entity/EntityCommand.java" />
+        <option value="$PROJECT_DIR$/HyUltXEssentials/src/cc/moecraft/hykilpikonna/ult/essentials/features/entity/CustomEntities.java" />
+        <option value="$PROJECT_DIR$/HyUltXEssentials/src/plugin.yml" />
         <option value="$PROJECT_DIR$/HyUlt/src/plugin.yml" />
       </list>
     </option>
@@ -399,33 +352,33 @@
             </path>
             <path>
               <item name="HyUltimatePlugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HyUltXFix" type="462c0819:PsiDirectoryNode" />
+              <item name="HyUltXEssentials" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HyUltimatePlugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HyUltXFix" type="462c0819:PsiDirectoryNode" />
+              <item name="HyUltXEssentials" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HyUltimatePlugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HyUltXFix" type="462c0819:PsiDirectoryNode" />
+              <item name="HyUltXEssentials" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="fix" type="462c0819:PsiDirectoryNode" />
+              <item name="essentials" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HyUltimatePlugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HyUltXFix" type="462c0819:PsiDirectoryNode" />
+              <item name="HyUltXEssentials" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="fix" type="462c0819:PsiDirectoryNode" />
+              <item name="essentials" type="462c0819:PsiDirectoryNode" />
               <item name="features" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HyUltimatePlugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HyUltXFix" type="462c0819:PsiDirectoryNode" />
+              <item name="HyUltXEssentials" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="fix" type="462c0819:PsiDirectoryNode" />
+              <item name="essentials" type="462c0819:PsiDirectoryNode" />
               <item name="features" type="462c0819:PsiDirectoryNode" />
-              <item name="antientityexplode" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -584,12 +537,12 @@
       <workItem from="1503314459920" duration="156000" />
       <workItem from="1503324727638" duration="2915000" />
       <workItem from="1503393603613" duration="1233000" />
-      <workItem from="1503536412485" duration="3249000" />
+      <workItem from="1503536412485" duration="4398000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="277101000" />
+    <option name="totallyTimeSpent" value="278250000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -746,13 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HyUltXEssentials/src/plugin.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HyUltXEssentials/src/cc/moecraft/hykilpikonna/ult/essentials/features/entity/EntityPermissions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -902,26 +848,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HyUltXEssentials/src/cc/moecraft/hykilpikonna/ult/essentials/features/entity/CustomEntities.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="28" column="22" lean-forward="false" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HyUltXEssentials/src/cc/moecraft/hykilpikonna/ult/essentials/features/entity/EntityCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1976">
-          <caret line="120" column="79" lean-forward="false" selection-start-line="120" selection-start-column="79" selection-end-line="120" selection-end-column="79" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HyUltXCommand/src/cc/moecraft/hykilpikonna/ult/command/features/commandmapping/CommandMappingConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1767">
@@ -954,14 +880,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HyUltXFun/src/cc/moecraft/hykilpikonna/ult/fun/features/listeners/ElevatorListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="57" column="31" lean-forward="true" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/Switches.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -978,36 +896,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HyUltXFix/src/plugin.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/antientityexplode/AntiEntityExplodeListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#591#592#0" expanded="true" />
-            <element signature="e#631#632#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/antientityexplode/AntiEntityExplodeConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#608#609#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
-            <element signature="e#760#761#0" expanded="true" />
-            <element signature="e#817#818#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#591#592#0" expanded="false" />
+            <element signature="e#631#632#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1029,10 +925,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/HyUltXFix/src/cc/moecraft/hykilpikonna/ult/fix/features/antientityexplode/AntiEntityExplodeConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#608#609#0" expanded="false" />
+            <element signature="e#709#710#0" expanded="false" />
+            <element signature="e#760#761#0" expanded="false" />
+            <element signature="e#817#818#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HyUltXFix/src/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HyUltXFun/src/cc/moecraft/hykilpikonna/ult/fun/features/listeners/ElevatorListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="57" column="31" lean-forward="true" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HyUltXEssentials/src/cc/moecraft/hykilpikonna/ult/essentials/features/entity/EntityCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1990">
+          <caret line="193" column="21" lean-forward="true" selection-start-line="193" selection-start-column="21" selection-end-line="193" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HyUltXEssentials/src/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/HyUlt/src/plugin.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="9" lean-forward="false" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HyUltXEssentials/src/cc/moecraft/hykilpikonna/ult/essentials/features/entity/CustomEntities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="25" column="15" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="15" />
           <folding />
         </state>
       </provider>

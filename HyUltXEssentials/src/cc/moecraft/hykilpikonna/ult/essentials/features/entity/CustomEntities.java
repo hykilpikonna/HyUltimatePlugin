@@ -21,7 +21,9 @@ public enum CustomEntities
     FIREBALL("Fireball", Enemies.NEUTRAL, EntityType.FIREBALL),
     SMALL_FIREBALL("Small_Fireball", Enemies.NEUTRAL, EntityType.SMALL_FIREBALL),
     DRAGON_FIREBALL("Dragon_Fireball", Enemies.NEUTRAL, EntityType.DRAGON_FIREBALL),
-    EGG("Egg", Enemies.NEUTRAL, EntityType.EGG);
+    EGG("Egg", Enemies.NEUTRAL, EntityType.EGG),
+    WITHER_SKULL("Wither_Skull", Enemies.NEUTRAL, EntityType.WITHER_SKULL),
+    ENDER_PEARL("Ender_Pearl", Enemies.NEUTRAL, EntityType.ENDER_PEARL);
 
     CustomEntities(String n, CustomEntities.Enemies en, String s, EntityType type)
     {

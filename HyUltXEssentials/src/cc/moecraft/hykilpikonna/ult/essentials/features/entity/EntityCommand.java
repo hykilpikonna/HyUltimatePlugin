@@ -142,6 +142,26 @@ public class EntityCommand extends CommandRunner
                             arrow.getWorld().playSound(arrow.getLocation(), Sound.ENTITY_ARROW_SHOOT, 1.5f, 1f);
                         }
                     }
+                    else if (entities == CustomEntities.WITHER_SKULL)
+                    {
+                        for (; temoAmount > 0; temoAmount--)
+                        {
+                            WitherSkull arrow = ((Player) sender).launchProjectile(WitherSkull.class, direction);
+                            arrow.setFireTicks(fireTicks);
+                            arrow.setBounce(bounce);
+                            arrow.getWorld().playSound(arrow.getLocation(), Sound.ENTITY_ARROW_SHOOT, 1.5f, 1f);
+                        }
+                    }
+                    else if (entities == CustomEntities.ENDER_PEARL)
+                    {
+                        for (; temoAmount > 0; temoAmount--)
+                        {
+                            EnderPearl arrow = ((Player) sender).launchProjectile(EnderPearl.class, direction);
+                            arrow.setFireTicks(fireTicks);
+                            arrow.setBounce(bounce);
+                            arrow.getWorld().playSound(arrow.getLocation(), Sound.ENTITY_ARROW_SHOOT, 1.5f, 1f);
+                        }
+                    }
                     else if (entities == CustomEntities.SMALL_FIREBALL)
                     {
                         for (; temoAmount > 0; temoAmount--)
