@@ -31,6 +31,7 @@ public class Switches extends Config
         addDefault("Pullback.Enable", true);
         addDefault("AutoRespawn.Enable", true);
         addDefault("FishModifier.Enable", true);
+        addDefault("UUIDGetter.Enable", true);
     }
 
     @Override

@@ -1,5 +1,5 @@
 name: HyUltXUtil
-version: 0.1.5.9.31
+version: 0.1.5.10.31
 author: Hykilpikonna
 main: cc.moecraft.hykilpikonna.ult.util.Util
 depend: [HyUltimatePlugin]
@@ -22,6 +22,10 @@ commands:
         usage: /<command>
         aliases: [fl, food, hyfood]
     fishmodifier:
-        description: CommandRunner for custom fish.
+        description: Command for custom fish.
         usage: /<command>
         aliases: [hyfish, hyfm, fm, fish]
+    getuuid:
+        description: Get a player's uuid
+        usage: /<command> player
+        aliases: [hyuuid, uuid]

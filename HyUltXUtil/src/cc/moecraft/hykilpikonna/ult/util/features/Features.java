@@ -1,6 +1,5 @@
 package cc.moecraft.hykilpikonna.ult.util.features;
 
-import cc.moecraft.hykilpikonna.ult.Configs;
 import cc.moecraft.hykilpikonna.ult.api.Feature;
 import cc.moecraft.hykilpikonna.ult.util.Util;
 import cc.moecraft.hykilpikonna.ult.util.features.commands.*;
@@ -13,6 +12,9 @@ import cc.moecraft.hykilpikonna.ult.util.features.databases.HealthDatabase;
 import cc.moecraft.hykilpikonna.ult.util.features.listeners.*;
 import cc.moecraft.hykilpikonna.ult.util.features.messengers.*;
 import cc.moecraft.hykilpikonna.ult.util.features.permissions.*;
+import cc.moecraft.hykilpikonna.ult.util.features.uuidgetter.UUIDGetterCommand;
+import cc.moecraft.hykilpikonna.ult.util.features.uuidgetter.UUIDGetterMessenger;
+import cc.moecraft.hykilpikonna.ult.util.features.uuidgetter.UUIDGetterPermissions;
 
 /**
  * 此类由 Hykilpikonna 在 2017/07/29 创建!
@@ -29,7 +31,8 @@ public class Features
             foodLevel,
             pullback,
             autoRespawn,
-            fishModifier
+            fishModifier,
+            uuidGetter
     ;
 
     public Features()
@@ -106,6 +109,15 @@ public class Features
             fishModifier.setListener(new FishModifierListener());
             fishModifier.setCommandRunner(new FishModifierCommand());
         }
+        if (Util.getInstance().getSwitches().getBoolean("UUIDGetter.Enable"))
+        {
+            uuidGetter = new Feature();
+            uuidGetter.setId("getuuid");
+            uuidGetter.setFriendlyName("UUIDGetter");
+            uuidGetter.setCommandRunner(new UUIDGetterCommand());
+            uuidGetter.setMessenger(new UUIDGetterMessenger());
+            uuidGetter.setPermissionsConfig(new UUIDGetterPermissions());
+        }
     }
 
     public static Feature getItemFix() {
@@ -134,5 +146,9 @@ public class Features
 
     public static Feature getFoodLevel() {
         return foodLevel;
+    }
+
+    public static Feature getUuidGetter() {
+        return uuidGetter;
     }
 }
